@@ -1,0 +1,29 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment-nextjs-marcoshssilva-com-br
+spec:
+  selector:
+    matchLabels:
+      app: deployment-nextjs-marcoshssilva-com-br
+      version: v1.0.0
+  replicas: 4
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: deployment-nextjs-marcoshssilva-com-br
+        version: v1.0.0
+    spec:
+      containers:
+      - name: nextjs-app
+        image: app-nx.marcoshssilva.com.br/arm64/nextjs-marcoshssilva.com.br:latest
+        imagePullPolicy: Always
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "100m"
+        ports:
+        - containerPort: 3000
