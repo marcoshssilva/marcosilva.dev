@@ -42,11 +42,11 @@ export default function MenuComponent() {
   }, 145);
 
   return (
-    <AppBar position="sticky" color="transparent" sx={{ boxShadow: 'none' }}>
+    <AppBar position="fixed" color="transparent" sx={{ boxShadow: 'none' }}>
       <Container>
         <Toolbar>
           <Typography variant="h6" component="a" href="/">
-            {endSiteUrl}
+            marcoshssilva
           </Typography>
           <Typography variant="h6" component="a" href="/" color='primary'>
             .com.br
