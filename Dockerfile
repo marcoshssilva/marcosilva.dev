@@ -1,23 +1,39 @@
-FROM node:lts as dependencies
-WORKDIR /www
+FROM node:18-alpine AS base
+
+FROM base AS deps
+
+RUN apk add --no-cache libc6-compat
+WORKDIR /app
+
 COPY package.json package-lock.json ./
-RUN npm install
+RUN npm ci
 
-FROM node:lts as builder
-WORKDIR /www
+FROM base AS builder
+WORKDIR /app
+
+COPY --from=deps /app/node_modules ./node_modules
 COPY . .
-COPY --from=dependencies /www/node_modules ./node_modules
-RUN npm run build
 
-FROM node:lts as runner
-WORKDIR /www
+RUN npm build
+
+FROM base AS runner
+WORKDIR /app
+
 ENV NODE_ENV production
-# If you are using a custom next.config.js file, uncomment this line.
-COPY --from=builder /www/next.config.js ./
-COPY --from=builder /www/public ./public
-COPY --from=builder /www/.next ./.next
-COPY --from=builder /www/node_modules ./node_modules
-COPY --from=builder /www/package.json ./package.json
+
+RUN addgroup --system --gid 1001 nodejs
+RUN adduser --system --uid 1001 nextjs
+
+USER nextjs
+
+COPY --from=builder /app/public ./public
+
+COPY --from=builder /app/.next/standalone ./
+COPY --from=builder /app/.next/static ./.next/static
 
 EXPOSE 3000
-CMD ["npm", "start"]
+
+ENV PORT 3000
+ENV HOSTNAME localhost
+
+CMD [ "node", "server.js" ]
