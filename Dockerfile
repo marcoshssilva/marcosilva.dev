@@ -14,26 +14,27 @@ WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
-RUN npm build
+RUN npm run build
 
 FROM base AS runner
 WORKDIR /app
 
 ENV NODE_ENV production
 
-RUN addgroup --system --gid 1001 nodejs
-RUN adduser --system --uid 1001 nextjs
+# RUN addgroup --system --gid 1001 nodejs
+# RUN adduser --system --uid 1001 nextjs
 
-USER nextjs
+# USER nextjs
 
 COPY --from=builder /app/public ./public
+COPY --from=builder /app/.next ./.next
+COPY --from=deps /app/package.json /app/package-lock.json ./
 
-COPY --from=builder /app/.next/standalone ./
-COPY --from=builder /app/.next/static ./.next/static
+RUN npm install -g next@latest react@latest react-dom@latest
 
 EXPOSE 3000
 
 ENV PORT 3000
 ENV HOSTNAME localhost
 
-CMD [ "node", "server.js" ]
+CMD [ "npm", "run", "start" ]
