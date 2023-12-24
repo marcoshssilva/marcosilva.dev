@@ -67,20 +67,20 @@ export default function MenuComponent() {
 
           <IconButton
             size="large"
-            aria-label="Redirect to LinkedIn"
-            color="inherit"
-            target="_blank"
-            href="https://www.linkedin.com/in/marcos-henrique-santana/">
-                <LinkedInIcon />
-          </IconButton>
-
-          <IconButton
-            size="large"
             aria-label="Redirect to Github"
             color="inherit"
             target="_blank"
             href="https://github.com/marcoshssilva">
                 <GitHubIcon />
+          </IconButton>
+
+          <IconButton
+            size="large"
+            aria-label="Redirect to LinkedIn"
+            color="inherit"
+            target="_blank"
+            href="https://www.linkedin.com/in/marcos-henrique-santana/">
+                <LinkedInIcon />
           </IconButton>
 
         </Toolbar>
