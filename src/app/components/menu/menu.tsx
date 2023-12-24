@@ -13,6 +13,7 @@ import {
 
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import MailIcon from '@mui/icons-material/Mail';
 
 export default function MenuComponent() {
   const [endSiteUrl, setEndSiteUrl] = useState("marcoshssilva");
@@ -54,6 +55,15 @@ export default function MenuComponent() {
 
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: "none", md: "flex" } }}></Box>
+
+          <IconButton
+            size="large"
+            aria-label="Redirect to Github"
+            color="inherit"
+            target="_blank"
+            href="mailto:me@marcoshssilva.com.br">
+                <MailIcon />
+          </IconButton>
 
           <IconButton
             size="large"

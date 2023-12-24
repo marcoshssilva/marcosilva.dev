@@ -6,6 +6,7 @@ import { useTheme } from '@mui/material/styles';
 
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import MailIcon from '@mui/icons-material/Mail';
 
 import MenuComponent from "./components/menu/menu";
 
@@ -50,7 +51,16 @@ export default function Home() {
               startIcon={ <GitHubIcon /> } 
               href="https://github.com/marcoshssilva" 
               size="large"
+              sx={{ marginRight: '16px' }}
               target="_blank">GitHub</Button>
+
+            <Button 
+              variant="outlined"
+              startIcon={ <MailIcon /> } 
+              href="mailto:me@marcoshssilva.com.br" 
+              size="large"
+              sx={{ marginRight: '16px' }}
+              target="_blank">E-Mail</Button>
 
         </Box>
       </Container>
