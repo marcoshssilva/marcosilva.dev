@@ -11,37 +11,46 @@ import MenuComponent from "./components/menu/menu";
 
 export default function Home() {
   const theme = useTheme();
-  const isTablet = useMediaQuery(theme.breakpoints.up('md'));
+  const isTablet = useMediaQuery(theme.breakpoints.up('sm'));
 
   return (
     <>
       <MenuComponent />
-      <Container>
-        <Box className="min-h-screen flex flex-col items-start justify-center px-5">
+      <Container className="min-h-screen flex flex-col items-start justify-center" sx={{ paddingY: '64px' }}>
+        <Box className="px-5">
 
-            <Typography className="pb-4" sx={{ width: '100%' }} variant={ isTablet ? 'h2' : 'h5'} align={ isTablet ? 'left' : 'center'}>
-              Olá, eu sou
-            </Typography>
-            <Typography className="pb-4" sx={{ width: '100%' }} variant={ isTablet ? 'h1' : 'h3'} align={ isTablet ? 'left' : 'center'}>
-              Marcos Henrique
-            </Typography>
-            <Typography className="pb-4" sx={{ width: '100%' }} variant={ isTablet ? 'h2' : 'h3'} align={ isTablet ? 'left' : 'center'}>
-              Desenvolvo aplicações para a web.
-            </Typography>
+            <Typography 
+              className="pb-4" 
+              sx={{ width: '100%' }} 
+              variant={ isTablet ? 'h4' : 'h5'} 
+              align={ isTablet ? 'left' : 'left'}>Olá, eu sou</Typography>
 
-            <Box className="w-full flex justify-center md:justify-start">
+            <Typography 
+              className="pb-4" 
+              sx={{ width: '100%' }} 
+              variant={ isTablet ? 'h1' : 'h3'} 
+              align={ isTablet ? 'left' : 'left'}>Marcos Henrique.</Typography>
 
-              <Button 
-                startIcon={ <LinkedInIcon /> } 
-                href="https://www.linkedin.com/in/marcos-henrique-santana/" 
-                target="_blank">LinkedIn</Button>
+            <Typography 
+              className="pb-4" 
+              sx={{ width: '100%' }} 
+              variant={ isTablet ? 'h2' : 'h4'} 
+              align={ isTablet ? 'left' : 'left'}>Desenvolvo aplicações para a web.</Typography>
 
-              <Button 
-                startIcon={ <GitHubIcon /> } 
-                href="https://github.com/marcoshssilva" 
-                target="_blank">GitHub</Button>
+            <Button 
+              variant="outlined"
+              startIcon={ <LinkedInIcon /> } 
+              href="https://www.linkedin.com/in/marcos-henrique-santana/" 
+              size="large"
+              sx={{ marginRight: '16px' }}
+              target="_blank">LinkedIn</Button>
 
-            </Box>            
+            <Button 
+              variant="outlined"
+              startIcon={ <GitHubIcon /> } 
+              href="https://github.com/marcoshssilva" 
+              size="large"
+              target="_blank">GitHub</Button>
 
         </Box>
       </Container>
