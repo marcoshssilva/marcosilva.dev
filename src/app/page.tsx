@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <>
       <MenuComponent />
-      <Container className="min-h-screen flex flex-col items-start justify-center" sx={{ paddingY: '64px' }}>
+      <Container className="min-h-screen flex flex-col items-center justify-center" sx={{ paddingY: '64px' }}>
         <Box className="px-5">
 
             <Typography 
