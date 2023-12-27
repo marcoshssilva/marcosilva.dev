@@ -17,8 +17,8 @@ export default function Home() {
   return (
     <>
       <MenuComponent />
-      <Container className="min-h-screen flex flex-col items-center justify-center" sx={{ paddingY: '64px' }}>
-        <Box className="px-5">
+      <Container className="min-h-screen" sx={{ paddingY: '64px', position: 'relative' }}>
+        <Box sx={{ position: 'absolute', top: '50%', right: '50%', transform: 'translateX(50%) translateY(-50%)', width: 'calc(100% - 128px)' }}>
 
             <Typography 
               className="pb-4" 
