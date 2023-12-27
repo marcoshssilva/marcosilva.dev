@@ -38,30 +38,28 @@ export default function Home() {
               variant={ isTablet ? 'h2' : 'h4'} 
               align={ isTablet ? 'left' : 'left'}>Desenvolvo aplicações para a web.</Typography>
 
-            <Button 
-              variant="outlined"
-              startIcon={ <LinkedInIcon /> } 
-              href="https://www.linkedin.com/in/marcos-henrique-santana/" 
-              size="large"
-              sx={{ marginRight: '16px' }}
-              target="_blank">LinkedIn</Button>
+            <Box className="grid grid-cols-1 md:grid-cols-5 gap-3 py-3">
+              <Button 
+                variant="outlined"
+                startIcon={ <LinkedInIcon /> } 
+                href="https://www.linkedin.com/in/marcos-henrique-santana/" 
+                size="large"
+                target="_blank">LinkedIn</Button>
 
-            <Button 
-              variant="outlined"
-              startIcon={ <GitHubIcon /> } 
-              href="https://github.com/marcoshssilva" 
-              size="large"
-              sx={{ marginRight: '16px' }}
-              target="_blank">GitHub</Button>
+              <Button 
+                variant="outlined"
+                startIcon={ <GitHubIcon /> } 
+                href="https://github.com/marcoshssilva" 
+                size="large"
+                target="_blank">GitHub</Button>
 
-            <Button 
-              variant="outlined"
-              startIcon={ <MailIcon /> } 
-              href="mailto:me@marcoshssilva.com.br" 
-              size="large"
-              sx={{ marginRight: '16px' }}
-              target="_blank">E-Mail</Button>
-
+              <Button 
+                variant="outlined"
+                startIcon={ <MailIcon /> } 
+                href="mailto:me@marcoshssilva.com.br" 
+                size="large"
+                target="_blank">E-Mail</Button>
+            </Box>
         </Box>
       </Container>
 
