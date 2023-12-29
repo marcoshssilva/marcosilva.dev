@@ -3,14 +3,16 @@ import { Box, Container } from "@mui/material";
 import MenuComponent from "./components/menu/menu";
 import HeaderHelloComponent from "./components/header-hello/header-hello";
 import HeaderGroupButtonsComponent from "./components/header-group-buttons/header-group-buttons";
+import HeaderGroupLangsComponent from "./components/header-group-langs/header-group-langs";
 
 export default function Home() {
   return (
     <>
       <MenuComponent />
       <Container className={"min-h-screen"} sx={{ position: 'relative' }}>
-        <Box className={"grid pt-[17%] px-6"}>
+        <Box className={"grid pt-[17%] px-6 grid-cols-2"}>
           <HeaderHelloComponent />
+          <HeaderGroupLangsComponent />
         </Box>
         <Box className={"px-6 pt-4"}>
           <HeaderGroupButtonsComponent />
