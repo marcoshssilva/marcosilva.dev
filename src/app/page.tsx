@@ -10,9 +10,13 @@ export default function Home() {
     <>
       <MenuComponent />
       <Container className={"min-h-screen"} sx={{ position: 'relative' }}>
-        <Box className={"grid pt-[17%] px-6 grid-cols-2"}>
-          <HeaderHelloComponent />
-          <HeaderGroupLangsComponent />
+        <Box className={"grid pt-[17%] px-6 grid-cols-12"}>
+          <Box className={'col-span-8'}>
+            <HeaderHelloComponent />
+          </Box>
+          <Box className={'col-span-4'}>
+            <HeaderGroupLangsComponent />
+          </Box>
         </Box>
         <Box className={"px-6 pt-4"}>
           <HeaderGroupButtonsComponent />
