@@ -1,5 +1,3 @@
-import { Typography } from "@mui/material";
-
 export default function HeaderHelloComponent() {
     return <>
         <h1 className={'font-semibold text-[4rem]'}>Olá, eu sou</h1>
