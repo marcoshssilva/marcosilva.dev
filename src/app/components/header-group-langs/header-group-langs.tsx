@@ -21,23 +21,23 @@ export default function HeaderGroupLangsComponent() {
   const itens: HeaderGroupRowComponentData[] = [
     { 
       id: 1, 
-      itens: [{ content: 'javascript'}, { content: 'docker'}, { content: 'html'}, { content: 'jasmine'}, { content: 'hibernate'}, { content: 'jenkins'}, { content: 'git'}, { content: 'ubuntu'}, { content: 'oracle-linux'}, { content: 'netdata'}]
+      itens: [{ content: 'JavaScript'}, { content: 'Docker'}, { content: 'HTML'}, { content: 'Jasmine'}, { content: 'Hibernate'}, { content: 'Jenkins'}, { content: 'Git'}, { content: 'Ubuntu'}, { content: 'Oracle Linux'}, { content: 'Netdata'}]
     },
     { 
       id: 2, 
-      itens: [{ content: 'typescript'}, { content: 'css'}, { content: 'java'}, { content: 'junit'}, { content: 'kubernetes'}, { content: 'grafana'}, { content: 'prometheus'}, { content: 'nest'}, { content: 'rabbimq'}]
+      itens: [{ content: 'TypeScript'}, { content: 'CSS'}, { content: 'Java'}, { content: 'JUnit'}, { content: 'Kubernetes'}, { content: 'Grafana'}, { content: 'Prometheus'}, { content: 'Nest'}, { content: 'RabbitMQ'}]
     },
     { 
       id: 3, 
-      itens: [{ content: 'react'}, { content: 'springboot'}, { content: 'rabbimq'}, { content: 'sonarqube'}, { content: 'gitlab'}, { content: 'github'}, { content: 'java-ee'}, { content: 'kafka'}]
+      itens: [{ content: 'React'}, { content: 'Springboot'}, { content: 'RabbitMQ'}, { content: 'SonarQube'}, { content: 'Gitlab'}, { content: 'Github'}, { content: 'Java-EE'}, { content: 'Apache Kafka'}]
     },
     { 
       id: 4, 
-      itens: [{ content: 'angular'}, { content: 'jquery'}, { content: 'quarkus'}, { content: 'mysql'}, { content: 'redis'}, { content: 'linux'}, { content: 'aws'}, { content: 'oracle-cloud '}, { content: 'jakarta'}]
+      itens: [{ content: 'Angular'}, { content: 'JQuery'}, { content: 'Quarkus'}, { content: 'MySQL'}, { content: 'Redis'}, { content: 'Linux'}, { content: 'AWS'}, { content: 'Oracle-Cloud '}, { content: 'Jakarta'}]
     },
     { 
       id: 5, 
-      itens: [{ content: 'nextjs'}, { content: 'jest'}, { content: 'spring-cloud'}, { content: 'postgresql'}, { content: 'mongodb'}, { content: 'podman'}, { content: 's3'}, { content: 'sql-server'}, { content: 'azure'}]
+      itens: [{ content: 'Next-js'}, { content: 'Jest'}, { content: 'Spring-Cloud'}, { content: 'PostgreSQL'}, { content: 'MongoDB'}, { content: 'Podman'}, { content: 'Amazon S3'}, { content: 'SQL-Server'}, { content: 'Azure Cloud'}]
     }
   ];
 
