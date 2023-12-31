@@ -8,12 +8,6 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media screen and (max-width: 600px) {
-  html {
-    font-size: 12px;
-  }
-}
-
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -26,4 +20,55 @@ body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
   height: 100vh !important;
+}
+
+.header-group-langs-box {
+  overflow: hidden;
+  position: relative;
+}
+
+.header-group-langs-row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 16px;
+}
+
+.header-group-langs-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-wrap: nowrap;
+  gap: 0 0.2rem;
+  color: #e2e8f0;
+  font-size: 0.9rem;
+  background-color: #334155;
+  border-radius: 0.4rem;
+  padding: 0.7rem 1rem;
+  margin-right: 1rem;
+  box-shadow:
+    0 0.1rem 0.2rem rgb(0 0 0 / 20%),
+    0 0.1rem 0.5rem rgb(0 0 0 / 30%),
+    0 0.2rem 1.5rem rgb(0 0 0 / 40%);
+  width: 120px;
+}
+
+.header-group-langs-item > .span {
+  font-size: 1.2rem;
+  color: #64748b;
+}
+
+@keyframes loop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.fade {
+  pointer-events: none;
+  background: linear-gradient(90deg, rgb(var(--background-end-rgb)), transparent 23%, transparent 77%, rgb(var(--background-end-rgb)));
+  position: absolute;
+  inset: 0;
 }

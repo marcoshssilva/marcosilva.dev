@@ -18,7 +18,10 @@ export default function Home() {
             <HeaderGroupLangsComponent />
           </Box>
         </Box>
-        <Box className={"px-6 pt-4"}>
+        <Box className={'py-6 w-[52%] pl-[16px]'}>
+          <hr className=""/>
+        </Box>
+        <Box className={"px-6"}>
           <HeaderGroupButtonsComponent />
         </Box>
       </Container>
