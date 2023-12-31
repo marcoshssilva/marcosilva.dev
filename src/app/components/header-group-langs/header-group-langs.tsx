@@ -1,3 +1,5 @@
+import { Avatar, Chip } from "@mui/material";
+
 export interface HeaderGroupRowComponentData {
   id: number;
   itens: HeaderGroupItemComponentData[];
@@ -19,30 +21,34 @@ export interface HeaderGroupLangItemComponentProps {
 
 export default function HeaderGroupLangsComponent() {
   const itens: HeaderGroupRowComponentData[] = [
-    { 
-      id: 1, 
+    {
+      id: 1,
       itens: [{ content: 'JavaScript'}, { content: 'Docker'}, { content: 'HTML'}, { content: 'Jasmine'}, { content: 'Hibernate'}, { content: 'Jenkins'}, { content: 'Git'}, { content: 'Ubuntu'}, { content: 'Oracle Linux'}, { content: 'Netdata'}]
     },
-    { 
-      id: 2, 
-      itens: [{ content: 'TypeScript'}, { content: 'CSS'}, { content: 'Java'}, { content: 'JUnit'}, { content: 'Kubernetes'}, { content: 'Grafana'}, { content: 'Prometheus'}, { content: 'Nest'}, { content: 'RabbitMQ'}]
+    {
+      id: 2,
+      itens: [{ content: 'TypeScript'}, { content: 'CSS'}, { content: 'Java'},  { content: 'Kubernetes'}, { content: 'Grafana'}, { content: 'Nest'}, { content: 'RabbitMQ'}]
     },
-    { 
-      id: 3, 
-      itens: [{ content: 'React'}, { content: 'Springboot'}, { content: 'RabbitMQ'}, { content: 'SonarQube'}, { content: 'Gitlab'}, { content: 'Github'}, { content: 'Java-EE'}, { content: 'Apache Kafka'}]
+    {
+      id: 3,
+      itens: [{ content: 'React'}, { content: 'Springboot'}, { content: 'SonarQube'}, { content: 'Gitlab'}, { content: 'Github'}, { content: 'Java-EE'}, { content: 'Apache Kafka'}]
     },
-    { 
-      id: 4, 
-      itens: [{ content: 'Angular'}, { content: 'JQuery'}, { content: 'Quarkus'}, { content: 'MySQL'}, { content: 'Redis'}, { content: 'Linux'}, { content: 'AWS'}, { content: 'Oracle-Cloud '}, { content: 'Jakarta'}]
+    {
+      id: 4,
+      itens: [{ content: 'Angular'}, { content: 'JQuery'},  { content: 'MySQL'}, { content: 'Redis'}, { content: 'Linux'}, { content: 'AWS'}, { content: 'Oracle-Cloud '}, { content: 'Jakarta'}]
     },
-    { 
-      id: 5, 
-      itens: [{ content: 'Next-js'}, { content: 'Jest'}, { content: 'Spring-Cloud'}, { content: 'PostgreSQL'}, { content: 'MongoDB'}, { content: 'Podman'}, { content: 'Amazon S3'}, { content: 'SQL-Server'}, { content: 'Azure Cloud'}]
+    {
+      id: 5,
+      itens: [{ content: 'Next-js'}, { content: 'Jest'}, { content: 'PostgreSQL'}, { content: 'MongoDB'}, { content: 'Podman'}, { content: 'Amazon S3'}, { content: 'SQL-Server'}, { content: 'Azure Cloud'}]
+    },
+    {
+      id: 6,
+      itens: [{ content: 'Spring-Cloud'}, { content: 'Quarkus'}, { content: 'RabbitMQ'}, { content: 'JUnit'}, { content: 'Prometheus'}]
     }
   ];
 
   return (
-    <div className={'header-group-langs-box'}>
+    <div className={'header-group-langs-box flex flex-col justify-center h-full'}>
       {itens.map(value => <HeaderGroupLangRowComponent key={value.id} value={value} />)}
       <div className='fade'/>
     </div>
@@ -59,8 +65,11 @@ function HeaderGroupLangRowComponent({ value }: HeaderGroupLangRowComponentProps
 
 function HeaderGroupLangItemComponent({ value }: HeaderGroupLangItemComponentProps) {
   return <>
-    <div className={'header-group-langs-item'}>
-      <span>#</span> {value.content}
-    </div>   
+    <Chip
+    avatar={<Avatar>#</Avatar>}
+    variant="outlined"
+    label={value.content}
+    clickable
+    color="primary"/>
   </>
 }

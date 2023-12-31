@@ -10,11 +10,11 @@ export default function Home() {
     <>
       <MenuComponent />
       <Container className={"min-h-screen"} sx={{ position: 'relative' }}>
-        <Box className={"grid pt-[17%] px-6 grid-cols-12"}>
-          <Box className={'col-span-7'}>
+        <Box className={"grid pt-[17%] px-6 grid-cols-12 min-h-[500px]"}>
+          <Box className={'col-span-7 h-full'}>
             <HeaderHelloComponent />
           </Box>
-          <Box className={'col-span-5'}>
+          <Box className={'col-span-5 h-full'}>
             <HeaderGroupLangsComponent />
           </Box>
         </Box>
