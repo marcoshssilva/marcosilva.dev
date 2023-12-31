@@ -30,31 +30,9 @@ body {
 .header-group-langs-row {
   display: flex;
   flex-direction: row;
-  margin-bottom: 16px;
-}
-
-.header-group-langs-item {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  text-wrap: nowrap;
-  gap: 0 0.2rem;
-  color: #e2e8f0;
-  font-size: 0.9rem;
-  background-color: #334155;
-  border-radius: 0.4rem;
-  padding: 0.7rem 1rem;
-  margin-right: 1rem;
-  box-shadow:
-    0 0.1rem 0.2rem rgb(0 0 0 / 20%),
-    0 0.1rem 0.5rem rgb(0 0 0 / 30%),
-    0 0.2rem 1.5rem rgb(0 0 0 / 40%);
-  width: 120px;
-}
-
-.header-group-langs-item > .span {
-  font-size: 1.2rem;
-  color: #64748b;
+  gap: 8px;
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 
 @keyframes loop {
@@ -68,7 +46,7 @@ body {
 
 .fade {
   pointer-events: none;
-  background: linear-gradient(90deg, rgb(var(--background-end-rgb)), transparent 23%, transparent 77%, rgb(var(--background-end-rgb)));
+  background: linear-gradient(90deg, rgb(var(--background-end-rgb)), transparent 40%, transparent 60%, rgb(var(--background-end-rgb)));
   position: absolute;
   inset: 0;
 }
