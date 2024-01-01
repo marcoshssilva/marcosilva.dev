@@ -7,6 +7,7 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 // global style
 import './globals.css'
+import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter';
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -23,7 +24,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <AppRouterCacheProvider>
+          {children}
+        </AppRouterCacheProvider>
+      </body>
     </html>
   )
 }
