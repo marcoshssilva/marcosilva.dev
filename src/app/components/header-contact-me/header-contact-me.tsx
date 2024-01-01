@@ -1,8 +1,14 @@
 "use client";
 import React from "react";
 
-import { Box, Button, TextField, Typography } from "@mui/material";
+import { Box, Button, TextField, ThemeProvider, Typography, createTheme } from "@mui/material";
 import { FormEvent } from "react";
+
+const darkTheme = createTheme({
+  palette: {
+    mode: 'dark',
+  },
+});
 
 export default function HeaderContactMe() {
 
@@ -18,6 +24,7 @@ export default function HeaderContactMe() {
   }
 
   return (
+    <ThemeProvider theme={darkTheme}>
     <Box className={'h-full flex flex-col items-baseline w-full'}>
       <form className="m-0 w-full" autoComplete="off" onSubmit={onSubmitContactMe}>
         <Typography variant="caption" className={'mb-6'}>
@@ -61,5 +68,6 @@ export default function HeaderContactMe() {
         </Box>
       </form>
     </Box>
+    </ThemeProvider>
   );
 }
