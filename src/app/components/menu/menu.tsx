@@ -8,13 +8,13 @@ import {
 
 export default function MenuComponent() {
   return (
-    <AppBar position="fixed" color="transparent" sx={{ boxShadow: 'none' }}>
+    <AppBar position="fixed" sx={{ boxShadow: 'none', background: 'rgb(var(--background-end-rgb))' }}>
       <Container>
         <Toolbar>
-          <Typography variant="h5" component="a" href="/">
+          <Typography variant="h6" component="a" href="/">
             marcoshssilva
           </Typography>
-          <Typography variant="h5" component="a" href="/" color='primary'>
+          <Typography variant="h6" component="a" href="/" color='primary'>
             .com.br
           </Typography>
 
