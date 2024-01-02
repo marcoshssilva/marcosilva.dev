@@ -26,7 +26,7 @@ export default function HeaderContactMe() {
   return (
     <ThemeProvider theme={darkTheme}>
     <Box className={'h-full flex flex-col items-baseline w-full'}>
-      <form className="m-0 w-full" autoComplete="off" onSubmit={onSubmitContactMe}>
+      <form className="m-0 w-full py-6" autoComplete="off" onSubmit={onSubmitContactMe}>
         <Typography variant="caption" className={'mb-6'}>
           Gostaria de entrar em contato comigo?
         </Typography>

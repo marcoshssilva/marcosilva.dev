@@ -11,7 +11,7 @@ export default function Home() {
     <>
         <MenuComponent />
         <Container className={"min-h-screen pt-[72px] lg:pt-0"} sx={{ position: 'relative' }}>
-          <Box className={"grid lg:top-2/4 lg:translate-y-1/2 px-6 grid-cols-1 lg:grid-cols-12 min-h-[550px] gap-5"}>
+          <Box className={"grid lg:top-2/4 lg:translate-y-1/2 px-6 grid-cols-1 lg:grid-cols-12 gap-5"}>
             <Box className={'col-span-1 lg:col-span-7 h-full'}>
               <HeaderHelloComponent />
               <HeaderGroupButtonsComponent />
