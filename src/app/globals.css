@@ -6,6 +6,34 @@
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 0, 0, 0;
   --background-end-rgb: 0, 0, 0;
+  /* color blue */
+  --color-blue: #3880ff;
+  --color-blue-tint: #4c8dff;
+  --color-blue-shade: #3171e0;
+  /* color yellow */
+  --color-yellow: #ffc409;
+  --color-yellow-tint: #ffca22;
+  --color-yellow-shade: #e0ac08;
+  /* color green */
+  --color-green: #2dd36f;
+  --color-green-tint: #42d77d;
+  --color-green-shade: #28ba62;
+  /* color red */
+  --color-red: #eb445a;
+  --color-red-tint: #ed576b;
+  --color-red-shade: #cf3c4f;
+  /* color medium */
+  --color-medium: #92949c;
+  --color-medium-tint: #9d9fa6;
+  --color-medium-shade: #808289;
+  /* color white */
+  --color-white: #f4f5f8;
+  --color-white-tint: #f5f6f9;
+  --color-white-shade: #d7d8da;
+  /* color black */
+  --color-black: #222428;
+  --color-black-tint: #383a3e;
+  --color-black-shade: #1e2023;
 }
 
 body {
