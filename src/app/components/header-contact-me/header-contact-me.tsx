@@ -4,6 +4,8 @@ import React from "react";
 import { Box, Button, TextField, ThemeProvider, Typography, createTheme } from "@mui/material";
 import { FormEvent } from "react";
 
+import SendIcon from '@mui/icons-material/Send';
+
 const darkTheme = createTheme({
   palette: {
     mode: 'dark',
@@ -64,7 +66,7 @@ export default function HeaderContactMe() {
             error={mensagemError}/>
         </Box>
         <Box className={"flex justify-end"}>
-          <Button variant="text" type="submit">Envie-me uma mensagem</Button>
+          <Button startIcon={<SendIcon />} variant="contained" type="submit">Envie-me uma mensagem</Button>
         </Box>
       </form>
     </Box>
