@@ -5,7 +5,7 @@ export default function HeaderHelloComponent() {
     <Box className="flex flex-col">
 
       <Typography variant="h1" sx={{ fontWeight: 600, fontSize: '4rem' }}>Olá, eu sou</Typography>
-      <Typography variant="h1" sx={{ fontWeight: 600, fontSize: '4rem' }}>Marcos Henrique.</Typography>
+      <Typography variant="h1" sx={{ fontWeight: 600, fontSize: '4rem', color: 'var(--color-yellow);' }}>Marcos Henrique.</Typography>
       <Typography variant="h1" sx={{ fontWeight: 300, fontSize: '2.12rem', marginBottom: '0.75rem' }}>
         Desenvolvo aplicações para a web
       </Typography>
