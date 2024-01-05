@@ -14,6 +14,8 @@ const darkTheme = createTheme({
   },
 });
 
+const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
 export default function HeaderContactMe() {
 
   const [nome, setNome] = React.useState("");
@@ -24,18 +26,53 @@ export default function HeaderContactMe() {
   const [mensagemError, setMensagemError] = React.useState(false)
 
   async function validateForm(form: HTMLFormElement) {
-    // do nothing yet
+    if (!form.checkValidity()) {
+      setEmailError(true);
+      setMensagemError(true);
+      setNomeError(true);
+    }
+    return form.checkValidity();
+  }
+
+  async function validateFieldNome(input?: HTMLInputElement | HTMLTextAreaElement, refreshValue: boolean = false) {
+    if (refreshValue && input) {
+      input.value = input.value.trimStart();
+      setNome(input.value);
+    }
+    const condition = nome.trim().length < 3;
+    setNomeError(condition);
+  }
+
+  async function validateFieldEmail(input?: HTMLInputElement | HTMLTextAreaElement, refreshValue: boolean = false) {
+    if (refreshValue && input) {
+      input.value = input.value.trimStart();
+      setEmail(input.value);
+    }
+    const condition = email.trim().length < 6 && !emailRegex.test(email);
+    setEmailError(condition);
+  }
+
+  async function validateFieldMensagem(input?: HTMLInputElement | HTMLTextAreaElement, refreshValue: boolean = false) {
+    if (refreshValue && input) {
+      input.value = input.value.trimStart();
+      setMensagem(input.value);
+    }
+    const condition = mensagem.trim().length < 2;
+    setMensagemError(condition);
   }
 
   async function onSubmitContactMe(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    sendContactMeGetFormDataAction(nome, email, mensagem);
+    const validForm = await validateForm(event.currentTarget);
+    if (validForm) {
+      sendContactMeGetFormDataAction(nome, email, mensagem);
+    }
   }
 
   return (
     <ThemeProvider theme={darkTheme}>
     <Box className={'h-full flex flex-col items-baseline w-full'}>
-      <form className="m-0 w-full py-6" autoComplete="off" onSubmit={onSubmitContactMe}>
+      <form noValidate className="m-0 w-full py-6" autoComplete="off" onSubmit={onSubmitContactMe}>
         <Typography variant="caption" className={'mb-6'}>
           Gostaria de entrar em contato comigo?
         </Typography>
@@ -44,7 +81,7 @@ export default function HeaderContactMe() {
           <TextField
             id="nome"
             label="Seu Nome"
-            onChange={(e) => setNome(e.target.value)}
+            onChange={(e) => validateFieldNome(e.target, true)}
             required
             variant="filled"
             type="text"
@@ -55,7 +92,7 @@ export default function HeaderContactMe() {
           <TextField
             id="email"
             label="Seu Email"
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={(e) => validateFieldEmail(e.target, true)}
             required
             variant="filled"
             type="email"
@@ -68,7 +105,7 @@ export default function HeaderContactMe() {
           <TextField
             id="mensagem"
             label="Mensagem"
-            onChange={(e) => setMensagem(e.target.value)}
+            onChange={(e) => validateFieldMensagem(e.target, true)}
             required
             multiline
             rows={5}
