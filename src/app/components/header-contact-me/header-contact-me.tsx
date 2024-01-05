@@ -49,7 +49,7 @@ export default function HeaderContactMe() {
             onChange={(e) => setEmail(e.target.value)}
             required
             variant="filled"
-            type="password"
+            type="email"
             value={email}
             error={emailError}
             fullWidth
@@ -58,6 +58,7 @@ export default function HeaderContactMe() {
         <Box className={"grid grid-cols-1 gap-2 mb-6"}>
           <TextField
             label="Mensagem"
+            onChange={(e) => setMensagem(e.target.value)}
             required
             multiline
             rows={5}
