@@ -6,6 +6,8 @@ import { FormEvent } from "react";
 
 import SendIcon from '@mui/icons-material/Send';
 
+import { sendContactMeGetFormDataAction } from "@/app/actions/contact-me-get-form-data";
+
 const darkTheme = createTheme({
   palette: {
     mode: 'dark',
@@ -23,7 +25,7 @@ export default function HeaderContactMe() {
 
   async function onSubmitContactMe(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    console.log(`Send event data: NAME=${nome} \tMAIL=${email} \tMESSAGE=${mensagem}`);
+    sendContactMeGetFormDataAction(nome, email, mensagem);
   }
 
   return (
