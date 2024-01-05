@@ -23,6 +23,10 @@ export default function HeaderContactMe() {
   const [emailError, setEmailError] = React.useState(false)
   const [mensagemError, setMensagemError] = React.useState(false)
 
+  async function validateForm(form: HTMLFormElement) {
+    // do nothing yet
+  }
+
   async function onSubmitContactMe(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     sendContactMeGetFormDataAction(nome, email, mensagem);
@@ -38,6 +42,7 @@ export default function HeaderContactMe() {
         <Box sx={{ height: '16px' }} />
         <Box className={"grid grid-cols-2 gap-2 mb-6"}>
           <TextField
+            id="nome"
             label="Seu Nome"
             onChange={(e) => setNome(e.target.value)}
             required
@@ -48,6 +53,7 @@ export default function HeaderContactMe() {
             error={nomeError}
           />
           <TextField
+            id="email"
             label="Seu Email"
             onChange={(e) => setEmail(e.target.value)}
             required
@@ -60,6 +66,7 @@ export default function HeaderContactMe() {
         </Box>
         <Box className={"grid grid-cols-1 gap-2 mb-6"}>
           <TextField
+            id="mensagem"
             label="Mensagem"
             onChange={(e) => setMensagem(e.target.value)}
             required
