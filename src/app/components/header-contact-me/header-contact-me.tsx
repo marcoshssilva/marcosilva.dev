@@ -23,6 +23,7 @@ export default function HeaderContactMe() {
 
   async function onSubmitContactMe(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    console.log(`Send event data: NAME=${nome} \tMAIL=${email} \tMESSAGE=${mensagem}`);
   }
 
   return (
@@ -39,7 +40,7 @@ export default function HeaderContactMe() {
             onChange={(e) => setNome(e.target.value)}
             required
             variant="filled"
-            type="email"
+            type="text"
             fullWidth
             value={nome}
             error={nomeError}
