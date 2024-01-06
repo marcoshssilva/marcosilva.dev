@@ -1,3 +1,3 @@
-@Library('nodejs@main')
+@Library('nodejs@main') _
 
 pipelineNodeJs();
