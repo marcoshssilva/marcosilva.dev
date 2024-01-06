@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "docker:build-image": "docker build --tag marcoshssilva-website:latest .",
-    "docker:run-compose": "docker compose -f 'docker-compose.yaml' up -d"
+    "docker:run-compose": "docker compose -f 'docker-compose.yaml' up -d",
+    "test": "echo 1"
   },
   "dependencies": {
     "@emotion/cache": "^11.11.0",
