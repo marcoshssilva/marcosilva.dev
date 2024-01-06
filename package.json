@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "docker:build-image": "docker build --tag marcoshssilva-website:latest ."
+    "docker:build-image": "docker build --tag marcoshssilva-website:latest .",
+    "docker:run-compose": "docker compose -f 'docker-compose.yaml' up -d",
+    "test": "echo 1"
   },
   "dependencies": {
     "@emotion/cache": "^11.11.0",
@@ -17,11 +19,13 @@
     "@mui/icons-material": "^5.14.15",
     "@mui/material": "^5.14.15",
     "@mui/material-nextjs": "^5.15.0",
+    "amqplib": "^0.10.3",
     "next": "14.0.0",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@types/amqplib": "^0.10.4",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

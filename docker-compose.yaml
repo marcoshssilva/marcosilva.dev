@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  marcoshssilva-website:
+    image: marcoshssilva-website:latest
+    ports:
+      - "3000:3000"
+    networks:
+      - net
+    environment:
+      - NEXTJS_RABBITMQ_HOST=host.docker.internal
+      - NEXTJS_RABBITMQ_PORT=5672
+      - NEXTJS_RABBITMQ_USERNAME=test-marcoshssilva-website
+      - NEXTJS_RABBITMQ_PASSWORD=P@ssword123
+      - NEXTJS_RABBITMQ_QUEUE_NOTIFY_CONTACT=notify.contact-me
+networks:
+  net:
+    driver: bridge
