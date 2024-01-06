@@ -1,3 +1,5 @@
 @Library('nodejs@main') _
 
-pipelineNodeJs();
+pipelineNodeJs(
+  PRE_TESTS_COMMAND = 'echo "SKIP step."'
+);
