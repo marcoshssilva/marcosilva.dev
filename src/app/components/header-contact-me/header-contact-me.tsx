@@ -6,7 +6,7 @@ import { FormEvent } from "react";
 
 import SendIcon from '@mui/icons-material/Send';
 
-import { sendContactMeGetFormDataAction } from "@/app/actions/contact-me-get-form-data";
+import { sendContactMeGetFormDataAction } from "@/app/actions/sendContactMeGetFormDataAction";
 
 const darkTheme = createTheme({
   palette: {
