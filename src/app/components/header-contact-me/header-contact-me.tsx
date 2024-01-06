@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 
-import { Box, Button, TextField, ThemeProvider, Typography, createTheme } from "@mui/material";
+import { Alert, Box, Button, TextField, ThemeProvider, Typography, createTheme } from "@mui/material";
 import { FormEvent } from "react";
 
 import SendIcon from '@mui/icons-material/Send';
@@ -24,6 +24,11 @@ export default function HeaderContactMe() {
   const [nomeError, setNomeError] = React.useState(false)
   const [emailError, setEmailError] = React.useState(false)
   const [mensagemError, setMensagemError] = React.useState(false)
+  const [showAlert, setShowAlert] = React.useState(false);
+
+  async function handleCloseAlert() {
+    setShowAlert(false);
+  };
 
   async function validateForm(form: HTMLFormElement) {
     if (!form.checkValidity()) {
@@ -65,7 +70,10 @@ export default function HeaderContactMe() {
     event.preventDefault();
     const validForm = await validateForm(event.currentTarget);
     if (validForm) {
-      sendContactMeGetFormDataAction(nome, email, mensagem);
+      sendContactMeGetFormDataAction(nome, email, mensagem)
+        .then(() => {
+          setShowAlert(true);
+        });
     }
   }
 
@@ -116,6 +124,13 @@ export default function HeaderContactMe() {
         <Box className={"flex justify-end"}>
           <Button startIcon={<SendIcon />} variant="contained" type="submit">Envie-me uma mensagem</Button>
         </Box>
+        {showAlert && (
+          <Box className={'my-4'}>
+            <Alert severity="info" onClose={handleCloseAlert}>
+              Muito obrigado pela sua mensagem.<br />Entraremos em contato.
+            </Alert>
+          </Box>
+      )}
       </form>
     </Box>
     </ThemeProvider>
