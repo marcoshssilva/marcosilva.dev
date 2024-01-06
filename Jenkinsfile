@@ -1,0 +1,3 @@
+@Library('nodejs@main')
+
+pipelineNodeJs();
