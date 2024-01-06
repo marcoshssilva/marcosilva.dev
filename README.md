@@ -5,8 +5,11 @@ Website deployed at [marcoshssilva.com.br](https://marcoshssilva.com.br)
 ## How to Run
 
 Follow commands:
+> Run using Node and Next.JS Server
 ```
-npm ci && npm run start
+npm ci 
+npm run build 
+npm run start
 ```
 
 > Run as Development Mode
