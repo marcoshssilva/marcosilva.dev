@@ -14,10 +14,10 @@ npm ci && npm run start
 npm run dev
 ```
 
-> Run using Docker container
+> Run using Docker Compose
 ```
 npm run docker:build-image
-docker run -it -p 3000:3000 --name marcoshssilva-website marcoshssilva-website:latest
+npm run docker:run-compose
 ```
 
 After you can open in browser at [http://localhost:3000](http://localhost:3000)
