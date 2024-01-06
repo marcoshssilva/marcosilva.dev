@@ -16,7 +16,7 @@ npm run dev
 
 > Run using Docker container
 ```
-docker build --tag marcoshssilva-website:latest .
+npm run docker:build-image
 docker run -it -p 3000:3000 --name marcoshssilva-website marcoshssilva-website:latest
 ```
 
