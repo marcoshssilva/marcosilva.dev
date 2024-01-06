@@ -126,7 +126,7 @@ export default function HeaderContactMe() {
         </Box>
         {showAlert && (
           <Box className={'my-4'}>
-            <Alert severity="info" onClose={handleCloseAlert}>
+            <Alert severity="success" onClose={handleCloseAlert}>
               Muito obrigado pela sua mensagem.<br />Entraremos em contato.
             </Alert>
           </Box>
