@@ -1,3 +1,3 @@
 @Library('nodejs@main') _
 
-pipelineNodeJs(false, true, 'marcoshssilvadev/marcoshssilva-com-br', 'linux/amd64,linux/arm64');
+pipelineNodeJs(false, true, 'marcoshssilva/marcoshssilva-com-br');
