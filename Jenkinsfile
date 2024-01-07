@@ -1,3 +1,3 @@
 @Library('nodejs@main') _
 
-pipelineNodeJs();
+pipelineNodeJs(enableContainerBuild = true, containerImageName = 'marcoshssilvadev/marcoshssilva-com-br');
