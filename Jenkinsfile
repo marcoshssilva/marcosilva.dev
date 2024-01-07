@@ -1,3 +1,3 @@
 @Library('nodejs@main') _
 
-pipelineNodeJs();
+pipelineNodeJs(false, true, 'marcoshssilva/marcoshssilva-com-br');
