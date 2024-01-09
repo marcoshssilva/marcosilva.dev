@@ -6,7 +6,15 @@ WORKDIR /app
 # Check https://github.com/nodejs/docker-node/tree/b4117f9333da4138b03a546ec926ef50a31506c3#nodealpine to understand why libc6-compat might be needed.
 RUN apk add --no-cache libc6-compat
 
-COPY tsconfig.json .eslintrc.json tailwind.config.js tailwind.config.ts postcss.config.js next.config.js package.json yarn.lock* package-lock.json* pnpm-lock.yaml* ./
+COPY tsconfig.json ./
+COPY .eslintrc.json ./
+COPY tailwind.config.js ./
+COPY tailwind.config.ts ./
+COPY postcss.config.js ./
+COPY next.config.js ./
+COPY package.json ./
+COPY package-lock.json ./
+
 RUN \
   if [ -f yarn.lock ]; then yarn --frozen-lockfile; \
   elif [ -f package-lock.json ]; then npm ci; \
@@ -30,7 +38,7 @@ RUN adduser --system --uid 1001 nextjs
 RUN mkdir .next
 RUN chown nextjs:nodejs .next
 
-COPY --from=builder /app/package.json /app/yarn.lock* /app/package-lock.json* /app/pnpm-lock.yaml* ./
+COPY --from=builder /app/package.json /app/package-lock.json ./
 RUN npm install -D
 
 COPY --from=builder /app/public ./public
