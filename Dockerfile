@@ -1,4 +1,4 @@
-FROM app-nx.marcoshssilva.com.br/node:18-alpine AS base
+FROM node:18-alpine AS base
 
 FROM base AS builder
 WORKDIR /app
