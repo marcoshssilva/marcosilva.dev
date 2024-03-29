@@ -1,2 +1,2 @@
 @Library('nodejs@main') _
-pipelineNodeJs21()
+pipelineNodeJs21WithDockerPublicImage('marcoshssilva/marcoshssilva-com-br')
