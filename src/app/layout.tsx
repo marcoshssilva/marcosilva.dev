@@ -8,6 +8,9 @@ import '@fontsource/roboto/700.css';
 // global style
 import './globals.css'
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter';
+import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from '@vercel/analytics/react';
+
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -28,6 +31,11 @@ export default function RootLayout({
         <AppRouterCacheProvider>
           {children}
         </AppRouterCacheProvider>
+        {/* https://vercel.com/docs/speed-insights/quickstart#add-the-speedinsights-component-to-your-app */}
+        <SpeedInsights />
+        {/* https://vercel.com/docs/analytics/quickstart#add-the-analytics-component-to-your-app */}
+        <Analytics />
+
       </body>
     </html>
   )
