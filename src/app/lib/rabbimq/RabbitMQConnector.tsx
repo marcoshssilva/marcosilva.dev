@@ -14,11 +14,11 @@ export class RabbitMQConnector {
 
   async connect() {
     try {
-      console.log(`⌛️ Connecting to Rabbit-MQ Server`);
-      let url = process.env.NEXTJS_RABBITMQ_URL || 'amqp://guest:guest@localhost:5672'
+      console.log(`⌛️ Connecting to RabbitMQ Server`);
+      let url = process.env.NEXTJS_RABBITMQ_URL ?? 'amqp://localhost:5672'
       this.connection = await client.connect(url);
 
-      console.log(`✅ Rabbit MQ Connection is ready`);
+      console.log(`✅ RabbitMQ Connection is ready`);
 
       this.channel = await this.connection.createChannel();
 
