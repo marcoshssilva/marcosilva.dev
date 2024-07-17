@@ -8,6 +8,7 @@ pipelineNodeJs21WithDockerPublicImage('marcoshssilva/marcoshssilva-com-br',
         'SKIP_BUILDIMAGE': false,
         'SKIP_SONARQUBE': false,
         'SKIP_TESTS': false,
-        'USE_LETSENCRYPT': false // available only for branch 'main'
+        'USE_LETSENCRYPT': true, // available only for branch 'main'
+        'USE_SSL': true
     ],
 )
