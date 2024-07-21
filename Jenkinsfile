@@ -1,5 +1,5 @@
 @Library(['nodejs@main']) _
-pipelineNodeJs21WithDockerPublicImage('marcoshssilva/marcoshssilva-com-br',
+pipelineNodeJs21WithDockerPrivateImage('marcoshssilva/marcoshssilva-com-br',
     [
         'APP_NAME': 'marcoshssilva-com-br',
         'DEPLOY': 'DOKKU',
