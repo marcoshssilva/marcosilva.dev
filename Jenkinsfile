@@ -1,13 +1,15 @@
 @Library(['nodejs@main']) _
 pipelineNodeJs21WithDockerPrivateImage('marcoshssilva/marcoshssilva-com-br',
     [
-        'APP_NAME': 'marcoshssilva-com-br',
-        'DEPLOY': 'NONE',
+        'APP_NAME': 'marcoshssilva-website',
+        'CERT_DOMAIN': 'marcoshssilva.com.br',
+        'DEPLOY': 'DOKKU',
         'HOST': 'marcoshssilva.com.br',
-        'SKIP_BUILD': false,
-        'SKIP_BUILDIMAGE': false,
-        'SKIP_SONARQUBE': false,
-        'SKIP_TESTS': false,
-        'USE_SSL': false, // available only for branch 'main'
+        // 'USE_SSL': false,
+        // 'USE_LETSENCRYPT': false, // available only for branch 'main'
+        // 'SKIP_BUILD': true,
+        // 'SKIP_BUILDIMAGE': true,
+        // 'SKIP_SONARQUBE': true,
+        // 'SKIP_TESTS': false,
     ],
 )
