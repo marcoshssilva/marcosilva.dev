@@ -5,7 +5,7 @@ pipelineNodeJs21WithDockerPrivateImage('marcoshssilva/marcoshssilva-com-br',
         'CERT_DOMAIN': 'marcoshssilva.com.br',
         'DEPLOY': 'DOKKU',
         'HOST': 'marcoshssilva.com.br',
-        // 'USE_SSL': false,
+        'USE_SSL': true,
         // 'USE_LETSENCRYPT': false, // available only for branch 'main'
         // 'SKIP_BUILD': true,
         // 'SKIP_BUILDIMAGE': true,
