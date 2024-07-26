@@ -1,5 +1,5 @@
 @Library(['nodejs@main']) _
-pipelineNodeJs21WithDockerPrivateImage('marcoshssilva/marcoshssilva-com-br',
+pipelineNodeJs21WithDockerPrivateImage('marcoshssilva-com-br',
     [
         'APP_NAME': 'marcoshssilva-website',
         'CERT_DOMAIN': 'marcoshssilva.com.br',
