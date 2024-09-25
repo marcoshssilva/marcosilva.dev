@@ -1,6 +1,6 @@
 try {
     node('node-builder') {
-        stage('SCM - git checkout'){
+        stage('SCM Checkout'){
             checkout scm
         }
         stage('Install and Configure tools and settings') {
