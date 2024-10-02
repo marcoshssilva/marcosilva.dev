@@ -17,9 +17,6 @@ try {
         stage('Compile and Build') {
             sh 'npm run build'
         }
-        stage('Docker - Build image') {
-            def image = docker.build("marcoshssilva-com-br:${env.BUILD_ID}")
-        }
     }
 } catch(ex) {
     currentBuild.result = 'ABORTED'
