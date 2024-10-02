@@ -1,6 +1,6 @@
 try {
     node('node-builder') {
-        stage('SCM Checkout'){
+        stage('Checkout'){
             checkout scm
         }
         stage('Install and Configure tools and settings') {
@@ -16,6 +16,9 @@ try {
         }
         stage('Compile and Build') {
             sh 'npm run build'
+        }
+        stage('Docker - Build image') {
+            def image = docker.build("marcoshssilva-com-br:${env.BUILD_ID}")
         }
     }
 } catch(ex) {
