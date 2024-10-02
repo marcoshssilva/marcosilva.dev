@@ -7,7 +7,7 @@ export default function HeaderGroupButtonsComponent() {
     return <>
         <Box className={'pt-6 pb-3'}>
           <Typography>
-            Siga-me pelas redes sociais:
+            Encontre-me pela internet:
           </Typography>
         </Box>
         <Box className={'flex gap-3'}>
