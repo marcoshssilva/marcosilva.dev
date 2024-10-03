@@ -1,5 +1,5 @@
 try {
-    node('node-builder') {
+    node('node-builder && os:linux && x86-64') {
         stage('Checkout'){
             checkout scm
         }
