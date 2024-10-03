@@ -14,6 +14,17 @@ try {
             sh 'npm run lint'
             sh 'npm run test'
         }
+        stage('OWASP - Dependency Check') {
+            // run dependency check
+            dependencyCheck odcInstallation: '10.0.4', nvdCredentialsId: 'NVD_API_KEY', additionalArguments: ''' 
+                    -o './'
+                    -s './'
+                    -f 'ALL' 
+                    --prettyPrint'''
+
+            // create report
+            dependencyCheckPublisher pattern: 'dependency-check-report.xml'
+        }
         stage('Compile and Build') {
             sh 'npm run build'
         }
