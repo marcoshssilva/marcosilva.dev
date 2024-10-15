@@ -1,13 +1,40 @@
 import React from "react";
-import Image from 'next/image';
 import {
   AppBar,
-  Box, Button,
+  Box,
+  Button,
   Container,
-  Toolbar,
-  Typography,
+  Toolbar
 } from "@mui/material";
 import MenuLogoGroup from "@/app/components/menu/menu-logo-group";
+import {SiteMenuItemButton} from "@/app/types";
+
+const menuItens: SiteMenuItemButton[] = [
+  {
+    title: "Ínicio",
+    color: "warning",
+    size: "large",
+    variant: "text",
+    key: 1,
+    hash: "#home"
+  },
+  {
+    title: "Projetos",
+    color: "warning",
+    size: "large",
+    variant: "text",
+    key: 2,
+    hash: "#projects"
+  },
+  {
+    title: "Sobre Mim",
+    color: "warning",
+    size: "large",
+    variant: "text",
+    key: 3,
+    hash: "#about"
+  },
+]
 
 export default function MenuComponent() {
   return (
@@ -21,15 +48,13 @@ export default function MenuComponent() {
 
               <Box sx={{flexGrow: 1}}></Box>
               <Box sx={{ display: { xs: "none", md: "flex" } }}>
-                <Button size="large" color="warning" variant="text">
-                  Ínicio
-                </Button>
-                <Button size="large" color="warning" variant="text">
-                  Projetos
-                </Button>
-                <Button size="large" color="warning" variant="text">
-                  Sobre Mim
-                </Button>
+                { menuItens.map((value, index) =>
+                  <>
+                    <Button size={value.size} color={value.color} variant={value.variant}>
+                      { value.title }
+                    </Button>
+                  </>)
+                }
               </Box>
 
               <Box sx={{flexGrow: 1}}></Box>
@@ -38,7 +63,6 @@ export default function MenuComponent() {
                   Fale Comigo
                 </Button>
               </Box>
-
             </Toolbar>
           </Container>
         </AppBar>
