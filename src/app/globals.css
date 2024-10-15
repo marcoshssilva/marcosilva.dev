@@ -5,7 +5,7 @@
 :root {
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 0, 0, 0;
-  --background-end-rgb: 0, 0, 0;
+  --background-end-rgb: 13, 13, 13;
   /* color blue */
   --color-blue: #3880ff;
   --color-blue-tint: #4c8dff;
@@ -38,8 +38,26 @@
 
 body {
   color: rgb(var(--foreground-rgb));
+  margin: 0;
   background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
   height: 100vh !important;
+  overflow-x: hidden;
+  overflow-y: clip;
+}
+
+.menu-box {
+  position: sticky;
+  display: flex;
+  width: 100%;
+  backdrop-filter: blur(16px);
+}
+
+#menu-globe {
+  transition: transform 0.5s ease;
+}
+
+.menu-header-logo:hover #menu-globe {
+  transform: rotate(360deg);
 }
 
 .header-group-langs-box {
@@ -69,4 +87,24 @@ body {
   background: linear-gradient(90deg, rgb(var(--background-end-rgb)), transparent 40%, transparent 60%, rgb(var(--background-end-rgb)));
   position: absolute;
   inset: 0;
+}
+
+a, .MuiButton-text {
+  text-decoration: none; /* Remove o sublinhado padrão */
+  position: relative; /* Posiciona o elemento para a animação */
+}
+
+a::before, .MuiButton-text::before {
+  content: "";
+  position: absolute;
+  bottom: -2px; /* Ajusta a posição da linha */
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #AA954F; /* Cor da linha */
+  transition: width 0.6s ease-in-out; /* Duração e efeito da transição */
+}
+
+a:hover::before, .MuiButton-text:hover::before{
+  width: 100%; /* Expanda a linha para 100% na hover */
 }
