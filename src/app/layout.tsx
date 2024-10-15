@@ -11,13 +11,11 @@ import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter';
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from '@vercel/analytics/react';
 
-
-
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'marcoshssilva.com.br | Full-Stack Developer',
-  description: 'Sou um Desenvolvedor FullStack com alguns anos de experiência. Atualmente, focado em desenvolvimento de aplicações voltadas para microserviços e escalabilidade vertical.',
+  title: 'Marco Silva.Dev | Desenvolvedor',
+  description: 'Descubra o portfólio de Marcos Silva, desenvolvedor de software especializado em projetos web, nuvem e soluções personalizadas. Explore exemplos de trabalhos com Java, Node.js, Python e outras tecnologias modernas, destacando qualidade e inovação.',
 }
 
 export default function RootLayout({
@@ -35,7 +33,6 @@ export default function RootLayout({
         <SpeedInsights />
         {/* https://vercel.com/docs/analytics/quickstart#add-the-analytics-component-to-your-app */}
         <Analytics />
-
       </body>
     </html>
   )
