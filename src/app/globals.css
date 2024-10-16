@@ -48,7 +48,6 @@ body {
   position: sticky;
   display: flex;
   width: 100%;
-  backdrop-filter: blur(16px);
 }
 
 #menu-globe {
