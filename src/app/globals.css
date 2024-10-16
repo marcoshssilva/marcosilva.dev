@@ -97,13 +97,23 @@ a::before, .MuiButton-text::before {
   content: "";
   position: absolute;
   bottom: -2px; /* Ajusta a posição da linha */
-  left: 0;
   width: 0;
   height: 2px;
   background-color: #AA954F; /* Cor da linha */
   transition: width 0.6s ease-in-out; /* Duração e efeito da transição */
 }
 
-a:hover::before, .MuiButton-text:hover::before{
+a:hover::before, .MuiButton-text:hover::before {
   width: 100%; /* Expanda a linha para 100% na hover */
+}
+
+.container-full-with-menu {
+  min-height: calc(100vh - 190px);
+}
+
+.background-1 {
+  background-image: url("/images/backgrounds/2626172-3.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right bottom;
 }
