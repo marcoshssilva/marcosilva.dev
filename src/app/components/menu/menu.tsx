@@ -50,7 +50,12 @@ export default function MenuComponent() {
               <Box sx={{ display: { xs: "none", md: "flex" } }}>
                 { menuItens.map((value, index) =>
                   <>
-                    <Button size={value.size} color={value.color} variant={value.variant}>
+                    <Button
+                      size={value.size}
+                      color={value.color}
+                      variant={value.variant}
+                      key={index}
+                    >
                       { value.title }
                     </Button>
                   </>)
