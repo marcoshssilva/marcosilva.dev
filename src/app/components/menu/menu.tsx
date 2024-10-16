@@ -39,10 +39,12 @@ const menuItens: SiteMenuItemButton[] = [
 export default function MenuComponent() {
   return (
     <div className={'menu-box z-10'}>
-        <AppBar position={'sticky'} color={'transparent'} sx={{ boxShadow: 'none' }}>
+        <AppBar position={'sticky'} color={'transparent'}>
           <Container>
             <Toolbar className={"items-center"}>
-              <Box sx={{ marginY: 8 }}>
+              <Box sx={{
+                    marginY: { xs: 2, md: 8 }
+                  }}>
                 <MenuLogoGroup />
               </Box>
               <Box sx={{flexGrow: 1}}></Box>
