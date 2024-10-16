@@ -60,35 +60,6 @@ body {
   transform: rotate(360deg);
 }
 
-.header-group-langs-box {
-  overflow: hidden;
-  position: relative;
-}
-
-.header-group-langs-row {
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-  margin-top: 4px;
-  margin-bottom: 4px;
-}
-
-@keyframes loop {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-.fade {
-  pointer-events: none;
-  background: linear-gradient(90deg, rgb(var(--background-end-rgb)), transparent 40%, transparent 60%, rgb(var(--background-end-rgb)));
-  position: absolute;
-  inset: 0;
-}
-
 a, .MuiButton-text {
   text-decoration: none; /* Remove o sublinhado padrão */
   position: relative; /* Posiciona o elemento para a animação */
@@ -106,16 +77,4 @@ a::before, .MuiButton-text::before {
 
 a:hover::before, .MuiButton-text:hover::before {
   width: 100%; /* Expanda a linha para 100% na hover */
-}
-
-.container-full-with-menu {
-  min-height: 740px;
-  height: 100vh;
-}
-
-.background-1 {
-  background-image: url("/images/backgrounds/2626172-3.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right bottom;
 }
