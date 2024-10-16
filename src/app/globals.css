@@ -40,14 +40,16 @@ body {
   color: rgb(var(--foreground-rgb));
   margin: 0;
   background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
-  height: 100vh !important;
+  min-height: 100vh !important;
   overflow-x: hidden;
 }
 
 .menu-box {
-  position: sticky;
+  position: fixed;
   display: flex;
   width: 100%;
+  /*background: rgba(0, 0, 0, 0.6);*/
+  /*backdrop-filter: blur(16px);*/
 }
 
 #menu-globe {
@@ -107,7 +109,8 @@ a:hover::before, .MuiButton-text:hover::before {
 }
 
 .container-full-with-menu {
-  min-height: calc(100vh - 190px);
+  min-height: 740px;
+  height: 100vh;
 }
 
 .background-1 {
