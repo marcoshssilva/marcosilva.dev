@@ -38,14 +38,13 @@ const menuItens: SiteMenuItemButton[] = [
 
 export default function MenuComponent() {
   return (
-    <div className={'menu-box'}>
-        <AppBar position={'sticky'} color={'transparent'}>
+    <div className={'menu-box z-10'}>
+        <AppBar position={'sticky'} color={'transparent'} sx={{ boxShadow: 'none' }}>
           <Container>
             <Toolbar className={"items-center"}>
               <Box sx={{ marginY: 8 }}>
                 <MenuLogoGroup />
               </Box>
-
               <Box sx={{flexGrow: 1}}></Box>
               <Box sx={{ display: { xs: "none", md: "flex" } }}>
                 { menuItens.map((value, index) =>
@@ -61,7 +60,6 @@ export default function MenuComponent() {
                   </>)
                 }
               </Box>
-
               <Box sx={{flexGrow: 1}}></Box>
               <Box sx={{ display: { xs: "none", sm: "flex" } }}>
                 <Button size="large" color="warning" variant="contained" sx={{ marginY: '8px' }}>
