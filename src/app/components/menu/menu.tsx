@@ -39,7 +39,7 @@ const menuItens: SiteMenuItemButton[] = [
 export default function MenuComponent() {
   return (
     <div className={'menu-box z-10'}>
-        <AppBar position={'sticky'} color={'transparent'}>
+        <AppBar position={'sticky'} color={'transparent'} sx={{ boxShadow: 'none' }}>
           <Container>
             <Toolbar className={"items-center"}>
               <Box sx={{
