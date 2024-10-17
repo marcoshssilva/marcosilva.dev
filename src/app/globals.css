@@ -45,11 +45,14 @@ body {
 }
 
 .menu-box {
-  position: fixed;
-  display: flex;
-  width: 100%;
-  /*background: rgba(0, 0, 0, 0.6);*/
-  /*backdrop-filter: blur(16px);*/
+  box-shadow: none;
+  background: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(6px);
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #AA954F;
+  margin-bottom: 1rem;
 }
 
 #menu-globe {
@@ -72,7 +75,7 @@ a::before, .MuiButton-text::before {
   width: 0;
   height: 2px;
   background-color: #AA954F; /* Cor da linha */
-  transition: width 0.6s ease-in-out; /* Duração e efeito da transição */
+  transition: width 0.4s ease-in-out; /* Duração e efeito da transição */
 }
 
 a:hover::before, .MuiButton-text:hover::before {
