@@ -38,7 +38,7 @@ const menuItens: SiteMenuItemButton[] = [
 
 export default function MenuComponent() {
   return (
-        <AppBar className='menu-box z-10' position={'fixed'} color={'transparent'}>
+        <AppBar component={'nav'} className='menu-box z-10' position={'fixed'} color={'transparent'}>
           <Container>
             <Toolbar className={"items-center"}>
               <Box sx={{ marginY: 2 }}>
