@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
 // roboto font
 import '@fontsource/roboto/300.css';
@@ -16,6 +16,13 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Marco Silva.Dev | Desenvolvedor',
   description: 'Descubra o portfólio de Marcos Silva, desenvolvedor de software especializado em projetos web, nuvem e soluções personalizadas. Explore exemplos de trabalhos com Java, Node.js, Python e outras tecnologias modernas, destacando qualidade e inovação.',
+}
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1.5,
+  userScalable: false,
 }
 
 export default function RootLayout({
