@@ -10,7 +10,8 @@
     "docker:build-image": "docker build --tag marcoshssilva-com-br:latest .",
     "docker:run-compose": "docker compose -f 'docker-compose.yaml' up -d",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "test:update": "jest -u"
   },
   "dependencies": {
     "@emotion/cache": "^11.11.0",
