@@ -36,7 +36,7 @@ export default function HeaderHelloComponent() {
             textAlign: { xs: 'center', md: 'left' },
             paddingBottom: '1.2rem'
           }}>
-            Desenvolvedor <span>CLOUD</span>
+            Desenvolvedor de Software
           </Typography>
           <Typography sx={{
             fontFamily: "'Open Sans', sans-serif",
