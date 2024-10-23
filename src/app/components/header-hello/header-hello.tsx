@@ -6,7 +6,6 @@ import {
   Container,
   Divider,
   Typography,
-  Button
 } from "@mui/material";
 
 import CallMadeOutlinedIcon from '@mui/icons-material/CallMadeOutlined';
