@@ -1,4 +1,5 @@
 import React from "react";
+import HeaderButtonHello from "@/app/components/header-button-hello/header-button-hello";
 import Image from "next/image";
 import {
   Box,
@@ -8,11 +9,13 @@ import {
   Button
 } from "@mui/material";
 
+import CallMadeOutlinedIcon from '@mui/icons-material/CallMadeOutlined';
+
 export default function HeaderHelloComponent() {
   return <>
     <Box component={'header'} id="header-hello" className="relative box-section">
       <Container className={"lg:pt-0 min-h-screen grid grid-cols-1 md:grid-cols-12 gap-5 pt-[97px]"}>
-        <Box className={'md:sticky md:top-1/2 md:bottom-1/2 md:-translate-y-1/2 mt-12'}>
+        <Box className={'md:absolute md:top-1/2 md:-translate-y-1/2'}>
           <Typography variant="h1" sx={{
             fontWeight: 600,
             fontSize: { xs: '1.20rem', md: '2.12rem' },
@@ -39,11 +42,25 @@ export default function HeaderHelloComponent() {
           <Typography sx={{
             fontFamily: "'Open Sans', sans-serif",
             textAlign: { xs: 'center', md: 'left' },
+            textShadow: '2px 2px 4px rgba(0, 0, 0, 0.35)',
           }}>
             {'\"'}As pessoas não sabem o que querem, até mostrarmos a elas.{'\"'} <br/>
             &nbsp; - Steve Jobs
           </Typography>
           <Divider sx={{ marginY: '1.5rem', width: { md: '33%' } }} color={'ffc409'}></Divider>
+          <Box className={'flex gap-4 flex-col md:flex-row md:w-[60%]'}>
+            <HeaderButtonHello
+              content={'Diga-me olá'}
+              variant={'contained'}
+              color={"inherit"}
+            />
+            <HeaderButtonHello
+              content={'Meus projetos'}
+              variant={'text'}
+              color={"inherit"}
+              icon={ <CallMadeOutlinedIcon /> }
+            />
+          </Box>
         </Box>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/images/headers/Laptop.png"
