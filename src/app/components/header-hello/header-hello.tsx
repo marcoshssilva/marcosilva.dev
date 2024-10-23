@@ -11,8 +11,7 @@ import {
 import CallMadeOutlinedIcon from '@mui/icons-material/CallMadeOutlined';
 
 export default function HeaderHelloComponent() {
-  return <>
-    <Box component={'header'} id="header-hello" className="relative box-section">
+  return <Box component={'header'} id="header-hello" className="relative box-section">
       <Container className={"lg:pt-0 min-h-screen grid grid-cols-1 md:grid-cols-12 gap-5 pt-[97px]"}>
         <Box className={'md:absolute md:top-1/2 md:-translate-y-1/2'}>
           <Typography variant="h1" sx={{
@@ -74,6 +73,5 @@ export default function HeaderHelloComponent() {
              loading="lazy"
              decoding="async" />
       </Container>
-    </Box>
-    </>;
+    </Box>;
 }
