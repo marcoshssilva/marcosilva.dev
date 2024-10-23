@@ -46,6 +46,12 @@ export default function HeaderHelloComponent() {
           <Divider sx={{ marginY: '1.5rem', width: { md: '33%' } }} color={'ffc409'}></Divider>
         </Box>
         {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/images/headers/Laptop.png"
+             className="hidden md:block absolute bottom-0 left-0 h-auto w-[70%] -z-10"
+             alt="illustrated image from myself"
+             loading="lazy"
+             decoding="async" />
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/images/headers/me.png"
              className="md:absolute bottom-0 right-0 h-auto w-[130vh] sm:w-[80vw] sm:translate-x-[8rem] md:w-[60vw] 2xl:w-[40vw] translate-x-4 md:translate-x-0 -z-10"
              alt="illustrated image from myself"
