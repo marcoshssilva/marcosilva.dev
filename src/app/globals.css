@@ -81,3 +81,32 @@ a::before, .MuiButton-text::before {
 a:hover::before, .MuiButton-text:hover::before {
   width: 100%; /* Expanda a linha para 100% na hover */
 }
+
+.background-projects {
+  background: linear-gradient(180deg, rgba(var(--background-start-rgb), 0) , rgba(72, 50,133, .87) 80%);
+  /*opacity: 0.87;*/
+}
+
+.project-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.project-card-tag {
+  background: var(--color-medium-tint);
+  color: var(--color-black);
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+}
+
+.project-card > .project-card-title {
+  margin: 1rem 0;
+  color: var(--foreground-rgb);
+  margin-bottom: 1rem;
+  background: linear-gradient(45deg, var(--color-medium-tint), var(--color-black));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
