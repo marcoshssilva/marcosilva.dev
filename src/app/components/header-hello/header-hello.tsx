@@ -13,7 +13,7 @@ import CallMadeOutlinedIcon from '@mui/icons-material/CallMadeOutlined';
 export default function HeaderHelloComponent() {
   return <Box component={'header'} id="header-hello" className="relative box-section">
       <Container className={"lg:pt-0 min-h-screen grid grid-cols-1 md:grid-cols-12 gap-5 pt-[97px]"}>
-        <Box className={'md:absolute md:top-1/2 md:-translate-y-1/2'}>
+        <Box className={'absolute top-1/2 -translate-y-1/2 p-3'}>
           <Typography variant="h1" sx={{
             fontWeight: 600,
             fontSize: { xs: '1.20rem', md: '2.12rem' },
@@ -62,13 +62,13 @@ export default function HeaderHelloComponent() {
         </Box>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/images/headers/Laptop.png"
-             className="hidden md:block absolute bottom-0 left-0 h-auto w-[70%] -z-10"
+             className="block fixed bottom-0 left-0 h-auto md:w-[70%] -z-10"
              alt="illustrated image from myself"
              loading="lazy"
              decoding="async" />
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/images/headers/me.png"
-             className="md:absolute bottom-0 right-0 h-auto w-[130vh] sm:w-[80vw] sm:translate-x-[8rem] md:w-[60vw] 2xl:w-[40vw] translate-x-4 md:translate-x-0 -z-10"
+             className="fixed bottom-0 right-0 h-auto w-[130vh] sm:w-[80vw] sm:translate-x-[8rem] md:w-[60vw] 2xl:w-[40vw] translate-x-[150px] md:translate-x-0 -z-10"
              alt="illustrated image from myself"
              loading="lazy"
              decoding="async" />
