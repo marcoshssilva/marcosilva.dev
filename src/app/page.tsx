@@ -1,9 +1,15 @@
 'use client'
+
 import React from "react";
-import { ThemeProvider, createTheme } from "@mui/material";
+import {
+  ThemeProvider,
+  createTheme,
+  Box
+} from "@mui/material";
 
 import MenuComponent from "./components/menu/menu";
 import HeaderHelloComponent from "./components/header-hello/header-hello";
+import SectionProjects from "@/app/components/section-projects/SectionProjects";
 
 const darkTheme = createTheme({
   palette: {
@@ -17,6 +23,9 @@ export default function Home() {
       <ThemeProvider theme={darkTheme}>
         <MenuComponent />
         <HeaderHelloComponent />
+        <Box component={'article'}>
+          <SectionProjects />
+        </Box>
       </ThemeProvider>
     </>
   );
