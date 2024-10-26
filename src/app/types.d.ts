@@ -15,3 +15,15 @@ export type SiteHeaderButtonHello = {
     color: "warning" | "inherit" | "primary" | "secondary" | "error" | "info" | "success"
     icon?: React.ReactNode
 }
+
+export type ProjectCardDataProps = {
+    project: ProjectData
+}
+
+export type ProjectData = {
+    image?: string,
+    title: string,
+    description: string,
+    tags: string[],
+    links: { icon: string, href: string }[],
+}
