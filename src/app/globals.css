@@ -106,7 +106,7 @@ a:hover::before, .MuiButton-text:hover::before {
   margin: 1rem 0;
   color: var(--foreground-rgb);
   margin-bottom: 1rem;
-  background: linear-gradient(45deg, var(--color-medium-tint), var(--color-black));
+  background: linear-gradient(45deg, var(--color-medium-tint), var(--color-white-tint));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
