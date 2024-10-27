@@ -16,7 +16,7 @@ const menuItens: SiteMenuItemButton[] = [
     size: "large",
     variant: "text",
     key: 1,
-    hash: "#home"
+    hash: "/#header-hello"
   },
   {
     title: "Projetos",
@@ -24,7 +24,7 @@ const menuItens: SiteMenuItemButton[] = [
     size: "large",
     variant: "text",
     key: 2,
-    hash: "#projects"
+    hash: "/#section-projects"
   },
   {
     title: "Sobre Mim",
@@ -32,7 +32,7 @@ const menuItens: SiteMenuItemButton[] = [
     size: "large",
     variant: "text",
     key: 3,
-    hash: "#about"
+    hash: "/#section-aboutme"
   },
 ]
 
@@ -52,6 +52,7 @@ export default function MenuComponent() {
                       size={value.size}
                       color={value.color}
                       variant={value.variant}
+                      href={value.hash}
                     >
                       { value.title }
                     </Button>)
