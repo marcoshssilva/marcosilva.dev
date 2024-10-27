@@ -25,8 +25,8 @@ export default function Home() {
         <MenuComponent />
         <HeaderHelloComponent />
         <Box component={'article'}>
-          <SectionAboutme />
           <SectionProjects />
+          <SectionAboutme />
         </Box>
       </ThemeProvider>
     </>
