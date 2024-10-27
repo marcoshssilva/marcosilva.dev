@@ -8,10 +8,8 @@ import { ProjectCardDataProps } from "@/app/types";
 export default function ProjectCard ({ project }: ProjectCardDataProps) {
   return <>
     <Box
-      className='project-card'
+      className='project-card h-full'
       sx={{
-        minWidth: { xs: '15rem' },
-        maxWidth: { xs: '20rem' },
         backgroundColor: 'var(--color-black-tint)',
         padding: '1rem',
         borderRadius: '16px'
