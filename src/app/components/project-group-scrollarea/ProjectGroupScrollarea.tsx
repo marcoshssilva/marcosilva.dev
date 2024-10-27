@@ -6,7 +6,7 @@ import {
 
 export default function ProjectGroupScrollarea({ children }: { children: Children }) {
   return <>
-    <Box className='flex flex-col md:flex-row gap-5 p-5 justify-start w-full overflow-x-hidden'>
+    <Box className='grid p-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2.5'>
       { Children.map(children, (child) => <Box>{child}</Box>) }
     </Box>
   </>
