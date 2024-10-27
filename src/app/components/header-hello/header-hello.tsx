@@ -56,6 +56,7 @@ export default function HeaderHelloComponent() {
               content={'Meus projetos'}
               variant={'text'}
               color={"inherit"}
+              href='/#section-projects'
               icon={ <CallMadeOutlinedIcon /> }
             />
           </Box>
