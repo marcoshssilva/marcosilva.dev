@@ -12,7 +12,7 @@ import { ProjectCardDataProps } from "@/app/types";
 export default function ProjectCard ({ project }: ProjectCardDataProps) {
   return <>
     <Box
-      className='project-card h-full relative hover:border-yellow-200 hover:border hover:-translate-y-[3px] transition-all duration-200 hover:shadow-lg hover:shadow-[#483285DD]'
+      className='project-card h-full relative hover:border-yellow-200 hover:border hover:-translate-y-[3px] transition-all duration-200 hover:shadow-lg'
       sx={{
         backgroundColor: 'var(--color-black-tint)',
         padding: '1rem',
