@@ -14,6 +14,7 @@ export type SiteHeaderButtonHello = {
     variant: "text" | "outlined" | "contained",
     color: "warning" | "inherit" | "primary" | "secondary" | "error" | "info" | "success"
     icon?: React.ReactNode
+    href?: string
 }
 
 export type ProjectCardDataProps = {
