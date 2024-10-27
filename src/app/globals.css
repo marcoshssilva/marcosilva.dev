@@ -133,14 +133,13 @@ a:hover::before, .MuiButton-text:hover::before {
   background: linear-gradient(45deg, var(--color-medium-tint), var(--color-white-tint));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: "BabaPro Bold", system-ui !important;
 }
 
 .section-aboutme-title {
   color: var(--foreground-rgb);
-  background: linear-gradient(45deg, var(--color-medium), var(--color-medium-tint), var(--color-medium-shade));
+  background: linear-gradient(45deg, var(--color-medium-tint), var(--color-white-tint));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "BabaPro Bold", system-ui !important;
-  font-size: 3.4rem !important;
-  font-weight: 700 !important;
 }
