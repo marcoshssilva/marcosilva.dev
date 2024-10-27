@@ -24,10 +24,34 @@ export default function SectionProjects() {
       description: 'Conjunto de aplicações para armazenar e criptografar senhas e arquivos utilizando par de chaves e validações'
     },
     {
-      links: [{ icon: 'github', href: 'https://github.com/marcoshssilva/MHPasswordManager' }],
+      links: [{ icon: 'github', href: 'https://github.com/marcoshssilva/client-ai' }],
       tags: ['Java', 'SpringBoot', 'Azure', 'OpenAI', 'Spring AI Experimental'],
       title: 'Azure Client-AI',
       description: 'Serviço API REST que comunica com modelos do serviço Azure OpenAI e permite geração de imagens e prompts'
+    },
+    {
+      links: [{ icon: 'github', href: 'https://github.com/marcoshssilva/app-registranotas-react-native' }],
+      tags: ['React Native', 'Android', 'Firebase', 'Google Auth'],
+      title: 'AppRegistra Notas',
+      description: 'Aplicativo mobile para guardar notas de forma sincronizada em nuvem utilizando Firebase e autenticador Google'
+    },
+    {
+      links: [{ icon: 'github', href: 'https://github.com/marcoshssilva/global-library' }],
+      tags: ['Groovy', 'Jenkins CI-CD'],
+      title: 'Global-Library',
+      description: 'Conjunto de funções escritas em Groovy script para Jenkins'
+    },
+    {
+      links: [{ icon: 'github', href: 'https://github.com/marcoshssilva/nexus3-kubernetes' }],
+      tags: ['Helm', 'Kubernetes'],
+      title: 'Nexus3 Deploy Helm',
+      description: 'Helm para facilitar deploy do Nexus3 Artifact Registry em ambiente Kubernetes'
+    },
+    {
+      links: [{ icon: 'github', href: 'https://github.com/marcoshssilva/docker-jenkins-agent' }],
+      tags: ['Docker', 'Jenkins'],
+      title: 'Docker Jenkins Agent',
+      description: 'Container editado com Docker CLI pré-instalado, ambos, SSH Agent e Inbound Agent'
     },
   ];
 
