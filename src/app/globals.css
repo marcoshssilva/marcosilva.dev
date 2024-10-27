@@ -89,8 +89,18 @@ a:hover::before, .MuiButton-text:hover::before {
   width: 100%; /* Expanda a linha para 100% na hover */
 }
 
+.background-header-hello {
+  background: linear-gradient(360deg, rgba(var(--background-start-rgb), .77) , rgba(var(--background-start-rgb), 0) 80%);
+}
+
 .background-projects {
-  background: linear-gradient(180deg, rgba(var(--background-start-rgb), 0) , rgba(72, 50,133, .87) 80%);
+  /*background: linear-gradient(180deg, rgba(var(--background-start-rgb), 0) , rgba(72, 50,133, .87) 80%);*/
+  background: linear-gradient(180deg, rgba(var(--background-start-rgb), .77) , rgba(var(--background-start-rgb), .87) 80%);
+  /*opacity: 0.87;*/
+}
+
+.background-aboutme {
+  background: linear-gradient(360deg, rgba(var(--background-start-rgb), 1) , rgba(var(--background-start-rgb), .87) 100%);
   /*opacity: 0.87;*/
 }
 
