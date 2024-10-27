@@ -68,7 +68,7 @@ a, .MuiButton-text {
   position: relative; /* Posiciona o elemento para a animação */
 }
 
-a::before, .MuiButton-text::before {
+#header-hello a::before, .MuiButton-text::before {
   content: "";
   position: absolute;
   bottom: -2px; /* Ajusta a posição da linha */
@@ -106,6 +106,13 @@ a:hover::before, .MuiButton-text:hover::before {
   margin: 1rem 0;
   color: var(--foreground-rgb);
   margin-bottom: 1rem;
+  background: linear-gradient(45deg, var(--color-medium-tint), var(--color-white-tint));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-projects-title {
+  color: var(--foreground-rgb);
   background: linear-gradient(45deg, var(--color-medium-tint), var(--color-white-tint));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
