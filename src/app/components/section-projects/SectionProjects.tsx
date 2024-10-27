@@ -62,7 +62,7 @@ export default function SectionProjects() {
           className='section-projects-title'
           variant='h1'
           align='left'
-          sx={{ marginTop: '1.2rem', marginBottom: '1rem', marginX: '1rem', fontFamily: 'Montserrat' }}>
+          sx={{ marginTop: '1.2rem', marginBottom: '1rem', marginX: '1rem' }}>
           #Meus Projetos
         </Typography>
         <Typography sx={{ marginX: '1.5rem', marginY: 0, padding: 0 }}>
