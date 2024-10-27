@@ -10,6 +10,7 @@ import {
 import MenuComponent from "./components/menu/menu";
 import HeaderHelloComponent from "./components/header-hello/header-hello";
 import SectionProjects from "@/app/components/section-projects/SectionProjects";
+import SectionAboutme from "@/app/components/section-aboutme/SectionAboutme";
 
 const darkTheme = createTheme({
   palette: {
@@ -24,6 +25,7 @@ export default function Home() {
         <MenuComponent />
         <HeaderHelloComponent />
         <Box component={'article'}>
+          <SectionAboutme />
           <SectionProjects />
         </Box>
       </ThemeProvider>
