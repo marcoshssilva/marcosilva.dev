@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'BabaPro Bold';
+  src: url('/fonts/babapro/BabaPro-Bold.ttf');
+}
+
 :root {
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 0, 0, 0;
@@ -35,6 +40,8 @@
   --color-black-tint: #383a3e;
   --color-black-shade: #1e2023;
 }
+
+html { scroll-behavior: smooth; }
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -116,4 +123,14 @@ a:hover::before, .MuiButton-text:hover::before {
   background: linear-gradient(45deg, var(--color-medium-tint), var(--color-white-tint));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.section-aboutme-title {
+  color: var(--foreground-rgb);
+  background: linear-gradient(45deg, var(--color-medium), var(--color-medium-tint), var(--color-medium-shade));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "BabaPro Bold", system-ui !important;
+  font-size: 3.4rem !important;
+  font-weight: 700 !important;
 }
