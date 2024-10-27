@@ -19,13 +19,13 @@ export default function SectionProjects() {
   const projects: GitHubProject[] = [
     {
       links: [{ icon: 'github', href: 'https://github.com/marcoshssilva/MHPasswordManager' }],
-      tags: ['Java', 'Spring Boot', 'Spring Cloud', 'OAuth2', 'RabbitMQ', 'Postgres', 'Mongo', 'Redis'],
+      tags: ['Spring Boot', 'Spring Cloud', 'OAuth2', 'RabbitMQ', 'Postgres', 'Mongo', 'Redis'],
       title: 'MHPasswordManager',
       description: 'Conjunto de aplicações para armazenar e criptografar senhas e arquivos utilizando par de chaves e validações'
     },
     {
       links: [{ icon: 'github', href: 'https://github.com/marcoshssilva/client-ai' }],
-      tags: ['Java', 'SpringBoot', 'Azure', 'OpenAI', 'Spring AI Experimental'],
+      tags: ['SpringBoot', 'Azure', 'OpenAI', 'Spring AI'],
       title: 'Azure Client-AI',
       description: 'Serviço API REST que comunica com modelos do serviço Azure OpenAI e permite geração de imagens e prompts'
     },
@@ -37,19 +37,19 @@ export default function SectionProjects() {
     },
     {
       links: [{ icon: 'github', href: 'https://github.com/marcoshssilva/global-library' }],
-      tags: ['Groovy', 'Jenkins CI-CD'],
+      tags: ['Groovy', 'Jenkins CI/CD'],
       title: 'Global-Library',
       description: 'Conjunto de funções escritas em Groovy script para Jenkins'
     },
     {
       links: [{ icon: 'github', href: 'https://github.com/marcoshssilva/nexus3-kubernetes' }],
       tags: ['Helm', 'Kubernetes'],
-      title: 'Nexus3 Deploy Helm',
+      title: 'Nexus3 Helm',
       description: 'Helm para facilitar deploy do Nexus3 Artifact Registry em ambiente Kubernetes'
     },
     {
       links: [{ icon: 'github', href: 'https://github.com/marcoshssilva/docker-jenkins-agent' }],
-      tags: ['Docker', 'Jenkins'],
+      tags: ['Docker'],
       title: 'Docker Jenkins Agent',
       description: 'Container editado com Docker CLI pré-instalado, ambos, SSH Agent e Inbound Agent'
     },
@@ -59,12 +59,13 @@ export default function SectionProjects() {
     <Box component={'section'} id="section-projects" className="relative box-section background-projects">
       <Container className='min-h-screen pt-[97px]'>
         <Typography
-          variant='h3'
+          className='section-projects-title'
+          variant='h1'
           align='left'
-          sx={{ margin: '1rem' }}>
-          # Meus Projetos
+          sx={{ marginTop: '1.2rem', marginBottom: '1rem', marginX: '1rem', fontFamily: 'Montserrat' }}>
+          #Meus Projetos
         </Typography>
-        <Typography sx={{ marginX: '1.5rem' }}>
+        <Typography sx={{ marginX: '1.5rem', marginY: 0, padding: 0 }}>
           Uma coleção de projetos feitos por mim.
         </Typography>
         <ProjectGroupScrollarea>
