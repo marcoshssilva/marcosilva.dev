@@ -14,6 +14,7 @@ export default function ProjectCard ({ project }: ProjectCardDataProps) {
     <Box
       className='project-card h-full relative hover:border-yellow-200 hover:border hover:-translate-y-[3px] transition-all duration-200 hover:shadow-lg'
       sx={{
+        border: '1px solid transparent',
         backgroundColor: 'var(--color-black-tint)',
         padding: '1rem',
         borderRadius: '16px'
