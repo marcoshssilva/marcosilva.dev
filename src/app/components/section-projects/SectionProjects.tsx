@@ -9,14 +9,14 @@ import {
 } from "@mui/material";
 
 import {
-  GitHubProject
+  ProjectData
 } from "@/app/types";
 
 import ProjectCard from "@/app/components/project-card/ProjectCard";
 import ProjectGroupScrollarea from "@/app/components/project-group-scrollarea/ProjectGroupScrollarea";
 
 export default function SectionProjects() {
-  const projects: GitHubProject[] = [
+  const projects: ProjectData[] = [
     {
       links: [{ icon: 'github', href: 'https://github.com/marcoshssilva/MHPasswordManager' }],
       tags: ['Spring Boot', 'Spring Cloud', 'OAuth2', 'RabbitMQ', 'Postgres', 'Mongo', 'Redis'],
@@ -60,7 +60,7 @@ export default function SectionProjects() {
       <Container className='min-h-screen pt-[97px]'>
         <Typography
           className='section-projects-title'
-          variant='h1'
+          variant='h2'
           align='left'
           sx={{ marginTop: '1.2rem', marginBottom: '1rem', marginX: '1rem' }}>
           #Meus Projetos
