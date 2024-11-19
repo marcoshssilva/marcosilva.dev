@@ -1,13 +1,13 @@
 {
-  "name": "marcoshssilva.com.br",
-  "version": "0.1.2-RC-SNAPSHOT",
+  "name": "marcosilva-dev-website",
+  "version": "1.0.0-RC-SNAPSHOT",
   "private": true,
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "docker:build-image": "docker build --tag marcoshssilva-com-br:latest .",
+    "docker:build-image": "docker build --tag marcosilva-dev-website:latest .",
     "docker:run-compose": "docker compose -f 'docker-compose.yaml' up -d",
     "test": "jest",
     "test:watch": "jest --watch",
