@@ -1,0 +1,33 @@
+kind: pipeline
+spec:
+  stages:
+  - type: ci
+    spec:
+      steps:
+      - name: 'Test Node 16'
+        type: run
+        spec:
+          container: node:16
+          script: |-
+            npm install
+            npm run lint
+            npm run test
+            npm run build
+      - name: 'Test Node 18'
+        type: run
+        spec:
+          container: node:18
+          script: |-
+            npm install
+            npm run lint
+            npm run test
+            npm run build
+      - name: 'Test Node 20'
+        type: run
+        spec:
+          container: node:20
+          script: |-
+            npm install
+            npm run lint
+            npm run test
+            npm run build
