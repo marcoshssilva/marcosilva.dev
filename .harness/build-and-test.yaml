@@ -23,3 +23,12 @@ spec:
           container: node:20
           script: |-
             npm run build
+      - name: 'generate_docker_image'
+        type: plugin
+        spec:
+          name: docker
+          inputs:
+            auto_tag: true
+            auto_tag_suffix: marcossilva-dev-website
+            context: .
+            dockerfile: ./Dockerfile
