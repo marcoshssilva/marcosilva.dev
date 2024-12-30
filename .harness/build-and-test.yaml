@@ -3,6 +3,7 @@ spec:
   stages:
   - type: ci
     spec:
+      steps:
       - name: 'download_dependencies'
         type: run
         spec:
