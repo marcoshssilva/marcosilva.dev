@@ -4,10 +4,22 @@ spec:
   - type: ci
     spec:
       steps:
-      - name: 'download-dependencies'
+      - name: 'download_dependencies'
         type: run
         spec:
           container: node:20
           script: |-
-            npm config set registry https://registry.starlord443.dev/repository/npm-public/
             npm install --force
+      - name: 'run_tests'
+        type: run
+        spec:
+          container: node:20
+          script: |-
+            npm run lint
+            npm run test
+      - name: 'run_build'
+        type: run
+        spec:
+          container: node:20
+          script: |-
+            npm run build
