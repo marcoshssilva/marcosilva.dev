@@ -7,6 +7,7 @@ spec:
       - name: 'download-dependencies'
         type: run
         spec:
-          container: node:16
+          container: node:20
           script: |-
+            npm config set registry https://registry.starlord443.dev/repository/npm-public/
             npm install --force
