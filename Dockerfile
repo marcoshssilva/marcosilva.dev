@@ -32,11 +32,9 @@ WORKDIR /app
 
 ENV NODE_ENV production
 
-RUN addgroup --system --gid 1001 nodejs
-RUN adduser --system --uid 1001 nextjs
-
-RUN mkdir .next
-RUN chown nextjs:nodejs .next
+RUN addgroup --system --gid 1001 nodejs && adduser --system --uid 1001 nextjs && \
+  mkdir .next && \
+  chown nextjs:nodejs .next
 
 COPY --from=builder /app/package.json /app/package-lock.json ./
 RUN npm install -D
