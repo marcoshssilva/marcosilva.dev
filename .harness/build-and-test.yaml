@@ -23,10 +23,3 @@ spec:
           container: node:20
           script: |-
             npm run build
-      - name: 'generate_docker_image'
-        type: run
-        spec:
-          container: docker:dind
-          script: |-
-            sleep 5
-            docker -H tcp://10.5.10.58:2375 build --tag marcosilva-dev-website:latest --load .
