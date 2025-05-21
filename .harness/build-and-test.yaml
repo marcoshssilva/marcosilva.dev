@@ -9,7 +9,7 @@ spec:
         spec:
           container: node:20
           script: |-
-            npm config set registry https://nxr.starlord443.dev/repository/npm-public/
+            npm config set registry http://nexus-nexus3.nexus.svc.cluster.local:8081/repository/npm-public/
             npm install --force
       - name: 'run_tests'
         type: run
