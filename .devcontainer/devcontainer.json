@@ -2,9 +2,8 @@
   "name": "Node.js",
   "dockerComposeFile": "docker-compose.yml",
   "service": "dev-container",
-  "workspaceFolder": "/home/node/workspace",
+  "workspaceFolder": "/home/node/",
   "postCreateCommand": "npm install",
   "runServices": ["rabbitmq"],
-  "forwardPorts": [5672, 15672],
-  "remoteUser": "node"
+  "forwardPorts": [5672, 15672]
 }

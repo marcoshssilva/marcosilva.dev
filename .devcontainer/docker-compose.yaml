@@ -1,9 +1,6 @@
 services:
   dev-container:
     image: dkpub.starlord443.dev/devcontainers/javascript-node:dev-20-bookworm
-    volumes:
-      - ..:/home/node/workspace:cached
-    # command: sleep infinity
     networks:
       - dev-network
   rabbitmq:
