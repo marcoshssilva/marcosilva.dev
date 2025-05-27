@@ -1,0 +1,21 @@
+services:
+  dev-container:
+    image: dkpub.starlord443.dev/devcontainers/javascript-node:dev-20-bookworm
+    volumes:
+      - ..:/home/node/workspace:cached
+    # command: sleep infinity
+    networks:
+      - dev-network
+  rabbitmq:
+    image: dkpub.starlord443.dev/rabbitmq:3-management
+    ports:
+      - "15672:15672"  # UI
+      - "5672:5672"    # Protocolo AMQP
+    environment:
+      - RABBITMQ_DEFAULT_USER="test-marcoshssilva-website"
+      - RABBITMQ_DEFAULT_PASS="P@ssword123"
+    networks:
+      - dev-network
+networks:
+  dev-network:
+    driver: bridge

@@ -1,16 +1,10 @@
 {
-  "name": "Devbox Remote Container",
-  "build": {
-    "dockerfile": "./Dockerfile",
-    "context": ".."
-  },
-  "customizations": {
-    "vscode": {
-      "settings": {},
-      "extensions": [
-        "jetpack-io.devbox"
-      ]
-    }
-  },
-  "remoteUser": "devbox"
+  "name": "Node.js",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "dev-container",
+  "workspaceFolder": "/home/node/workspace",
+  "postCreateCommand": "npm install",
+  "runServices": ["rabbitmq"],
+  "forwardPorts": [5672, 15672],
+  "remoteUser": "node"
 }
