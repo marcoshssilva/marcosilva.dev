@@ -1,9 +1,10 @@
 {
+  "$schema": "https://raw.githubusercontent.com/devcontainers/spec/main/schemas/devcontainer.schema.json",
   "name": "Node.js",
+  "image": "dkpub.starlord443.dev/devcontainers/javascript-node:dev-20-bookworm",
   "dockerComposeFile": "docker-compose.yml",
-  "service": "dev-container",
   "workspaceFolder": "/home/node/",
   "postCreateCommand": "npm install",
   "runServices": ["rabbitmq"],
-  "forwardPorts": [5672, 15672]
+  "forwardPorts": [5672, 15672],
 }
