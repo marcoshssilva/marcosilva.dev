@@ -1,0 +1,25 @@
+kind: pipeline
+spec:
+  stages:
+  - type: ci
+    spec:
+      steps:
+      - name: 'download_dependencies'
+        type: run
+        spec:
+          container: node:20
+          script: |-
+            npm install --force
+      - name: 'run_tests'
+        type: run
+        spec:
+          container: node:20
+          script: |-
+            npm run lint
+            npm run test
+      - name: 'run_build'
+        type: run
+        spec:
+          container: node:20
+          script: |-
+            npm run build

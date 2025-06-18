@@ -1,28 +1,71 @@
+import React from "react";
 import {
   AppBar,
   Box,
+  Button,
   Container,
-  Toolbar,
-  Typography,
+  Toolbar
 } from "@mui/material";
+import MenuLogoGroup from "@/app/components/menu/menu-logo-group";
+import {SiteMenuItemButton} from "@/app/types";
+
+const menuItens: SiteMenuItemButton[] = [
+  {
+    title: "Ínicio",
+    color: "warning",
+    size: "large",
+    variant: "text",
+    key: 1,
+    hash: "/#header-hello"
+  },
+  {
+    title: "Projetos",
+    color: "warning",
+    size: "large",
+    variant: "text",
+    key: 2,
+    hash: "/#section-projects"
+  },
+  {
+    title: "Sobre Mim",
+    color: "warning",
+    size: "large",
+    variant: "text",
+    key: 3,
+    hash: "/#section-aboutme"
+  },
+]
 
 export default function MenuComponent() {
   return (
-    <AppBar position="fixed" sx={{ boxShadow: 'none', background: 'rgb(var(--background-end-rgb))' }}>
-      <Container>
-        <Toolbar>
-          <Typography variant="h6" component="a" href="/">
-            marcoshssilva
-          </Typography>
-          <Typography variant="h6" component="a" href="/" color='primary'>
-            .com.br
-          </Typography>
-
-          <Box sx={{ flexGrow: 1 }} />
-          <Box sx={{ display: { xs: "none", md: "flex" } }}></Box>
-
-        </Toolbar>
-      </Container>
-    </AppBar>
+        <AppBar component={'nav'} className='menu-box z-10' position={'fixed'} color={'transparent'}>
+          <Container>
+            <Toolbar className={"items-center"}>
+              <Box sx={{ marginY: 2 }}>
+                <MenuLogoGroup />
+              </Box>
+              <Box sx={{flexGrow: 1}}></Box>
+              <Box sx={{ display: { xs: "none", md: "flex" } }}>
+                { menuItens.map((value) =>
+                    <Button
+                      key={value.hash}
+                      size={value.size}
+                      color={value.color}
+                      variant={value.variant}
+                      href={value.hash}
+                    >
+                      { value.title }
+                    </Button>)
+                }
+              </Box>
+              <Box sx={{flexGrow: 1}}></Box>
+              <Box sx={{ display: { xs: "none", sm: "flex" } }}>
+                <Button size="large" color="warning" variant="contained" sx={{ marginY: '8px' }}>
+                  Fale Comigo
+                </Button>
+              </Box>
+            </Toolbar>
+          </Container>
+        </AppBar>
   );
 }

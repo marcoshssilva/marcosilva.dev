@@ -5,7 +5,7 @@ import process from "process";
  * RabbitMQConnector
  * Make a connection on RabbitMQ server using amqplib
  *
- * Thanks and congratulations for Hassan Fouad
+ * Thanks and congratulations to Hassan Fouad
  * Reference: https://hassanfouad.medium.com/using-rabbitmq-with-nodejs-and-typescript-8b33d56a62cc
  */
 export class RabbitMQConnector {

@@ -1,16 +1,17 @@
 {
-  "name": "marcoshssilva.com.br",
-  "version": "0.1.1",
+  "name": "marcosilva-dev-website",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -H 0.0.0.0",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "docker:build-image": "docker build --tag marcoshssilva-com-br:latest .",
+    "docker:build-image": "docker build --tag marcosilva-dev-website:latest .",
     "docker:run-compose": "docker compose -f 'docker-compose.yaml' up -d",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "test:update": "jest -u"
   },
   "dependencies": {
     "@emotion/cache": "^11.11.0",
