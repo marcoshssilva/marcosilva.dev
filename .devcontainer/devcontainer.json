@@ -1,5 +1,5 @@
 {
   "name": "Node.js",
-  "image": "dkpub.starlord443.dev/devcontainers/javascript-node:dev-20-bookworm",
+  "image": "dkhub.starlord443.dev/devcontainers/javascript-node:dev-20-bookworm",
   "postCreateCommand": "npm install"
 }
