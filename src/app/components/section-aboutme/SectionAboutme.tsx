@@ -80,9 +80,9 @@ export default function SectionAboutme() {
             <Box className={'box-image translate-y-[-50%] translate-x-[-50%] lg:translate-x-[-35%]'}>
                 <Box className={'box-content'}>
                   <Image
-                    src='https://media.licdn.com/dms/image/v2/D4D03AQFY4E74og9D_A/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1729111804471?e=1737590400&v=beta&t=SRqmwMVPbna6ofw13EnvSdAsKpO_Z0D9ZmH0R33wpnM'
-                    width={100}
-                    height={400}
+                    src='/images/me/me.jpeg'
+                    width={200}
+                    height={200}
                     alt={'profile-aboutme'}
                   />
                   {/* Gostaria de usar emojis? Acesse: https://emojipedia.org/ */}
