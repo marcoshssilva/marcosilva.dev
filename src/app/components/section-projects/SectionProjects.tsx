@@ -66,7 +66,7 @@ export default function SectionProjects() {
           #Meus Projetos
         </Typography>
         <Typography sx={{ marginX: '1.5rem', marginY: 0, padding: 0 }}>
-          Uma coleção de projetos feitos por mim.
+          Aqui estão alguns dos meus projetos mais recentes. Você pode ver mais detalhes e o código fonte acessando os links.
         </Typography>
         <ProjectGroupScrollarea>
           { projects.map((item, index) => <ProjectCard key={index} project={item} />) }

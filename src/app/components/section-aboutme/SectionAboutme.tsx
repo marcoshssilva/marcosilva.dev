@@ -112,7 +112,7 @@ export default function SectionAboutme() {
                 sx={{ marginTop: '1.2rem', marginBottom: '1rem', marginX: '1rem', fontSize: '2.5rem' }}
                 variant='body1'
               >
-                5+
+                5+ anos
               </Typography>
             </Box>
 
@@ -131,20 +131,20 @@ export default function SectionAboutme() {
                 variant='body1'
               >
                 <ul className=''>
+                  <li className=''>
+                    Desenvolvimento Fullstack foco em Java
+                  </li>
                   <li className='text-right'>
-                    Infraestrutura em Nuvem
+                    Infraestrutura em Nuvem (AWS, Azure e GCP)
                   </li>
                   <li className=''>
-                    Desenvolvimento Fullstack
+                    Metodologias Ageis Scrum e Kanban
                   </li>
                   <li className=''>
-                    Administração de Servidores
+                    Configuração de Servidores
                   </li>
                   <li className=''>
-                    DevOps e GitOps
-                  </li>
-                  <li className=''>
-                    Metodologias Ageis
+                    DevOps, GitOps e automação CI/CD
                   </li>
                 </ul>
               </Typography>
