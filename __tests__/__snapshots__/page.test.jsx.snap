@@ -254,7 +254,7 @@ exports[`Home render component 1`] = `
         <p
           class="MuiTypography-root MuiTypography-body1 css-lz8ca2-MuiTypography-root"
         >
-          Uma coleção de projetos feitos por mim.
+          Aqui estão alguns dos meus projetos mais recentes. Você pode ver mais detalhes e o código fonte acessando os links.
         </p>
         <div
           class="grid p-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2.5 MuiBox-root css-0"
@@ -750,12 +750,12 @@ exports[`Home render component 1`] = `
                   alt="profile-aboutme"
                   data-nimg="1"
                   decoding="async"
-                  height="400"
+                  height="200"
                   loading="lazy"
-                  src="/_next/image?url=https%3A%2F%2Fmedia.licdn.com%2Fdms%2Fimage%2Fv2%2FD4D03AQFY4E74og9D_A%2Fprofile-displayphoto-shrink_200_200%2Fprofile-displayphoto-shrink_200_200%2F0%2F1729111804471%3Fe%3D1737590400%26v%3Dbeta%26t%3DSRqmwMVPbna6ofw13EnvSdAsKpO_Z0D9ZmH0R33wpnM&w=256&q=75"
-                  srcset="/_next/image?url=https%3A%2F%2Fmedia.licdn.com%2Fdms%2Fimage%2Fv2%2FD4D03AQFY4E74og9D_A%2Fprofile-displayphoto-shrink_200_200%2Fprofile-displayphoto-shrink_200_200%2F0%2F1729111804471%3Fe%3D1737590400%26v%3Dbeta%26t%3DSRqmwMVPbna6ofw13EnvSdAsKpO_Z0D9ZmH0R33wpnM&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fmedia.licdn.com%2Fdms%2Fimage%2Fv2%2FD4D03AQFY4E74og9D_A%2Fprofile-displayphoto-shrink_200_200%2Fprofile-displayphoto-shrink_200_200%2F0%2F1729111804471%3Fe%3D1737590400%26v%3Dbeta%26t%3DSRqmwMVPbna6ofw13EnvSdAsKpO_Z0D9ZmH0R33wpnM&w=256&q=75 2x"
+                  src="/_next/image?url=%2Fimages%2Fme%2Fme.jpeg&w=640&q=75"
+                  srcset="/_next/image?url=%2Fimages%2Fme%2Fme.jpeg&w=256&q=75 1x, /_next/image?url=%2Fimages%2Fme%2Fme.jpeg&w=640&q=75 2x"
                   style="color: transparent;"
-                  width="100"
+                  width="200"
                 />
                 <span>
                   🤖
@@ -789,7 +789,7 @@ exports[`Home render component 1`] = `
               <p
                 class="MuiTypography-root MuiTypography-body1 MuiTypography-alignRight css-1b6t5ww-MuiTypography-root"
               >
-                5+
+                5+ anos
               </p>
             </div>
             <div
@@ -807,29 +807,29 @@ exports[`Home render component 1`] = `
                   class=""
                 >
                   <li
+                    class=""
+                  >
+                    Desenvolvimento Fullstack foco em Java
+                  </li>
+                  <li
                     class="text-right"
                   >
-                    Infraestrutura em Nuvem
+                    Infraestrutura em Nuvem (AWS, Azure e GCP)
                   </li>
                   <li
                     class=""
                   >
-                    Desenvolvimento Fullstack
+                    Metodologias Ageis Scrum e Kanban
                   </li>
                   <li
                     class=""
                   >
-                    Administração de Servidores
+                    Configuração de Servidores
                   </li>
                   <li
                     class=""
                   >
-                    DevOps e GitOps
-                  </li>
-                  <li
-                    class=""
-                  >
-                    Metodologias Ageis
+                    DevOps, GitOps e automação CI/CD
                   </li>
                 </ul>
               </p>
