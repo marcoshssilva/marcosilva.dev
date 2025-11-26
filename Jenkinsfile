@@ -16,15 +16,14 @@ try {
         }
         stage('OWASP - Dependency Check') {
             // run dependency check
-            // dependencyCheck odcInstallation: '10.0.4', nvdCredentialsId: 'NVD_API_KEY', additionalArguments: '''
-            //         -o './'
-            //         -s './'
-            //         -f 'ALL'
-            //         --prettyPrint'''
+            dependencyCheck odcInstallation: 'odc-12.1', nvdCredentialsId: 'NVD_API_KEY', additionalArguments: '''
+                    -o './'
+                    -s './'
+                    -f 'ALL'
+                    --prettyPrint'''
 
             // create report
-            // dependencyCheckPublisher pattern: 'dependency-check-report.xml'
-            echo 'OWASP Dependency Check is not configured in this pipeline.'
+            dependencyCheckPublisher pattern: 'dependency-check-report.xml'
         }
         stage('SonarQube analysis') {
             def scannerHome = tool 'sonar-scanner-6.2.0';
