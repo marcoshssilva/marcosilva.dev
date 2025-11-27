@@ -28,7 +28,8 @@ try {
         stage('SonarQube analysis') {
             def scannerHome = tool 'sonar-scanner-6.2.0';
             withSonarQubeEnv('sonarqube-cloud') {
-                sh "${scannerHome}/bin/sonar-scanner -Dsonar.host.url=${env.SONAR_HOST_URL} -Dsonar.branch.name=${env.BRANCH_NAME}"
+                sh "npx sonarqube-scanner -Dsonar.host.url=${env.SONAR_HOST_URL} -Dsonar.branch.name=${env.BRANCH_NAME}"
+                // sh "${scannerHome}/bin/sonar-scanner -Dsonar.host.url=${env.SONAR_HOST_URL} -Dsonar.branch.name=${env.BRANCH_NAME}"
             }
         }
         stage('Compile and Build') {
