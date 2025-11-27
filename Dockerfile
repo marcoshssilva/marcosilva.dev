@@ -40,7 +40,7 @@ COPY --from=builder /app/package.json /app/package-lock.json ./
 RUN npm install -D
 
 COPY --from=builder /app/public ./public
-COPY --from=builder --chown=nextjs:nodejs /app/.next ./.next
+COPY --from=builder --chown=root:root --chmod=744 /app/.next ./.next
 
 USER nextjs
 
