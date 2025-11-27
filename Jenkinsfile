@@ -4,7 +4,7 @@ try {
             checkout scm
         }
         stage('Install and Configure tools and settings') {
-            env.NODEJS_HOME = "${tool 'node-20'}"
+            env.NODEJS_HOME = "${tool 'node-18'}"
             env.SONARSCANNER_HOME = "${tool 'sonar-scanner-6.2.0'}"
             env.PATH="${env.NODEJS_HOME}/bin:${env.SONARSCANNER_HOME}/bin:${env.PATH}"
         }
