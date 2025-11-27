@@ -68,6 +68,7 @@ try {
                 sh 'docker buildx inspect --bootstrap --builder multiarch-build'
               }
             }
+        }
     }
 } catch(ex) {
     currentBuild.result = 'ABORTED'
