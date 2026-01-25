@@ -72,6 +72,9 @@ try {
     }
 
     node('dokku') {
+        stage('Checkout'){
+          checkout scm
+        }
         stage('Dokku - Sync and Deploy') {
           script {
               try {
