@@ -4,7 +4,7 @@ try {
             checkout scm
         }
         stage('Install and Configure tools and settings') {
-            env.NODEJS_HOME = "${tool 'node-20'}"
+            env.NODEJS_HOME = "${tool 'node-24'}"
             env.PATH="${env.NODEJS_HOME}/bin:${env.PATH}"
         }
         stage('Install all dependencies') {
@@ -16,15 +16,14 @@ try {
         }
         stage('OWASP - Dependency Check') {
             // run dependency check
-            // dependencyCheck odcInstallation: '10.0.4', nvdCredentialsId: 'NVD_API_KEY', additionalArguments: '''
-            //         -o './'
-            //         -s './'
-            //         -f 'ALL'
-            //         --prettyPrint'''
+            dependencyCheck odcInstallation: '10.0.4', nvdCredentialsId: 'NVD_API_KEY', additionalArguments: '''
+                    -o './'
+                    -s './'
+                    -f 'ALL'
+                    --prettyPrint'''
 
             // create report
-            // dependencyCheckPublisher pattern: 'dependency-check-report.xml'
-            echo 'OWASP Dependency Check is not configured in this pipeline.'
+            dependencyCheckPublisher pattern: 'dependency-check-report.xml'
         }
         stage('SonarQube analysis') {
             def scannerHome = tool 'sonar-scanner-6.2.0';
