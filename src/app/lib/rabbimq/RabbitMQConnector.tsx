@@ -42,11 +42,10 @@ export class RabbitMQConnector {
   }
 
   async disconnect() {
-    this.isConnected().then(isConnected => {
-      if (isConnected) {
-        this.connection?.close().then(() => this.connection = undefined);
-      }
-    });
+    let isConnected = await this.isConnected()
+    if (isConnected) {
+      await this.connection?.close();
+    }
   }
 
   async isConnected() {
