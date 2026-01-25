@@ -4,11 +4,9 @@ try {
             checkout scm
         }
         stage('Install and Configure tools and settings') {
-            env.NODEJS_HOME = "${tool 'node-18'}"
-            env.SONARSCANNER_HOME = "${tool 'sonar-scanner-6.2.0'}"
-            env.PATH="${env.NODEJS_HOME}/bin:${env.SONARSCANNER_HOME}/bin:${env.PATH}"
             env.NODEJS_HOME = "${tool 'node-24'}"
-            env.PATH="${env.NODEJS_HOME}/bin:${env.PATH}"
+            env.SONARSCANNER_HOME = "${tool 'sonar-scanner-8.0.1'}"
+            env.PATH="${env.NODEJS_HOME}/bin:${env.SONARSCANNER_HOME}/bin:${env.PATH}"
         }
         stage('Install all dependencies') {
             sh 'npm install --force'
