@@ -16,7 +16,7 @@ try {
         }
         stage('OWASP - Dependency Check') {
             // run dependency check
-            dependencyCheck odcInstallation: '10.0.4', nvdCredentialsId: 'NVD_API_KEY', additionalArguments: '''
+            dependencyCheck odcInstallation: 'odc-12.1', nvdCredentialsId: 'NVD_API_KEY', additionalArguments: '''
                     -o './'
                     -s './'
                     -f 'ALL'
