@@ -26,7 +26,7 @@ try {
             dependencyCheckPublisher pattern: 'dependency-check-report.xml'
         }
         stage('SonarQube analysis') {
-            def scannerHome = tool 'sonar-scanner-6.2.0';
+            def scannerHome = tool 'sonar-scanner-8.0.1';
             withSonarQubeEnv('sonarqube-cloud') {
                 sh "${scannerHome}/bin/sonar-scanner -Dsonar.host.url=${env.SONAR_HOST_URL} -Dsonar.branch.name=${env.BRANCH_NAME}"
             }
