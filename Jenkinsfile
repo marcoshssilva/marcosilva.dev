@@ -1,6 +1,7 @@
 try {
     node('node-builder && os:linux && docker-buildx') {
         stage('Checkout'){
+            cleanWs()
             checkout scm
         }
         stage('Install and Configure tools and settings') {
