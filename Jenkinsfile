@@ -7,7 +7,7 @@ try {
               } catch (Exception e) {
                 cleanWs()
                 currentBuild.result = 'FAILURE'
-                error("Can't checkout git project: ${e.getMessage()}")
+                error("Can't checkout git project -- ${e.getMessage()}")
               }
             }
 
@@ -21,7 +21,7 @@ try {
               } catch (Exception e) {
                 cleanWs()
                 currentBuild.result = 'FAILURE'
-                error("Can't install and/or configure tools: ${e.getMessage()}")
+                error("Can't install and/or configure tools -- ${e.getMessage()}")
               }
             }
 
@@ -33,7 +33,7 @@ try {
               } catch (Exception e) {
                 cleanWs()
                 currentBuild.result = 'FAILURE'
-                error("Can't install dependencies project: ${e.getMessage()}")
+                error("Can't install dependencies project -- ${e.getMessage()}")
               }
             }
         }
@@ -45,7 +45,7 @@ try {
               } catch (Exception e) {
                 cleanWs()
                 currentBuild.result = 'FAILURE'
-                error("Can't run tests on project: ${e.getMessage()}")
+                error("Can't run tests on project -- ${e.getMessage()}")
               }
             }
 
@@ -65,7 +65,7 @@ try {
               } catch (Exception e) {
                 cleanWs()
                 currentBuild.result = 'FAILURE'
-                error("Can't run owasp dependency check on project: ${e.getMessage()}")
+                error("Can't run owasp dependency check on project -- ${e.getMessage()}")
               }
             }
 
@@ -79,7 +79,7 @@ try {
               } catch (Exception e) {
                 cleanWs()
                 currentBuild.result = 'FAILURE'
-                error("Can't run SonarScanner on project: ${e.getMessage()}")
+                error("Can't run SonarScanner on project -- ${e.getMessage()}")
               }
             }
 
@@ -170,6 +170,7 @@ try {
                   sh "git push dokku ${env.BUILD_NUMBER}-${env.BRANCH_NAME.replace('/','_')}:main"
               } catch(exception) {
                   currentBuild.result = 'FAILURE'
+                  error("Can't deploy project on Dokku -- ${e.getMessage()}")
               } finally {
                 cleanWs()
               }
