@@ -2,6 +2,24 @@
 
 exports[`Home render component 1`] = `
 <div>
+  <div
+    class="background"
+  >
+    <img
+      alt="illustrated image from myself"
+      class="block fixed bottom-0 left-0 h-auto md:w-[70%] -z-10"
+      decoding="async"
+      loading="lazy"
+      src="/images/headers/Laptop.png"
+    />
+    <img
+      alt="illustrated image from myself"
+      class="fixed bottom-0 right-0 h-auto w-[130vh] sm:w-[80vw] sm:translate-x-[8rem] md:w-[60vw] 2xl:w-[40vw] translate-x-[150px] md:translate-x-0 -z-10"
+      decoding="async"
+      loading="lazy"
+      src="/images/headers/me.png"
+    />
+  </div>
   <nav
     class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionFixed menu-box z-10 mui-fixed css-1abk1c-MuiPaper-root-MuiAppBar-root"
     style="--Paper-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12); --Paper-overlay: linear-gradient(rgba(255, 255, 255, 0.092), rgba(255, 255, 255, 0.092));"
@@ -24,7 +42,7 @@ exports[`Home render component 1`] = `
               class="inline-block"
               data-nimg="1"
               decoding="async"
-              height="62"
+              height="37.78"
               loading="lazy"
               src="/_next/image?url=%2Fimages%2Flogo%2Flogo.png&w=128&q=75"
               srcset="/_next/image?url=%2Fimages%2Flogo%2Flogo.png&w=64&q=75 1x, /_next/image?url=%2Fimages%2Flogo%2Flogo.png&w=128&q=75 2x"
@@ -39,7 +57,7 @@ exports[`Home render component 1`] = `
                 class="inline-block"
                 data-nimg="1"
                 decoding="async"
-                height="28.75"
+                height="14.3"
                 loading="lazy"
                 src="/_next/image?url=%2Fimages%2Flogo%2FMarcoSilva.png&w=256&q=75"
                 srcset="/_next/image?url=%2Fimages%2Flogo%2FMarcoSilva.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Flogo%2FMarcoSilva.png&w=256&q=75 2x"
@@ -51,20 +69,20 @@ exports[`Home render component 1`] = `
                 class="inline-block"
                 data-nimg="1"
                 decoding="async"
-                height="18"
+                height="14.3"
                 id="menu-globe"
                 loading="lazy"
-                src="/_next/image?url=%2Fimages%2Flogo%2Fglobo-language-pink.png&w=48&q=75"
-                srcset="/_next/image?url=%2Fimages%2Flogo%2Fglobo-language-pink.png&w=32&q=75 1x, /_next/image?url=%2Fimages%2Flogo%2Fglobo-language-pink.png&w=48&q=75 2x"
+                src="/_next/image?url=%2Fimages%2Flogo%2Fglobo-language-pink.png&w=32&q=75"
+                srcset="/_next/image?url=%2Fimages%2Flogo%2Fglobo-language-pink.png&w=32&q=75 1x"
                 style="color: transparent;"
-                width="18"
+                width="14.3"
               />
               <img
                 alt="DEV"
                 class="inline-block"
                 data-nimg="1"
                 decoding="async"
-                height="24"
+                height="14.3"
                 loading="lazy"
                 src="/_next/image?url=%2Fimages%2Flogo%2FDEV.png&w=96&q=75"
                 srcset="/_next/image?url=%2Fimages%2Flogo%2FDEV.png&w=48&q=75 1x, /_next/image?url=%2Fimages%2Flogo%2FDEV.png&w=96&q=75 2x"
@@ -203,20 +221,6 @@ exports[`Home render component 1`] = `
           </a>
         </div>
       </div>
-      <img
-        alt="illustrated image from myself"
-        class="block fixed bottom-0 left-0 h-auto md:w-[70%] -z-10"
-        decoding="async"
-        loading="lazy"
-        src="/images/headers/Laptop.png"
-      />
-      <img
-        alt="illustrated image from myself"
-        class="fixed bottom-0 right-0 h-auto w-[130vh] sm:w-[80vw] sm:translate-x-[8rem] md:w-[60vw] 2xl:w-[40vw] translate-x-[150px] md:translate-x-0 -z-10"
-        decoding="async"
-        loading="lazy"
-        src="/images/headers/me.png"
-      />
     </div>
   </header>
   <article
