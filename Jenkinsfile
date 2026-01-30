@@ -1,40 +1,100 @@
 try {
     node('node-builder && os:linux && docker-buildx') {
         stage('Checkout'){
-            cleanWs()
-            checkout scm
+            script {
+              try {
+                checkout scm
+              } catch (Exception e) {
+                cleanWs()
+                currentBuild.result = 'FAILURE'
+                error("Can't checkout git project: ${e.getMessage()}")
+              }
+            }
+
         }
         stage('Install and Configure tools and settings') {
-            env.NODEJS_HOME = "${tool 'node-24'}"
-            env.SONARSCANNER_HOME = "${tool 'sonar-scanner-8.0.1'}"
-            env.PATH="${env.NODEJS_HOME}/bin:${env.SONARSCANNER_HOME}/bin:${env.PATH}"
+            script {
+              try {
+                env.NODEJS_HOME = "${tool 'node-24'}"
+                env.SONARSCANNER_HOME = "${tool 'sonar-scanner-8.0.1'}"
+                env.PATH="${env.NODEJS_HOME}/bin:${env.SONARSCANNER_HOME}/bin:${env.PATH}"
+              } catch (Exception e) {
+                cleanWs()
+                currentBuild.result = 'FAILURE'
+                error("Can't install and/or configure tools: ${e.getMessage()}")
+              }
+            }
+
         }
         stage('Install all dependencies') {
-            sh 'npm install --force'
-        }
-        stage('Tests') {
-            sh 'npm run lint'
-            sh 'npm run test'
-        }
-        stage('OWASP - Dependency Check') {
-            // run dependency check
-            dependencyCheck odcInstallation: 'odc-12.1', nvdCredentialsId: 'NVD_API_KEY', additionalArguments: '''
-                    -o './'
-                    -s './'
-                    -f 'ALL'
-                    --prettyPrint'''
-
-            // create report
-            dependencyCheckPublisher pattern: 'dependency-check-report.xml'
-        }
-        stage('SonarQube analysis') {
-            withSonarQubeEnv('sonarqube-cloud') {
-                // sh "npx sonarqube-scanner -Dsonar.host.url=${env.SONAR_HOST_URL} -Dsonar.branch.name=${env.BRANCH_NAME}"
-                sh "sonar-scanner -Dsonar.host.url=${env.SONAR_HOST_URL} -Dsonar.branch.name=${env.BRANCH_NAME}"
+            script {
+              try {
+                sh 'npm install --force'
+              } catch (Exception e) {
+                cleanWs()
+                currentBuild.result = 'FAILURE'
+                error("Can't install dependencies project: ${e.getMessage()}")
+              }
             }
         }
+        stage('Tests') {
+            script {
+              try {
+                sh 'npm run lint'
+                sh 'npm run test'
+              } catch (Exception e) {
+                cleanWs()
+                currentBuild.result = 'FAILURE'
+                error("Can't run tests on project: ${e.getMessage()}")
+              }
+            }
+
+        }
+        stage('OWASP - Dependency Check') {
+            script {
+              try {
+                // run dependency check
+                dependencyCheck odcInstallation: 'odc-12.1', nvdCredentialsId: 'NVD_API_KEY', additionalArguments: '''
+                        -o './'
+                        -s './'
+                        -f 'ALL'
+                        --prettyPrint'''
+
+                // create report
+                dependencyCheckPublisher pattern: 'dependency-check-report.xml'
+              } catch (Exception e) {
+                cleanWs()
+                currentBuild.result = 'FAILURE'
+                error("Can't run owasp dependency check on project: ${e.getMessage()}")
+              }
+            }
+
+        }
+        stage('SonarQube analysis') {
+            script {
+              try {
+                withSonarQubeEnv('sonarqube-cloud') {
+                  sh "sonar-scanner -Dsonar.host.url=${env.SONAR_HOST_URL} -Dsonar.branch.name=${env.BRANCH_NAME}" // sh "npx sonarqube-scanner -Dsonar.host.url=${env.SONAR_HOST_URL} -Dsonar.branch.name=${env.BRANCH_NAME}"
+                }
+              } catch (Exception e) {
+                cleanWs()
+                currentBuild.result = 'FAILURE'
+                error("Can't run SonarScanner on project: ${e.getMessage()}")
+              }
+            }
+
+        }
         stage('Compile and Build') {
-            sh 'npm run build'
+            script {
+              try {
+                sh 'npm run build'
+              } catch (Exception e) {
+                cleanWs()
+                currentBuild.result = 'FAILURE'
+                error("Can't build project -- ${e.getMessage()}")
+              }
+            }
+
         }
         stage('Build Docker Image Multiplatform linux/amd64 and linux/arm64/v8') {
             script {
@@ -74,8 +134,16 @@ try {
 
     node('dokku') {
         stage('Checkout'){
-          cleanWs()
-          checkout scm
+            script {
+              try {
+                checkout scm
+              } catch (Exception e) {
+                cleanWs()
+                currentBuild.result = 'FAILURE'
+                error("Can't checkout git project -- ${e.getMessage()}")
+              }
+            }
+
         }
         stage('Dokku - Sync and Deploy') {
           script {
