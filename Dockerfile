@@ -1,6 +1,8 @@
 # -----------------------------------------------------------------------------
 # This Dockerfile.bun is specifically configured for projects using Bun
 # For npm/pnpm or yarn, refer to the Dockerfile instead
+#
+# Based from https://github.com/vercel/next.js/tree/canary/examples/with-docker
 # -----------------------------------------------------------------------------
 
 # Use Bun's official image
