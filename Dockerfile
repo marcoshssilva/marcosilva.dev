@@ -1,52 +1,54 @@
-FROM node:18-alpine AS base
+# -----------------------------------------------------------------------------
+# This Dockerfile.bun is specifically configured for projects using Bun
+# For npm/pnpm or yarn, refer to the Dockerfile instead
+# -----------------------------------------------------------------------------
 
-FROM base AS builder
+# Use Bun's official image
+FROM oven/bun:1 AS base
+
 WORKDIR /app
 
-# Check https://github.com/nodejs/docker-node/tree/b4117f9333da4138b03a546ec926ef50a31506c3#nodealpine to understand why libc6-compat might be needed.
-RUN apk add --no-cache libc6-compat
+# Install dependencies with bun
+FROM base AS deps
+COPY package.json bun.lock* ./
+RUN bun install --no-save --frozen-lockfile
 
-COPY tsconfig.json ./
-COPY .eslintrc.json ./
-COPY tailwind.config.js ./
-COPY tailwind.config.ts ./
-COPY postcss.config.js ./
-COPY next.config.js ./
-COPY package.json ./
-COPY package-lock.json ./
+# Rebuild the source code only when needed
+FROM base AS builder
+WORKDIR /app
+COPY --from=deps /app/node_modules ./node_modules
+COPY . .
 
-RUN \
-  if [ -f yarn.lock ]; then yarn --frozen-lockfile; \
-  elif [ -f package-lock.json ]; then npm ci; \
-  elif [ -f pnpm-lock.yaml ]; then yarn global add pnpm && pnpm i --frozen-lockfile; \
-  else echo "Lockfile not found." && exit 1; \
-  fi
+# Next.js collects completely anonymous telemetry data about general usage.
+# Learn more here: https://nextjs.org/telemetry
+# Uncomment the following line in case you want to disable telemetry during the build.
+# ENV NEXT_TELEMETRY_DISABLED=1
 
-COPY src ./src
-COPY public ./public
+RUN bun run build
 
-RUN yarn build
-
+# Production image, copy all the files and run next
 FROM base AS runner
 WORKDIR /app
 
-ENV NODE_ENV=production
+# Uncomment the following line in case you want to disable telemetry during runtime.
+# ENV NEXT_TELEMETRY_DISABLED=1
 
-RUN addgroup --system --gid 1001 nodejs && adduser --system --uid 1001 nextjs && \
-  mkdir .next && \
-  chown nextjs:nodejs .next
+ENV NODE_ENV=production \
+    PORT=3000 \
+    HOSTNAME="0.0.0.0"
 
-COPY --from=builder /app/package.json /app/package-lock.json ./
-RUN npm install -D
+RUN groupadd --system --gid 1001 nodejs && \
+    useradd --system --uid 1001 --no-log-init -g nodejs nextjs
 
 COPY --from=builder /app/public ./public
-COPY --from=builder --chown=root:root --chmod=744 /app/.next ./.next
+
+# Automatically leverage output traces to reduce image size
+# https://nextjs.org/docs/advanced-features/output-file-tracing
+COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
+COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
 USER nextjs
 
 EXPOSE 3000
 
-ENV PORT 3000
-ENV HOSTNAME "0.0.0.0"
-
-CMD ["npm", "run", "start"]
+CMD ["bun", "./server.js"]
