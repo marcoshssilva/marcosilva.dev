@@ -74,6 +74,7 @@ try {
 
     node('dokku') {
         stage('Checkout'){
+          cleanWs()
           checkout scm
         }
         stage('Dokku - Sync and Deploy') {
