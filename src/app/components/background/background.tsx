@@ -1,5 +1,3 @@
-import {Container} from "@mui/material";
-
 export default function Background(props: Record<string, any>) {
   return <div className={'background'}>
     {/* eslint-disable-next-line @next/next/no-img-element */}
