@@ -112,42 +112,22 @@ export default function SectionAboutme() {
                 sx={{ marginTop: '1.2rem', marginBottom: '1rem', marginX: '1rem', fontSize: '2.5rem' }}
                 variant='body1'
               >
-                5+ anos
+                6+ anos
               </Typography>
             </Box>
 
             <Box>
-              <Typography
-                align='right'
-                className='section-aboutme-name'
-                variant='subtitle1'
-                sx={{ marginTop: '1.2rem', marginBottom: '1rem', marginX: '1rem' }}
-              >
+              <Typography align='right' className='section-aboutme-name' variant='subtitle1' sx={{ marginTop: '1.2rem', marginBottom: '1rem', marginX: '1rem' }}>
                 Habilidades
               </Typography>
-              <Typography
-                align='right'
-                sx={{ marginTop: '1.2rem', marginBottom: '1rem', marginX: '1rem' }}
-                variant='body1'
-              >
-                <ul className=''>
-                  <li className=''>
-                    Desenvolvimento Fullstack foco em Java
-                  </li>
-                  <li className='text-right'>
-                    Infraestrutura em Nuvem (AWS, Azure e GCP)
-                  </li>
-                  <li className=''>
-                    Metodologias Ageis Scrum e Kanban
-                  </li>
-                  <li className=''>
-                    Configuração de Servidores
-                  </li>
-                  <li className=''>
-                    DevOps, GitOps e automação CI/CD
-                  </li>
-                </ul>
-              </Typography>
+              <ul className='mt-[1.2rem] mb-4 mx-4'>
+                <li> <Typography align='right' variant={'body1'}>Desenvolvimento Fullstack foco em Java</Typography> </li>
+                <li> <Typography align='right' variant={'body1'}>Infraestrutura em Nuvem (AWS, Azure e GCP)</Typography> </li>
+                <li> <Typography align='right' variant={'body1'}>Metodologias Ageis Scrum e Kanban</Typography> </li>
+                <li> <Typography align='right' variant={'body1'}>Configuração de Servidores</Typography> </li>
+                <li> <Typography align='right' variant={'body1'}>DevOps, GitOps e automação CI/CD</Typography> </li>
+              </ul>
+
             </Box>
 
             <Box>
