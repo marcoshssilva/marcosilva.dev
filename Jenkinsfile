@@ -77,6 +77,11 @@ try {
         }
         stage('Dokku - Sync and Deploy') {
           script {
+              if (env.BRANCH_NAME != 'main') {
+                echo 'Skipping when branch is not default.';
+                return;
+              }
+
               try {
                   sh "ssh dokku@dev.starlord443.dev -p 22 apps:exists marcosilva-dev || (ssh dokku@dev.starlord443.dev -p 22 apps:create marcosilva-dev)"
                   sh "ssh dokku@dev.starlord443.dev -p 22 builder:set marcosilva-dev selected pack"
