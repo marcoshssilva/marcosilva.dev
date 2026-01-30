@@ -768,7 +768,7 @@ exports[`Home render component 1`] = `
                 class="MuiTypography-root MuiTypography-body1 MuiTypography-alignRight css-1cg9ty5-MuiTypography-root"
                 style="--Typography-textAlign: right;"
               >
-                5+ anos
+                6+ anos
               </p>
             </div>
             <div
@@ -780,40 +780,60 @@ exports[`Home render component 1`] = `
               >
                 Habilidades
               </h6>
-              <p
-                class="MuiTypography-root MuiTypography-body1 MuiTypography-alignRight css-1agxnb9-MuiTypography-root"
-                style="--Typography-textAlign: right;"
+              <ul
+                class="mt-[1.2rem] mb-4 mx-4"
               >
-                <ul
-                  class=""
-                >
-                  <li
-                    class=""
+                <li>
+                   
+                  <p
+                    class="MuiTypography-root MuiTypography-body1 MuiTypography-alignRight css-1j3qii7-MuiTypography-root"
+                    style="--Typography-textAlign: right;"
                   >
                     Desenvolvimento Fullstack foco em Java
-                  </li>
-                  <li
-                    class="text-right"
+                  </p>
+                   
+                </li>
+                <li>
+                   
+                  <p
+                    class="MuiTypography-root MuiTypography-body1 MuiTypography-alignRight css-1j3qii7-MuiTypography-root"
+                    style="--Typography-textAlign: right;"
                   >
                     Infraestrutura em Nuvem (AWS, Azure e GCP)
-                  </li>
-                  <li
-                    class=""
+                  </p>
+                   
+                </li>
+                <li>
+                   
+                  <p
+                    class="MuiTypography-root MuiTypography-body1 MuiTypography-alignRight css-1j3qii7-MuiTypography-root"
+                    style="--Typography-textAlign: right;"
                   >
                     Metodologias Ageis Scrum e Kanban
-                  </li>
-                  <li
-                    class=""
+                  </p>
+                   
+                </li>
+                <li>
+                   
+                  <p
+                    class="MuiTypography-root MuiTypography-body1 MuiTypography-alignRight css-1j3qii7-MuiTypography-root"
+                    style="--Typography-textAlign: right;"
                   >
                     Configuração de Servidores
-                  </li>
-                  <li
-                    class=""
+                  </p>
+                   
+                </li>
+                <li>
+                   
+                  <p
+                    class="MuiTypography-root MuiTypography-body1 MuiTypography-alignRight css-1j3qii7-MuiTypography-root"
+                    style="--Typography-textAlign: right;"
                   >
                     DevOps, GitOps e automação CI/CD
-                  </li>
-                </ul>
-              </p>
+                  </p>
+                   
+                </li>
+              </ul>
             </div>
             <div
               class="MuiBox-root css-0"
