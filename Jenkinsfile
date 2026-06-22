@@ -1,4 +1,4 @@
-pipelineSimpleNpmNodeProject('marcosilva-dev', 'node-24',
+pipelineSimpleNpmNodeProject('marcosilva-dev', '24',
       [
           'ENABLE_SONARQUBE_CHECK': 'true',
           'DEPLOY': 'DOKKU',
