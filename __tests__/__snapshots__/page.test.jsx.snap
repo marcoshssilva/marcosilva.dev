@@ -126,13 +126,13 @@ exports[`Home render component 1`] = `
         <div
           class="MuiBox-root css-rntpfg"
         >
-          <button
+          <a
             class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-sizeLarge MuiButton-colorWarning css-5mnkq5-MuiButtonBase-root-MuiButton-root"
+            href="#section-contact-me"
             tabindex="0"
-            type="button"
           >
             Fale Comigo
-          </button>
+          </a>
         </div>
       </div>
     </div>
@@ -186,17 +186,17 @@ exports[`Home render component 1`] = `
         <div
           class="flex gap-4 flex-col md:flex-row md:w-[60%] MuiBox-root css-0"
         >
-          <button
+          <a
             class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-sizeMedium MuiButton-colorInherit css-f9ha1k-MuiButtonBase-root-MuiButton-root"
+            href="/#section-contact-me"
             tabindex="0"
-            type="button"
           >
             <span
               style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.35);"
             >
               Diga-me olá
             </span>
-          </button>
+          </a>
           <a
             class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorInherit css-jf0qh4-MuiButtonBase-root-MuiButton-root"
             href="/#section-projects"
@@ -889,6 +889,181 @@ exports[`Home render component 1`] = `
               </p>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="relative box-section background-contact-me MuiBox-root css-0"
+      id="section-contact-me"
+    >
+      <div
+        class="MuiContainer-root MuiContainer-maxWidthLg min-h-screen py-[97px] px-4 css-5c1adp-MuiContainer-root"
+      >
+        <h2
+          class="MuiTypography-root MuiTypography-h2 MuiTypography-alignLeft section-aboutme-title css-1ghxng7-MuiTypography-root"
+          style="--Typography-textAlign: left;"
+        >
+          #Contate-me
+        </h2>
+        <div
+          class="grid grid-cols-2 gap-2 mb-6 items-stretch MuiBox-root css-0"
+        >
+          <div
+            class="col-span-1 flex h-full MuiBox-root css-0"
+          >
+            <div
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root w-full h-full p-4 css-ipps7o-MuiPaper-root-MuiCard-root"
+              style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12); --Paper-overlay: linear-gradient(rgba(255, 255, 255, 0.051), rgba(255, 255, 255, 0.051));"
+            />
+          </div>
+          <form
+            autocomplete="off"
+            class="col-span-1 m-0 w-full py-6"
+            novalidate=""
+          >
+            <span
+              class="MuiTypography-root MuiTypography-caption mb-6 css-mpaqru-MuiTypography-root"
+            >
+              Gostaria de entrar em contato comigo?
+            </span>
+            <div
+              class="MuiBox-root css-o9hh3a"
+            />
+            <div
+              class="grid grid-cols-2 gap-2 mb-6 MuiBox-root css-0"
+            >
+              <div
+                class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
+              >
+                <label
+                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-filled MuiFormLabel-colorPrimary Mui-required MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-filled css-ksl3ul-MuiFormLabel-root-MuiInputLabel-root"
+                  data-shrink="false"
+                  for="nome"
+                  id="nome-label"
+                >
+                  Seu Nome
+                  <span
+                    aria-hidden="true"
+                    class="MuiFormLabel-asterisk MuiInputLabel-asterisk css-mzcsug-MuiFormLabel-asterisk"
+                  >
+                     
+                    *
+                  </span>
+                </label>
+                <div
+                  class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl css-6ipr6v-MuiInputBase-root-MuiFilledInput-root"
+                >
+                  <input
+                    aria-invalid="false"
+                    class="MuiInputBase-input MuiFilledInput-input css-pz8349-MuiInputBase-input-MuiFilledInput-input"
+                    id="nome"
+                    required=""
+                    type="text"
+                    value=""
+                  />
+                </div>
+              </div>
+              <div
+                class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
+              >
+                <label
+                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-filled MuiFormLabel-colorPrimary Mui-required MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-filled css-ksl3ul-MuiFormLabel-root-MuiInputLabel-root"
+                  data-shrink="false"
+                  for="email"
+                  id="email-label"
+                >
+                  Seu Email
+                  <span
+                    aria-hidden="true"
+                    class="MuiFormLabel-asterisk MuiInputLabel-asterisk css-mzcsug-MuiFormLabel-asterisk"
+                  >
+                     
+                    *
+                  </span>
+                </label>
+                <div
+                  class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl css-6ipr6v-MuiInputBase-root-MuiFilledInput-root"
+                >
+                  <input
+                    aria-invalid="false"
+                    class="MuiInputBase-input MuiFilledInput-input css-pz8349-MuiInputBase-input-MuiFilledInput-input"
+                    id="email"
+                    required=""
+                    type="email"
+                    value=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="grid grid-cols-1 gap-2 mb-6 MuiBox-root css-0"
+            >
+              <div
+                class="MuiFormControl-root MuiTextField-root css-1xp5r68-MuiFormControl-root-MuiTextField-root"
+              >
+                <label
+                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-filled MuiFormLabel-colorPrimary Mui-required MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-filled css-ksl3ul-MuiFormLabel-root-MuiInputLabel-root"
+                  data-shrink="false"
+                  for="mensagem"
+                  id="mensagem-label"
+                >
+                  Mensagem
+                  <span
+                    aria-hidden="true"
+                    class="MuiFormLabel-asterisk MuiInputLabel-asterisk css-mzcsug-MuiFormLabel-asterisk"
+                  >
+                     
+                    *
+                  </span>
+                </label>
+                <div
+                  class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiFilledInput-multiline MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-multiline css-qonvoy-MuiInputBase-root-MuiFilledInput-root"
+                >
+                  <textarea
+                    aria-invalid="false"
+                    class="MuiInputBase-input MuiFilledInput-input css-1cnnmui-MuiInputBase-input-MuiFilledInput-input"
+                    id="mensagem"
+                    required=""
+                    rows="10"
+                    style="height: 0px; overflow: hidden;"
+                  />
+                  <textarea
+                    aria-hidden="true"
+                    class="MuiInputBase-input MuiFilledInput-input css-1cnnmui-MuiInputBase-input-MuiFilledInput-input"
+                    readonly=""
+                    style="visibility: hidden; position: absolute; overflow: hidden; height: 0px; top: 0px; left: 0px; transform: translateZ(0); padding-top: 0px; padding-bottom: 0px; width: 100%;"
+                    tabindex="-1"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex justify-end MuiBox-root css-0"
+            >
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-sizeMedium MuiButton-colorPrimary css-1ulft33-MuiButtonBase-root-MuiButton-root"
+                tabindex="0"
+                type="submit"
+              >
+                <span
+                  class="MuiButton-icon MuiButton-startIcon css-1lxyhll-MuiButton-startIcon"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                    data-testid="SendIcon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M2.01 21 23 12 2.01 3 2 10l15 2-15 2z"
+                    />
+                  </svg>
+                </span>
+                Envie-me uma mensagem
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </section>
