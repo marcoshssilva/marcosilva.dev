@@ -41,6 +41,11 @@ const config: Config = {
   // Indicates which provider should be used to instrument code for coverage
   coverageProvider: "v8",
 
+  // Resolve alias @/ → ./src/ (igual ao tsconfig.json paths)
+  moduleNameMapper: {
+    "^@/(.*)$": "<rootDir>/src/$1",
+  },
+
   // A list of reporter names that Jest uses when writing coverage reports
   // coverageReporters: [
   //   "json",
