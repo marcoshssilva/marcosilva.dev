@@ -60,7 +60,7 @@ export default function MenuComponent() {
               </Box>
               <Box sx={{flexGrow: 1}}></Box>
               <Box sx={{ display: { xs: "none", sm: "flex" } }}>
-                <Button size="large" color="warning" variant="contained" sx={{ marginY: '8px' }}>
+                <Button size="large" color="warning" variant="contained" sx={{ marginY: '8px' }} href="#section-contact-me">
                   Fale Comigo
                 </Button>
               </Box>

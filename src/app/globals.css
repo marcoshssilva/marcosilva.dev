@@ -229,6 +229,10 @@ a:hover::before, .MuiButton-text:hover::before {
   /*opacity: 0.87;*/
 }
 
+.background-contact-me {
+  background: rgba(var(--background-start-rgb), 1);
+}
+
 .project-card-tags {
   display: flex;
   flex-wrap: wrap;
