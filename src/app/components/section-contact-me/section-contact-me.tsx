@@ -16,7 +16,7 @@ const darkTheme = createTheme({
 
 const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
-export default function HeaderContactMe() {
+export default function SectionContactMe() {
 
   const [nome, setNome] = React.useState("");
   const [email, setEmail] = React.useState("");
