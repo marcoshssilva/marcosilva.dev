@@ -51,6 +51,7 @@ export default function HeaderHelloComponent() {
               content={'Diga-me olá'}
               variant={'contained'}
               color={"inherit"}
+              href='/#section-contact-me'
             />
             <HeaderButtonHello
               content={'Meus projetos'}
