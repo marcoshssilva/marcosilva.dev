@@ -4,20 +4,20 @@ spec:
   - type: ci
     spec:
       steps:
-      - name: 'download_dependencies'
+      - name: 'call_npm_install'
         type: run
         spec:
-          container: node:20
+          container: node:24
           script: |-
             npm install --force
-      - name: 'run_tests'
+      - name: 'call_npm_tests'
         type: run
         spec:
-          container: node:20
+          container: node:24
           script: |-
             npm run lint
             npm run test
-      - name: 'run_build'
+      - name: 'call_npm_build'
         type: run
         spec:
           container: node:20

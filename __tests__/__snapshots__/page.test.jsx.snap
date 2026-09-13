@@ -99,21 +99,21 @@ exports[`Home render component 1`] = `
           class="MuiBox-root css-1guk29"
         >
           <a
-            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textWarning MuiButton-sizeLarge MuiButton-textSizeLarge MuiButton-colorWarning MuiButton-root MuiButton-text MuiButton-textWarning MuiButton-sizeLarge MuiButton-textSizeLarge MuiButton-colorWarning css-lmrzp6-MuiButtonBase-root-MuiButton-root"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeLarge MuiButton-colorWarning css-1t5lw6a-MuiButtonBase-root-MuiButton-root"
             href="/#header-hello"
             tabindex="0"
           >
             Ínicio
           </a>
           <a
-            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textWarning MuiButton-sizeLarge MuiButton-textSizeLarge MuiButton-colorWarning MuiButton-root MuiButton-text MuiButton-textWarning MuiButton-sizeLarge MuiButton-textSizeLarge MuiButton-colorWarning css-lmrzp6-MuiButtonBase-root-MuiButton-root"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeLarge MuiButton-colorWarning css-1t5lw6a-MuiButtonBase-root-MuiButton-root"
             href="/#section-projects"
             tabindex="0"
           >
             Projetos
           </a>
           <a
-            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textWarning MuiButton-sizeLarge MuiButton-textSizeLarge MuiButton-colorWarning MuiButton-root MuiButton-text MuiButton-textWarning MuiButton-sizeLarge MuiButton-textSizeLarge MuiButton-colorWarning css-lmrzp6-MuiButtonBase-root-MuiButton-root"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeLarge MuiButton-colorWarning css-1t5lw6a-MuiButtonBase-root-MuiButton-root"
             href="/#section-aboutme"
             tabindex="0"
           >
@@ -127,7 +127,7 @@ exports[`Home render component 1`] = `
           class="MuiBox-root css-rntpfg"
         >
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedWarning MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorWarning MuiButton-root MuiButton-contained MuiButton-containedWarning MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorWarning css-1jd9e9i-MuiButtonBase-root-MuiButton-root"
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-sizeLarge MuiButton-colorWarning css-5mnkq5-MuiButtonBase-root-MuiButton-root"
             tabindex="0"
             type="button"
           >
@@ -187,7 +187,7 @@ exports[`Home render component 1`] = `
           class="flex gap-4 flex-col md:flex-row md:w-[60%] MuiBox-root css-0"
         >
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedInherit MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorInherit MuiButton-root MuiButton-contained MuiButton-containedInherit MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorInherit css-1qu1y0m-MuiButtonBase-root-MuiButton-root"
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-sizeMedium MuiButton-colorInherit css-f9ha1k-MuiButtonBase-root-MuiButton-root"
             tabindex="0"
             type="button"
           >
@@ -198,7 +198,7 @@ exports[`Home render component 1`] = `
             </span>
           </button>
           <a
-            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit css-1twsrii-MuiButtonBase-root-MuiButton-root"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorInherit css-jf0qh4-MuiButtonBase-root-MuiButton-root"
             href="/#section-projects"
             tabindex="0"
           >
@@ -320,7 +320,7 @@ exports[`Home render component 1`] = `
                 class="my-4 absolute bottom-0 MuiBox-root css-0"
               >
                 <a
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-hjc5kd-MuiButtonBase-root-MuiIconButton-root"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1ijjcdo-MuiButtonBase-root-MuiIconButton-root"
                   href="https://github.com/marcoshssilva/MHPasswordManager"
                   tabindex="0"
                   target="_blank"
@@ -392,7 +392,7 @@ exports[`Home render component 1`] = `
                 class="my-4 absolute bottom-0 MuiBox-root css-0"
               >
                 <a
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-hjc5kd-MuiButtonBase-root-MuiIconButton-root"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1ijjcdo-MuiButtonBase-root-MuiIconButton-root"
                   href="https://github.com/marcoshssilva/client-ai"
                   tabindex="0"
                   target="_blank"
@@ -464,7 +464,7 @@ exports[`Home render component 1`] = `
                 class="my-4 absolute bottom-0 MuiBox-root css-0"
               >
                 <a
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-hjc5kd-MuiButtonBase-root-MuiIconButton-root"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1ijjcdo-MuiButtonBase-root-MuiIconButton-root"
                   href="https://github.com/marcoshssilva/app-registranotas-react-native"
                   tabindex="0"
                   target="_blank"
@@ -522,7 +522,7 @@ exports[`Home render component 1`] = `
                 class="my-4 absolute bottom-0 MuiBox-root css-0"
               >
                 <a
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-hjc5kd-MuiButtonBase-root-MuiIconButton-root"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1ijjcdo-MuiButtonBase-root-MuiIconButton-root"
                   href="https://github.com/marcoshssilva/global-library"
                   tabindex="0"
                   target="_blank"
@@ -580,7 +580,7 @@ exports[`Home render component 1`] = `
                 class="my-4 absolute bottom-0 MuiBox-root css-0"
               >
                 <a
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-hjc5kd-MuiButtonBase-root-MuiIconButton-root"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1ijjcdo-MuiButtonBase-root-MuiIconButton-root"
                   href="https://github.com/marcoshssilva/nexus3-kubernetes"
                   tabindex="0"
                   target="_blank"
@@ -631,7 +631,7 @@ exports[`Home render component 1`] = `
                 class="my-4 absolute bottom-0 MuiBox-root css-0"
               >
                 <a
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-hjc5kd-MuiButtonBase-root-MuiIconButton-root"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1ijjcdo-MuiButtonBase-root-MuiIconButton-root"
                   href="https://github.com/marcoshssilva/docker-jenkins-agent"
                   tabindex="0"
                   target="_blank"
@@ -850,7 +850,7 @@ exports[`Home render component 1`] = `
               >
                 <a
                   aria-label="linkedin"
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-hjc5kd-MuiButtonBase-root-MuiIconButton-root"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1ijjcdo-MuiButtonBase-root-MuiIconButton-root"
                   href="https://www.linkedin.com/in/marcos-henrique-santana/"
                   tabindex="0"
                   target="_blank"
@@ -869,7 +869,7 @@ exports[`Home render component 1`] = `
                 </a>
                 <a
                   aria-label="github"
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-hjc5kd-MuiButtonBase-root-MuiIconButton-root"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1ijjcdo-MuiButtonBase-root-MuiIconButton-root"
                   href="https://github.com/marcoshssilva"
                   tabindex="0"
                   target="_blank"
