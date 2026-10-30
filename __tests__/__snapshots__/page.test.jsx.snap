@@ -99,21 +99,21 @@ exports[`Home render component 1`] = `
           class="MuiBox-root css-1guk29"
         >
           <a
-            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeLarge MuiButton-colorWarning css-1t5lw6a-MuiButtonBase-root-MuiButton-root"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeLarge MuiButton-colorWarning css-niffyi-MuiButtonBase-root-MuiButton-root"
             href="/#header-hello"
             tabindex="0"
           >
             Ínicio
           </a>
           <a
-            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeLarge MuiButton-colorWarning css-1t5lw6a-MuiButtonBase-root-MuiButton-root"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeLarge MuiButton-colorWarning css-niffyi-MuiButtonBase-root-MuiButton-root"
             href="/#section-projects"
             tabindex="0"
           >
             Projetos
           </a>
           <a
-            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeLarge MuiButton-colorWarning css-1t5lw6a-MuiButtonBase-root-MuiButton-root"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeLarge MuiButton-colorWarning css-niffyi-MuiButtonBase-root-MuiButton-root"
             href="/#section-aboutme"
             tabindex="0"
           >
@@ -127,7 +127,7 @@ exports[`Home render component 1`] = `
           class="MuiBox-root css-rntpfg"
         >
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-sizeLarge MuiButton-colorWarning css-5mnkq5-MuiButtonBase-root-MuiButton-root"
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-sizeLarge MuiButton-colorWarning css-14znjsc-MuiButtonBase-root-MuiButton-root"
             tabindex="0"
             type="button"
           >
@@ -187,7 +187,7 @@ exports[`Home render component 1`] = `
           class="flex gap-4 flex-col md:flex-row md:w-[60%] MuiBox-root css-0"
         >
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-sizeMedium MuiButton-colorInherit css-f9ha1k-MuiButtonBase-root-MuiButton-root"
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-sizeMedium MuiButton-colorInherit css-1l6bad7-MuiButtonBase-root-MuiButton-root"
             tabindex="0"
             type="button"
           >
@@ -198,7 +198,7 @@ exports[`Home render component 1`] = `
             </span>
           </button>
           <a
-            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorInherit css-jf0qh4-MuiButtonBase-root-MuiButton-root"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorInherit css-8ul3yq-MuiButtonBase-root-MuiButton-root"
             href="/#section-projects"
             tabindex="0"
           >
