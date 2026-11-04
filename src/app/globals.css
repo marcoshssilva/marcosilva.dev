@@ -273,6 +273,16 @@ a:hover::before, .MuiButton-text:hover::before {
   font-family: "BabaPro Bold", system-ui !important;
 }
 
+.section-contactme-title {
+  color: #ffc409;
+  background: linear-gradient(90deg, #ffc409 0%, #fff6d6 48%, #00e1ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "BabaPro Bold", system-ui !important;
+  filter: drop-shadow(3px 3px 0px #151924) drop-shadow(0 0 14px rgba(255, 196, 9, 0.22));
+  letter-spacing: 0.04em;
+}
+
 .section-aboutme-name {
   color: var(--foreground-rgb);
   background: linear-gradient(45deg, var(--color-medium-tint), var(--color-white-tint));
@@ -389,4 +399,25 @@ a:hover::before, .MuiButton-text:hover::before {
 
 .box-content a:hover {
   letter-spacing: .2em;
+}
+
+@keyframes retro-border-pulse {
+  0%, 100% {
+    border-color: #AA954F;
+    box-shadow: inset 0 0 0 2px #1c2230, 0 0 18px rgba(170, 149, 79, 0.25);
+  }
+  50% {
+    border-color: #ffc409;
+    box-shadow: inset 0 0 0 2px #262c3d, 0 0 26px rgba(0, 225, 255, 0.22);
+  }
+}
+
+.contact-section-screen-frame {
+  position: relative;
+  border: 2px solid #AA954F;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(0, 225, 255, 0.05), transparent 60%),
+    linear-gradient(180deg, #07090e 0%, #0b0e17 100%);
+  box-shadow: inset 0 0 0 2px #1c2230, 0 0 24px rgba(170, 149, 79, 0.2);
+  animation: retro-border-pulse 5s ease-in-out infinite;
 }
