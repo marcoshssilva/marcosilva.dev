@@ -35,34 +35,32 @@ function getSpeechText(
   nome: string,
   customMessage: string | null
 ): string {
-  if (customMessage) {
-    return customMessage;
-  }
-  if (activity === "celebrating") {
-    return "Boa!! Recebi sua mensagem aqui no servidor! Já já te respondo! 🚀";
-  }
-  if (activity === "alert") {
-    return "Ops! Faltou preencher algum campo obrigatório ali no formulário 👉";
-  }
-  if (activity === "listening") {
-    const firstName = nome.trim().split(" ")[0];
-    if (activeField === "nome") {
-      return firstName
-        ? `Opa, prazer em te conhecer, ${firstName}! 👋`
-        : "Opa! Como posso te chamar? 👀";
+  if (customMessage) return customMessage;
+  switch (activity) {
+    case "celebrating":
+      return "Boa!! Recebi sua mensagem aqui no servidor! Já já te respondo! 🚀";
+    case "alert":
+      return "Ops! Faltou preencher algum campo obrigatório ali no formulário 👉";
+    case "listening": {
+      const firstName = nome.trim().split(" ")[0];
+      switch (activeField) {
+        case "nome":
+          return firstName
+            ? `Opa, prazer em te conhecer, ${firstName}! 👋`
+            : "Opa! Como posso te chamar? 👀";
+        case "email":
+          return "Anotando seu e-mail aqui no terminal... 📬";
+        default:
+          return "Tô lendo sua mensagem! Pode escrever à vontade ✍️";
+      }
     }
-    if (activeField === "email") {
-      return "Anotando seu e-mail aqui no terminal... 📬";
-    }
-    return "Tô lendo sua mensagem! Pode escrever à vontade ✍️";
+    case "coffee":
+      return "Pausa estratégica pro café ☕ Sem café, sem deploy em produção!";
+    case "server":
+      return "Monitorando os clusters Cloud & pipelines CI/CD... Tudo verde! 🟢";
+    default:
+      return "Codando microsserviços e arquitetura Cloud... Manda um oi aí do lado! 💻";
   }
-  if (activity === "coffee") {
-    return "Pausa estratégica pro café ☕ Sem café, sem deploy em produção!";
-  }
-  if (activity === "server") {
-    return "Monitorando os clusters Cloud & pipelines CI/CD... Tudo verde! 🟢";
-  }
-  return "Codando microsserviços e arquitetura Cloud... Manda um oi aí do lado! 💻";
 }
 
 export default function PixelDevCard({
