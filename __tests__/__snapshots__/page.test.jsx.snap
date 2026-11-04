@@ -133,7 +133,7 @@ exports[`Home render component 1`] = `
           class="MuiBox-root css-1n1scir"
         >
           <a
-            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeLarge MuiButton-colorWarning css-k3oddn-MuiButtonBase-root-MuiButton-root"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeLarge MuiButton-colorWarning css-2n2h92-MuiButtonBase-root-MuiButton-root"
             href="/#header-hello"
             tabindex="0"
           >
@@ -145,7 +145,7 @@ exports[`Home render component 1`] = `
             Ínicio
           </a>
           <a
-            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeLarge MuiButton-colorWarning css-k3oddn-MuiButtonBase-root-MuiButton-root"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeLarge MuiButton-colorWarning css-2n2h92-MuiButtonBase-root-MuiButton-root"
             href="/#section-projects"
             tabindex="0"
           >
@@ -157,7 +157,7 @@ exports[`Home render component 1`] = `
             Projetos
           </a>
           <a
-            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeLarge MuiButton-colorWarning css-k3oddn-MuiButtonBase-root-MuiButton-root"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeLarge MuiButton-colorWarning css-2n2h92-MuiButtonBase-root-MuiButton-root"
             href="/#section-aboutme"
             tabindex="0"
           >
@@ -176,7 +176,7 @@ exports[`Home render component 1`] = `
           class="MuiBox-root css-rntpfg"
         >
           <a
-            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-sizeLarge MuiButton-colorWarning css-90p5ln-MuiButtonBase-root-MuiButton-root"
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-sizeLarge MuiButton-colorWarning css-appiis-MuiButtonBase-root-MuiButton-root"
             href="#section-contact-me"
             tabindex="0"
           >
@@ -274,7 +274,7 @@ exports[`Home render component 1`] = `
               "
               As pessoas não sabem o que querem, até mostrarmos a elas.
               "
-
+               
               <br />
               <span
                 class="MuiBox-root css-kfje3k"
@@ -303,7 +303,7 @@ exports[`Home render component 1`] = `
             class="flex gap-4 flex-col md:flex-row MuiBox-root css-0"
           >
             <a
-              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-sizeMedium MuiButton-colorInherit css-1txl631-MuiButtonBase-root-MuiButton-root"
+              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-sizeMedium MuiButton-colorInherit css-1ms986g-MuiButtonBase-root-MuiButton-root"
               href="/#section-contact-me"
               tabindex="0"
             >
@@ -314,7 +314,7 @@ exports[`Home render component 1`] = `
               </span>
             </a>
             <a
-              class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorInherit css-4b84qo-MuiButtonBase-root-MuiButton-root"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorInherit css-uc958q-MuiButtonBase-root-MuiButton-root"
               href="/#section-projects"
               tabindex="0"
             >
@@ -493,51 +493,51 @@ exports[`Home render component 1`] = `
                   <span
                     class="project-card-tag"
                   >
-
+                     
                     Spring Boot
-
+                     
                   </span>
                   <span
                     class="project-card-tag"
                   >
-
+                     
                     Spring Cloud
-
+                     
                   </span>
                   <span
                     class="project-card-tag"
                   >
-
+                     
                     OAuth2
-
+                     
                   </span>
                   <span
                     class="project-card-tag"
                   >
-
+                     
                     RabbitMQ
-
+                     
                   </span>
                   <span
                     class="project-card-tag"
                   >
-
+                     
                     Postgres
-
+                     
                   </span>
                   <span
                     class="project-card-tag"
                   >
-
+                     
                     Mongo
-
+                     
                   </span>
                   <span
                     class="project-card-tag"
                   >
-
+                     
                     Redis
-
+                     
                   </span>
                 </div>
               </div>
@@ -615,30 +615,30 @@ exports[`Home render component 1`] = `
                   <span
                     class="project-card-tag"
                   >
-
+                     
                     SpringBoot
-
+                     
                   </span>
                   <span
                     class="project-card-tag"
                   >
-
+                     
                     Azure
-
+                     
                   </span>
                   <span
                     class="project-card-tag"
                   >
-
+                     
                     OpenAI
-
+                     
                   </span>
                   <span
                     class="project-card-tag"
                   >
-
+                     
                     Spring AI
-
+                     
                   </span>
                 </div>
               </div>
@@ -716,30 +716,30 @@ exports[`Home render component 1`] = `
                   <span
                     class="project-card-tag"
                   >
-
+                     
                     React Native
-
+                     
                   </span>
                   <span
                     class="project-card-tag"
                   >
-
+                     
                     Android
-
+                     
                   </span>
                   <span
                     class="project-card-tag"
                   >
-
+                     
                     Firebase
-
+                     
                   </span>
                   <span
                     class="project-card-tag"
                   >
-
+                     
                     Google Auth
-
+                     
                   </span>
                 </div>
               </div>
@@ -817,16 +817,16 @@ exports[`Home render component 1`] = `
                   <span
                     class="project-card-tag"
                   >
-
+                     
                     Groovy
-
+                     
                   </span>
                   <span
                     class="project-card-tag"
                   >
-
+                     
                     Jenkins CI/CD
-
+                     
                   </span>
                 </div>
               </div>
@@ -904,16 +904,16 @@ exports[`Home render component 1`] = `
                   <span
                     class="project-card-tag"
                   >
-
+                     
                     Helm
-
+                     
                   </span>
                   <span
                     class="project-card-tag"
                   >
-
+                     
                     Kubernetes
-
+                     
                   </span>
                 </div>
               </div>
@@ -991,9 +991,9 @@ exports[`Home render component 1`] = `
                   <span
                     class="project-card-tag"
                   >
-
+                     
                     Docker
-
+                     
                   </span>
                 </div>
               </div>
@@ -2638,7 +2638,7 @@ exports[`Home render component 1`] = `
                 CHARS: 0 // UTF-8
               </span>
               <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-sizeMedium MuiButton-colorPrimary css-g42fo6-MuiButtonBase-root-MuiButton-root"
+                class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-sizeMedium MuiButton-colorPrimary css-lwyina-MuiButtonBase-root-MuiButton-root"
                 tabindex="0"
                 type="submit"
               >

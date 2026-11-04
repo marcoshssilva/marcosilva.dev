@@ -8,7 +8,7 @@ jest.mock("@/app/actions/sendContactMeGetFormDataAction", () => ({
   sendContactMeGetFormDataAction: jest.fn(),
 }));
 
-// eslint-disable-next-line @typescript-eslint/no-require-imports
+ 
 const { sendContactMeGetFormDataAction } = require("@/app/actions/sendContactMeGetFormDataAction");
 const mockSendAction = sendContactMeGetFormDataAction as jest.MockedFunction<
   typeof sendContactMeGetFormDataAction
