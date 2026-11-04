@@ -9,7 +9,7 @@ spec:
         spec:
           container: node:24
           script: |-
-            npm install --force
+            npm ci --ignore-scripts --no-audit --no-fund
       - name: 'call_npm_tests'
         type: run
         spec:
@@ -20,6 +20,6 @@ spec:
       - name: 'call_npm_build'
         type: run
         spec:
-          container: node:20
+          container: node:24
           script: |-
             npm run build
