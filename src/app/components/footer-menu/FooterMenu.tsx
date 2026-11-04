@@ -5,20 +5,21 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import CallMadeOutlinedIcon from "@mui/icons-material/CallMadeOutlined";
 
 import MenuLogoGroup from "@/app/components/menu/menu-logo-group";
+import { FooterNavLinkItem, FooterRepoLinkItem } from "@/app/types";
 
-const sectionLinks = [
+const sectionLinks: FooterNavLinkItem[] = [
   { label: "Ínicio", href: "/#header-hello" },
   { label: "Projetos", href: "/#section-projects" },
   { label: "Sobre Mim", href: "/#section-aboutme" },
   { label: "Fale Comigo", href: "/#section-contact-me" },
 ];
 
-const dataControlLinks = [
+const dataControlLinks: FooterNavLinkItem[] = [
   { label: "Termos de Serviço", href: "#termos-de-servico" },
   { label: "Política de Privacidade", href: "#politica-de-privacidade" },
 ];
 
-const projectGithubLinks = [
+const projectGithubLinks: FooterRepoLinkItem[] = [
   {
     title: "MHPasswordManager",
     href: "https://github.com/marcoshssilva/MHPasswordManager",

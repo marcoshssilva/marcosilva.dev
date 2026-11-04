@@ -1,22 +1,12 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { Box, Card, Typography } from "@mui/material";
-
-export type PixelActivity =
-  | "coding"
-  | "coffee"
-  | "server"
-  | "listening"
-  | "celebrating"
-  | "alert";
-
-export interface PixelDevCardProps {
-  nome?: string;
-  email?: string;
-  mensagem?: string;
-  hasError?: boolean;
-  isSuccess?: boolean;
-}
+import {
+  ContactFormEventDetail,
+  PixelActiveField,
+  PixelActivity,
+  PixelDevCardProps,
+} from "@/app/types";
 
 const ROUTINE_CYCLE: PixelActivity[] = ["coding", "coding", "coffee", "coding", "server"];
 
@@ -31,7 +21,7 @@ const ACTIVITY_LABELS: Record<PixelActivity, { badge: string; color: string }> =
 
 function getSpeechText(
   activity: PixelActivity,
-  activeField: "none" | "nome" | "email" | "mensagem",
+  activeField: PixelActiveField,
   nome: string,
   customMessage: string | null
 ): string {
@@ -93,13 +83,7 @@ export default function PixelDevCard({
   // Escuta eventos disparados pelo componente FormContactMe
   useEffect(() => {
     const handleFormSync = (event: Event) => {
-      const customEvent = event as CustomEvent<{
-        nome: string;
-        email: string;
-        mensagem: string;
-        hasError: boolean;
-        isSuccess: boolean;
-      }>;
+      const customEvent = event as CustomEvent<ContactFormEventDetail>;
       if (customEvent.detail) {
         setSyncedForm(customEvent.detail);
       }
@@ -124,7 +108,7 @@ export default function PixelDevCard({
     return () => clearInterval(routineTimer);
   }, []);
 
-  const resolveActiveField = (): "none" | "nome" | "email" | "mensagem" => {
+  const resolveActiveField = (): PixelActiveField => {
     if (mensagem.trim().length > 0) return "mensagem";
     if (email.trim().length > 0) return "email";
     if (nome.trim().length > 0) return "nome";

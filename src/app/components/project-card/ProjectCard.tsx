@@ -7,7 +7,7 @@ import {
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LanguageIcon from '@mui/icons-material/Language';
 
-import { ProjectCardDataProps } from "@/app/types";
+import { ProjectCardButtonIconProps, ProjectCardDataProps } from "@/app/types";
 
 export default function ProjectCard({ project }: ProjectCardDataProps) {
   return (
@@ -155,7 +155,7 @@ export default function ProjectCard({ project }: ProjectCardDataProps) {
   );
 }
 
-function ProjectCardButtonIcon({ icon }: { icon: string }) {
+function ProjectCardButtonIcon({ icon }: ProjectCardButtonIconProps) {
   switch (icon) {
     case 'github':
       return (<GitHubIcon fontSize="small" />);

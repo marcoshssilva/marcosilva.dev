@@ -4,6 +4,7 @@ import { Alert, Box, Button, TextField, Typography } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
 
 import { sendContactMeGetFormDataAction } from "@/app/actions/sendContactMeGetFormDataAction";
+import { ContactFormEventDetail, FormHudStatus } from "@/app/types";
 
 const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
@@ -54,7 +55,7 @@ function getFormHudStatus(
   showAlert: boolean,
   hasError: boolean,
   isTyping: boolean
-): { label: string; color: string } {
+): FormHudStatus {
   if (showAlert) {
     return { label: "PACOTE ENVIADO!", color: "#2dd36f" };
   }
@@ -65,14 +66,6 @@ function getFormHudStatus(
     return { label: "CAMPOS PENDENTES", color: "#eb445a" };
   }
   return { label: "AGUARDANDO INPUT", color: "#00e1ff" };
-}
-
-export interface ContactFormEventDetail {
-  nome: string;
-  email: string;
-  mensagem: string;
-  hasError: boolean;
-  isSuccess: boolean;
 }
 
 function emitFormSync(detail: ContactFormEventDetail) {
