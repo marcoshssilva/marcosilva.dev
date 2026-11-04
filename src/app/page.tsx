@@ -13,6 +13,7 @@ import SectionProjects from "@/app/components/section-projects/SectionProjects";
 import SectionAboutme from "@/app/components/section-aboutme/SectionAboutme";
 import Background from "@/app/components/background/background";
 import SectionContactMe from "./components/section-contact-me/SectionContactMe";
+import FooterMenu from "@/app/components/footer-menu/FooterMenu";
 
 const darkTheme = createTheme({
   palette: {
@@ -32,6 +33,7 @@ export default function Home() {
           <SectionAboutme />
           <SectionContactMe />
         </Box>
+        <FooterMenu />
       </ThemeProvider>
     </>
   );
