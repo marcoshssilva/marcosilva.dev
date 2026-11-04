@@ -9,6 +9,9 @@
     "lint": "eslint .",
     "docker:build-image": "docker build --tag marcosilva-dev-website:latest .",
     "docker:run-compose": "docker compose -f 'docker-compose.yaml' up -d",
+    "sonar:sync-version": "node ./etc/scripts/sync-sonar-version.mjs",
+    "pretest": "npm run sonar:sync-version",
+    "version": "npm run sonar:sync-version && git add sonar-project.properties",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:update": "jest -u"
