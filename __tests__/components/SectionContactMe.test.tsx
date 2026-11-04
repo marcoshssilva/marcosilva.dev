@@ -199,4 +199,61 @@ describe("SectionContactMe", () => {
       });
     });
   });
+
+  describe("PixelDevCard interatividade", () => {
+    it("deve renderizar o card 2D Pixel Art e reagir aos botões interativos e cliques", async () => {
+      jest.useFakeTimers();
+      render(<SectionContactMe />);
+
+      expect(screen.getByTestId("pixel-dev-card")).toBeInTheDocument();
+      expect(
+        screen.getByRole("img", { name: /Boneco 2D Pixel Art do Marcos Henrique/i })
+      ).toBeInTheDocument();
+
+      // Avança os timers de frame e rotina automática completa (coding -> coffee -> server)
+      await act(async () => {
+        jest.advanceTimersByTime(24000);
+      });
+
+      // Submete o formulário vazio (inválido) para acionar o estado de alerta/erro
+      const form = screen.getByRole("button", { name: /Envie-me uma mensagem/i }).closest("form")!;
+      await act(async () => {
+        fireEvent.submit(form);
+      });
+      expect(screen.getByTestId("pixel-speech-bubble")).toHaveTextContent(/campo obrigatório/i);
+
+      // Clica no botão Dar Café
+      await act(async () => {
+        fireEvent.click(screen.getByRole("button", { name: /Dar Café/i }));
+      });
+      expect(screen.getByTestId("pixel-speech-bubble")).toHaveTextContent(/cafezinho quente/i);
+
+      // Clica no botão Deploy
+      await act(async () => {
+        fireEvent.click(screen.getByRole("button", { name: /Deploy/i }));
+      });
+      expect(screen.getByTestId("pixel-speech-bubble")).toHaveTextContent(/Deploy em produção/i);
+
+      // Clica no botão Chamar
+      await act(async () => {
+        fireEvent.click(screen.getByRole("button", { name: /Chamar/i }));
+      });
+      expect(screen.getByTestId("pixel-speech-bubble")).toHaveTextContent(/Manda sua mensagem/i);
+
+      // Clica diretamente na cena pixel art
+      await act(async () => {
+        fireEvent.click(
+          screen.getByRole("img", { name: /Boneco 2D Pixel Art do Marcos Henrique/i })
+        );
+      });
+      expect(screen.getByTestId("pixel-speech-bubble")).toHaveTextContent(/escritório 8-bit/i);
+
+      // Expira o timeout da ação manual para voltar à rotina
+      await act(async () => {
+        jest.advanceTimersByTime(4500);
+      });
+
+      jest.useRealTimers();
+    });
+  });
 });
