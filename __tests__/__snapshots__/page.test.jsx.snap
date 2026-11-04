@@ -25,16 +25,50 @@ exports[`Home render component 1`] = `
     style="--Paper-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12); --Paper-overlay: linear-gradient(rgba(255, 255, 255, 0.092), rgba(255, 255, 255, 0.092));"
   >
     <div
+      class="MuiBox-root css-1r8qeh3"
+    >
+      <div
+        class="MuiBox-root css-1w71xjo"
+      >
+        <div
+          class="MuiBox-root css-a402ac"
+        />
+        <div
+          class="MuiBox-root css-1zmahj"
+        />
+        <div
+          class="MuiBox-root css-vdrvbr"
+        />
+        <span
+          class="MuiTypography-root MuiTypography-caption css-1nlj98d-MuiTypography-root"
+        >
+          NAV_SYS // MARCOSILVA.DEV
+        </span>
+      </div>
+      <div
+        class="MuiBox-root css-sgu34r"
+      >
+        <div
+          class="MuiBox-root css-gkaflh"
+        />
+        <span
+          class="MuiTypography-root MuiTypography-caption css-11ptz1b-MuiTypography-root"
+        >
+          [SESSION: ACTIVE // UTF-8]
+        </span>
+      </div>
+    </div>
+    <div
       class="MuiContainer-root MuiContainer-maxWidthLg css-5c1adp-MuiContainer-root"
     >
       <div
-        class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular items-center css-1ygil4i-MuiToolbar-root"
+        class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular items-center css-46uzwd-MuiToolbar-root"
       >
         <div
-          class="MuiBox-root css-1ebprri"
+          class="MuiBox-root css-pb69ky"
         >
           <a
-            class="MuiTypography-root MuiTypography-body1 menu-header-logo css-rizt0-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 menu-header-logo css-1lr89bq-MuiTypography-root"
             href="/"
           >
             <img
@@ -42,52 +76,52 @@ exports[`Home render component 1`] = `
               class="inline-block"
               data-nimg="1"
               decoding="async"
-              height="37.78"
+              height="33"
               loading="lazy"
               src="/_next/image?url=%2Fimages%2Flogo%2Flogo.png&w=128&q=75"
               srcset="/_next/image?url=%2Fimages%2Flogo%2Flogo.png&w=64&q=75 1x, /_next/image?url=%2Fimages%2Flogo%2Flogo.png&w=128&q=75 2x"
               style="color: transparent;"
-              width="62"
+              width="54"
             />
             <div
-              class="MuiBox-root css-0"
+              class="MuiBox-root css-13b65n"
             >
               <img
                 alt="MarcoSilva"
                 class="inline-block"
                 data-nimg="1"
                 decoding="async"
-                height="14.3"
+                height="14"
                 loading="lazy"
                 src="/_next/image?url=%2Fimages%2Flogo%2FMarcoSilva.png&w=256&q=75"
                 srcset="/_next/image?url=%2Fimages%2Flogo%2FMarcoSilva.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Flogo%2FMarcoSilva.png&w=256&q=75 2x"
                 style="color: transparent;"
-                width="115"
+                width="110"
               />
               <img
                 alt="globe"
                 class="inline-block"
                 data-nimg="1"
                 decoding="async"
-                height="14.3"
+                height="14"
                 id="menu-globe"
                 loading="lazy"
                 src="/_next/image?url=%2Fimages%2Flogo%2Fglobo-language-pink.png&w=32&q=75"
                 srcset="/_next/image?url=%2Fimages%2Flogo%2Fglobo-language-pink.png&w=32&q=75 1x"
                 style="color: transparent;"
-                width="14.3"
+                width="14"
               />
               <img
                 alt="DEV"
                 class="inline-block"
                 data-nimg="1"
                 decoding="async"
-                height="14.3"
+                height="14"
                 loading="lazy"
                 src="/_next/image?url=%2Fimages%2Flogo%2FDEV.png&w=96&q=75"
                 srcset="/_next/image?url=%2Fimages%2Flogo%2FDEV.png&w=48&q=75 1x, /_next/image?url=%2Fimages%2Flogo%2FDEV.png&w=96&q=75 2x"
                 style="color: transparent;"
-                width="36"
+                width="34"
               />
             </div>
           </a>
@@ -96,27 +130,42 @@ exports[`Home render component 1`] = `
           class="MuiBox-root css-i9gxme"
         />
         <div
-          class="MuiBox-root css-1guk29"
+          class="MuiBox-root css-1n1scir"
         >
           <a
-            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeLarge MuiButton-colorWarning css-1t5lw6a-MuiButtonBase-root-MuiButton-root"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeLarge MuiButton-colorWarning css-k3oddn-MuiButtonBase-root-MuiButton-root"
             href="/#header-hello"
             tabindex="0"
           >
+            <span
+              class="MuiBox-root css-yxe8gp"
+            >
+              01.
+            </span>
             Ínicio
           </a>
           <a
-            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeLarge MuiButton-colorWarning css-1t5lw6a-MuiButtonBase-root-MuiButton-root"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeLarge MuiButton-colorWarning css-k3oddn-MuiButtonBase-root-MuiButton-root"
             href="/#section-projects"
             tabindex="0"
           >
+            <span
+              class="MuiBox-root css-yxe8gp"
+            >
+              02.
+            </span>
             Projetos
           </a>
           <a
-            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeLarge MuiButton-colorWarning css-1t5lw6a-MuiButtonBase-root-MuiButton-root"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeLarge MuiButton-colorWarning css-k3oddn-MuiButtonBase-root-MuiButton-root"
             href="/#section-aboutme"
             tabindex="0"
           >
+            <span
+              class="MuiBox-root css-yxe8gp"
+            >
+              03.
+            </span>
             Sobre Mim
           </a>
         </div>
@@ -127,7 +176,7 @@ exports[`Home render component 1`] = `
           class="MuiBox-root css-rntpfg"
         >
           <a
-            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-sizeLarge MuiButton-colorWarning css-5mnkq5-MuiButtonBase-root-MuiButton-root"
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-sizeLarge MuiButton-colorWarning css-90p5ln-MuiButtonBase-root-MuiButton-root"
             href="#section-contact-me"
             tabindex="0"
           >
@@ -145,80 +194,148 @@ exports[`Home render component 1`] = `
       class="MuiContainer-root MuiContainer-maxWidthLg lg:pt-0 min-h-screen grid grid-cols-1 md:grid-cols-12 gap-5 pt-[97px] css-5c1adp-MuiContainer-root"
     >
       <div
-        class="absolute top-1/2 -translate-y-1/2 p-3 MuiBox-root css-0"
+        class="absolute top-1/2 -translate-y-1/2 overflow-hidden MuiBox-root css-cz60pe"
       >
-        <h1
-          class="MuiTypography-root MuiTypography-h1 css-w18mu-MuiTypography-root"
-        >
-          Bem-vindo(a) ao meu portifólio
-        </h1>
-        <img
-          alt="DEV"
-          class="my-0 mx-auto lg:mx-0"
-          data-nimg="1"
-          decoding="async"
-          height="178"
-          loading="lazy"
-          src="/_next/image?url=%2Fimages%2Fheaders%2FTitle.png&w=1920&q=75"
-          srcset="/_next/image?url=%2Fimages%2Fheaders%2FTitle.png&w=750&q=75 1x, /_next/image?url=%2Fimages%2Fheaders%2FTitle.png&w=1920&q=75 2x"
-          style="color: transparent; padding-top: 1.2rem; padding-bottom: 0.1rem;"
-          width="720"
-        />
-        <h1
-          class="MuiTypography-root MuiTypography-h1 css-ceyije-MuiTypography-root"
-        >
-          Desenvolvedor de Software
-        </h1>
-        <p
-          class="MuiTypography-root MuiTypography-body1 css-vucwgi-MuiTypography-root"
-        >
-          "
-          As pessoas não sabem o que querem, até mostrarmos a elas.
-          "
-           
-          <br />
-            - Steve Jobs
-        </p>
-        <hr
-          class="MuiDivider-root MuiDivider-fullWidth css-1wm0ltw-MuiDivider-root"
-          color="ffc409"
-        />
         <div
-          class="flex gap-4 flex-col md:flex-row md:w-[60%] MuiBox-root css-0"
+          class="MuiBox-root css-1614cor"
         >
-          <a
-            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-sizeMedium MuiButton-colorInherit css-f9ha1k-MuiButtonBase-root-MuiButton-root"
-            href="/#section-contact-me"
-            tabindex="0"
+          <div
+            class="MuiBox-root css-axw7ok"
           >
+            <div
+              class="MuiBox-root css-9218an"
+            />
+            <div
+              class="MuiBox-root css-1hm9hj5"
+            />
+            <div
+              class="MuiBox-root css-12c35yr"
+            />
             <span
-              style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.35);"
+              class="MuiTypography-root MuiTypography-caption css-56idqn-MuiTypography-root"
             >
-              Diga-me olá
+              SYS://MARCOSILVA.DEV/HOME
             </span>
-          </a>
-          <a
-            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorInherit css-jf0qh4-MuiButtonBase-root-MuiButton-root"
-            href="/#section-projects"
-            tabindex="0"
+          </div>
+          <div
+            class="MuiBox-root css-1jfj49q"
           >
-            <span
-              style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.35);"
+            ONLINE // V1.2.0
+          </div>
+        </div>
+        <div
+          class="MuiBox-root css-15vwu91"
+        >
+          <span
+            class="MuiTypography-root MuiTypography-caption css-1nflbin-MuiTypography-root"
+          >
+            [BOOT_SEQUENCE // WELCOME]
+          </span>
+          <h1
+            class="MuiTypography-root MuiTypography-h1 css-1q9pgx5-MuiTypography-root"
+          >
+            Bem-vindo(a) ao meu portifólio
+          </h1>
+          <img
+            alt="DEV"
+            class="my-0 mx-auto lg:mx-0"
+            data-nimg="1"
+            decoding="async"
+            height="178"
+            loading="lazy"
+            src="/_next/image?url=%2Fimages%2Fheaders%2FTitle.png&w=1920&q=75"
+            srcset="/_next/image?url=%2Fimages%2Fheaders%2FTitle.png&w=750&q=75 1x, /_next/image?url=%2Fimages%2Fheaders%2FTitle.png&w=1920&q=75 2x"
+            style="color: transparent; padding-top: 1rem; padding-bottom: 0.5rem; filter: drop-shadow(0 0 14px rgba(0, 225, 255, 0.2));"
+            width="720"
+          />
+          <div
+            class="MuiBox-root css-1v5wup2"
+          >
+            <div
+              class="MuiBox-root css-h6qto9"
+            />
+            <h1
+              class="MuiTypography-root MuiTypography-h1 css-hhh4r-MuiTypography-root"
             >
-              Meus projetos
-            </span>
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-              data-testid="CallMadeOutlinedIcon"
-              focusable="false"
-              viewBox="0 0 24 24"
+              Desenvolvedor de Software
+            </h1>
+          </div>
+          <div
+            class="MuiBox-root css-1hdv8op"
+          >
+            <p
+              class="MuiTypography-root MuiTypography-body1 css-eni8kc-MuiTypography-root"
             >
-              <path
-                d="M9 5v2h6.59L4 18.59 5.41 20 17 8.41V15h2V5z"
-              />
-            </svg>
-          </a>
+              <span
+                class="MuiBox-root css-rhyb55"
+              >
+                &gt;_
+              </span>
+              "
+              As pessoas não sabem o que querem, até mostrarmos a elas.
+              "
+               
+              <br />
+              <span
+                class="MuiBox-root css-kfje3k"
+              >
+                  - Steve Jobs
+              </span>
+            </p>
+          </div>
+          <div
+            class="MuiBox-root css-19tulxh"
+          >
+            <div
+              class="MuiBox-root css-1rhjc35"
+            />
+            <div
+              class="MuiBox-root css-1hn696o"
+            />
+            <div
+              class="MuiBox-root css-venrdb"
+            />
+            <div
+              class="MuiBox-root css-1d6hbv8"
+            />
+          </div>
+          <div
+            class="flex gap-4 flex-col md:flex-row MuiBox-root css-0"
+          >
+            <a
+              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-sizeMedium MuiButton-colorInherit css-1txl631-MuiButtonBase-root-MuiButton-root"
+              href="/#section-contact-me"
+              tabindex="0"
+            >
+              <span
+                style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.35);"
+              >
+                Diga-me olá
+              </span>
+            </a>
+            <a
+              class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorInherit css-4b84qo-MuiButtonBase-root-MuiButton-root"
+              href="/#section-projects"
+              tabindex="0"
+            >
+              <span
+                style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.35);"
+              >
+                Meus projetos
+              </span>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                data-testid="CallMadeOutlinedIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M9 5v2h6.59L4 18.59 5.41 20 17 8.41V15h2V5z"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -227,23 +344,111 @@ exports[`Home render component 1`] = `
     class="MuiBox-root css-0"
   >
     <section
-      class="relative box-section background-projects MuiBox-root css-0"
+      class="relative box-section background-projects contact-section-screen-frame MuiBox-root css-fgwfj8"
       id="section-projects"
     >
       <div
-        class="MuiContainer-root MuiContainer-maxWidthLg min-h-screen pt-[97px] css-5c1adp-MuiContainer-root"
+        class="MuiBox-root css-1hxljay"
       >
-        <h2
-          class="MuiTypography-root MuiTypography-h2 MuiTypography-alignLeft section-projects-title css-1ghxng7-MuiTypography-root"
-          style="--Typography-textAlign: left;"
+        <div
+          class="MuiBox-root css-axw7ok"
         >
-          #Meus Projetos
-        </h2>
-        <p
-          class="MuiTypography-root MuiTypography-body1 css-1udj6p4-MuiTypography-root"
+          <div
+            class="MuiBox-root css-9218an"
+          />
+          <div
+            class="MuiBox-root css-1hm9hj5"
+          />
+          <div
+            class="MuiBox-root css-12c35yr"
+          />
+          <span
+            class="MuiTypography-root MuiTypography-caption css-56idqn-MuiTypography-root"
+          >
+            SYS://MARCOSILVA.DEV/MEUS-PROJETOS
+          </span>
+        </div>
+        <span
+          class="MuiTypography-root MuiTypography-caption css-n1ym79-MuiTypography-root"
         >
-          Aqui estão alguns dos meus projetos mais recentes. Você pode ver mais detalhes e o código fonte acessando os links.
-        </p>
+          [REPOSITÓRIOS // GIT_LOG]
+        </span>
+      </div>
+      <div
+        class="MuiContainer-root MuiContainer-maxWidthLg py-[48px] px-4 css-5c1adp-MuiContainer-root"
+      >
+        <div
+          class="MuiBox-root css-nxadop"
+        >
+          <div
+            class="MuiBox-root css-0"
+          >
+            <div
+              class="MuiBox-root css-1w4vxup"
+            >
+              <span
+                class="MuiTypography-root MuiTypography-caption css-1dn6asd-MuiTypography-root"
+              >
+                [SECTION_01 // PORTFOLIO_REPOS]
+              </span>
+            </div>
+            <div
+              class="MuiBox-root css-120nera"
+            >
+              <div
+                class="MuiBox-root css-1duaw62"
+              />
+              <h2
+                class="MuiTypography-root MuiTypography-h2 MuiTypography-alignLeft section-projects-title css-1dkbdd3-MuiTypography-root"
+                style="--Typography-textAlign: left;"
+              >
+                #Meus Projetos
+              </h2>
+            </div>
+            <div
+              class="MuiBox-root css-1y1fxk2"
+            >
+              <div
+                class="MuiBox-root css-o0kvu6"
+              />
+              <div
+                class="MuiBox-root css-gt3wa2"
+              />
+              <div
+                class="MuiBox-root css-1e6mx9a"
+              />
+              <div
+                class="MuiBox-root css-1d6hbv8"
+              />
+            </div>
+          </div>
+          <div
+            class="MuiBox-root css-1wkxdv3"
+          >
+            <div
+              class="MuiBox-root css-16gb4zv"
+            />
+            <span
+              class="MuiTypography-root MuiTypography-caption css-uhklpy-MuiTypography-root"
+            >
+              TOTAL: 6 PROJETOS ATIVOS
+            </span>
+          </div>
+        </div>
+        <div
+          class="MuiBox-root css-onmseu"
+        >
+          <span
+            class="MuiTypography-root MuiTypography-body1 css-sgtfnv-MuiTypography-root"
+          >
+            &gt;_
+          </span>
+          <p
+            class="MuiTypography-root MuiTypography-body1 css-172fqlz-MuiTypography-root"
+          >
+            Aqui estão alguns dos meus projetos mais recentes. Você pode ver mais detalhes e o código fonte acessando os links.
+          </p>
+        </div>
         <div
           class="grid p-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2.5 MuiBox-root css-0"
         >
@@ -251,92 +456,121 @@ exports[`Home render component 1`] = `
             class="MuiBox-root css-0"
           >
             <div
-              class="project-card h-full relative hover:border-yellow-200 hover:border hover:-translate-y-[3px] transition-all duration-200 hover:shadow-lg MuiBox-root css-vcocbw"
+              class="project-card h-full relative flex flex-col justify-between overflow-hidden hover:-translate-y-[3px] transition-all duration-200 MuiBox-root css-baf2j"
             >
-              <h6
-                class="MuiTypography-root MuiTypography-h6 project-card-title css-1miy0lu-MuiTypography-root"
-              >
-                MHPasswordManager
-              </h6>
-              <p
-                class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
-              >
-                Conjunto de aplicações para armazenar e criptografar senhas e arquivos utilizando par de chaves e validações
-              </p>
               <div
-                class="project-card-tags pb-8 MuiBox-root css-0"
+                class="MuiBox-root css-1s11haw"
               >
-                <span
-                  class="project-card-tag"
+                <div
+                  class="MuiBox-root css-axw7ok"
                 >
-                   
-                  Spring Boot
-                   
-                </span>
-                <span
-                  class="project-card-tag"
+                  <div
+                    class="MuiBox-root css-9k2uub"
+                  />
+                  <h6
+                    class="MuiTypography-root MuiTypography-h6 project-card-title css-6fi00x-MuiTypography-root"
+                  >
+                    MHPasswordManager
+                  </h6>
+                </div>
+                <div
+                  class="MuiBox-root css-19k2pfw"
                 >
-                   
-                  Spring Cloud
-                   
-                </span>
-                <span
-                  class="project-card-tag"
-                >
-                   
-                  OAuth2
-                   
-                </span>
-                <span
-                  class="project-card-tag"
-                >
-                   
-                  RabbitMQ
-                   
-                </span>
-                <span
-                  class="project-card-tag"
-                >
-                   
-                  Postgres
-                   
-                </span>
-                <span
-                  class="project-card-tag"
-                >
-                   
-                  Mongo
-                   
-                </span>
-                <span
-                  class="project-card-tag"
-                >
-                   
-                  Redis
-                   
-                </span>
+                  REPO
+                </div>
               </div>
               <div
-                class="my-4 absolute bottom-0 MuiBox-root css-0"
+                class="MuiBox-root css-1th7isc"
               >
-                <a
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1ijjcdo-MuiButtonBase-root-MuiIconButton-root"
-                  href="https://github.com/marcoshssilva/MHPasswordManager"
-                  tabindex="0"
-                  target="_blank"
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-hy96pz-MuiTypography-root"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-                    data-testid="GitHubIcon"
-                    focusable="false"
-                    viewBox="0 0 24 24"
+                  Conjunto de aplicações para armazenar e criptografar senhas e arquivos utilizando par de chaves e validações
+                </p>
+                <div
+                  class="project-card-tags MuiBox-root css-0"
+                >
+                  <span
+                    class="project-card-tag"
                   >
-                    <path
-                      d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"
-                    />
-                  </svg>
-                </a>
+                     
+                    Spring Boot
+                     
+                  </span>
+                  <span
+                    class="project-card-tag"
+                  >
+                     
+                    Spring Cloud
+                     
+                  </span>
+                  <span
+                    class="project-card-tag"
+                  >
+                     
+                    OAuth2
+                     
+                  </span>
+                  <span
+                    class="project-card-tag"
+                  >
+                     
+                    RabbitMQ
+                     
+                  </span>
+                  <span
+                    class="project-card-tag"
+                  >
+                     
+                    Postgres
+                     
+                  </span>
+                  <span
+                    class="project-card-tag"
+                  >
+                     
+                    Mongo
+                     
+                  </span>
+                  <span
+                    class="project-card-tag"
+                  >
+                     
+                    Redis
+                     
+                  </span>
+                </div>
+              </div>
+              <div
+                class="MuiBox-root css-zicj3k"
+              >
+                <span
+                  class="MuiTypography-root MuiTypography-caption css-1hlo5le-MuiTypography-root"
+                >
+                  SOURCE // LINK
+                </span>
+                <div
+                  class="MuiBox-root css-1utx3w7"
+                >
+                  <a
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-8whigj-MuiButtonBase-root-MuiIconButton-root"
+                    href="https://github.com/marcoshssilva/MHPasswordManager"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="GitHubIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"
+                      />
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -344,71 +578,100 @@ exports[`Home render component 1`] = `
             class="MuiBox-root css-0"
           >
             <div
-              class="project-card h-full relative hover:border-yellow-200 hover:border hover:-translate-y-[3px] transition-all duration-200 hover:shadow-lg MuiBox-root css-vcocbw"
+              class="project-card h-full relative flex flex-col justify-between overflow-hidden hover:-translate-y-[3px] transition-all duration-200 MuiBox-root css-baf2j"
             >
-              <h6
-                class="MuiTypography-root MuiTypography-h6 project-card-title css-1miy0lu-MuiTypography-root"
-              >
-                Azure Client-AI
-              </h6>
-              <p
-                class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
-              >
-                Serviço API REST que comunica com modelos do serviço Azure OpenAI e permite geração de imagens e prompts
-              </p>
               <div
-                class="project-card-tags pb-8 MuiBox-root css-0"
+                class="MuiBox-root css-1s11haw"
               >
-                <span
-                  class="project-card-tag"
+                <div
+                  class="MuiBox-root css-axw7ok"
                 >
-                   
-                  SpringBoot
-                   
-                </span>
-                <span
-                  class="project-card-tag"
+                  <div
+                    class="MuiBox-root css-9k2uub"
+                  />
+                  <h6
+                    class="MuiTypography-root MuiTypography-h6 project-card-title css-6fi00x-MuiTypography-root"
+                  >
+                    Azure Client-AI
+                  </h6>
+                </div>
+                <div
+                  class="MuiBox-root css-19k2pfw"
                 >
-                   
-                  Azure
-                   
-                </span>
-                <span
-                  class="project-card-tag"
-                >
-                   
-                  OpenAI
-                   
-                </span>
-                <span
-                  class="project-card-tag"
-                >
-                   
-                  Spring AI
-                   
-                </span>
+                  REPO
+                </div>
               </div>
               <div
-                class="my-4 absolute bottom-0 MuiBox-root css-0"
+                class="MuiBox-root css-1th7isc"
               >
-                <a
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1ijjcdo-MuiButtonBase-root-MuiIconButton-root"
-                  href="https://github.com/marcoshssilva/client-ai"
-                  tabindex="0"
-                  target="_blank"
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-hy96pz-MuiTypography-root"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-                    data-testid="GitHubIcon"
-                    focusable="false"
-                    viewBox="0 0 24 24"
+                  Serviço API REST que comunica com modelos do serviço Azure OpenAI e permite geração de imagens e prompts
+                </p>
+                <div
+                  class="project-card-tags MuiBox-root css-0"
+                >
+                  <span
+                    class="project-card-tag"
                   >
-                    <path
-                      d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"
-                    />
-                  </svg>
-                </a>
+                     
+                    SpringBoot
+                     
+                  </span>
+                  <span
+                    class="project-card-tag"
+                  >
+                     
+                    Azure
+                     
+                  </span>
+                  <span
+                    class="project-card-tag"
+                  >
+                     
+                    OpenAI
+                     
+                  </span>
+                  <span
+                    class="project-card-tag"
+                  >
+                     
+                    Spring AI
+                     
+                  </span>
+                </div>
+              </div>
+              <div
+                class="MuiBox-root css-zicj3k"
+              >
+                <span
+                  class="MuiTypography-root MuiTypography-caption css-1hlo5le-MuiTypography-root"
+                >
+                  SOURCE // LINK
+                </span>
+                <div
+                  class="MuiBox-root css-1utx3w7"
+                >
+                  <a
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-8whigj-MuiButtonBase-root-MuiIconButton-root"
+                    href="https://github.com/marcoshssilva/client-ai"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="GitHubIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"
+                      />
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -416,71 +679,100 @@ exports[`Home render component 1`] = `
             class="MuiBox-root css-0"
           >
             <div
-              class="project-card h-full relative hover:border-yellow-200 hover:border hover:-translate-y-[3px] transition-all duration-200 hover:shadow-lg MuiBox-root css-vcocbw"
+              class="project-card h-full relative flex flex-col justify-between overflow-hidden hover:-translate-y-[3px] transition-all duration-200 MuiBox-root css-baf2j"
             >
-              <h6
-                class="MuiTypography-root MuiTypography-h6 project-card-title css-1miy0lu-MuiTypography-root"
-              >
-                AppRegistra Notas
-              </h6>
-              <p
-                class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
-              >
-                Aplicativo mobile para guardar notas de forma sincronizada em nuvem utilizando Firebase e autenticador Google
-              </p>
               <div
-                class="project-card-tags pb-8 MuiBox-root css-0"
+                class="MuiBox-root css-1s11haw"
               >
-                <span
-                  class="project-card-tag"
+                <div
+                  class="MuiBox-root css-axw7ok"
                 >
-                   
-                  React Native
-                   
-                </span>
-                <span
-                  class="project-card-tag"
+                  <div
+                    class="MuiBox-root css-9k2uub"
+                  />
+                  <h6
+                    class="MuiTypography-root MuiTypography-h6 project-card-title css-6fi00x-MuiTypography-root"
+                  >
+                    AppRegistra Notas
+                  </h6>
+                </div>
+                <div
+                  class="MuiBox-root css-19k2pfw"
                 >
-                   
-                  Android
-                   
-                </span>
-                <span
-                  class="project-card-tag"
-                >
-                   
-                  Firebase
-                   
-                </span>
-                <span
-                  class="project-card-tag"
-                >
-                   
-                  Google Auth
-                   
-                </span>
+                  REPO
+                </div>
               </div>
               <div
-                class="my-4 absolute bottom-0 MuiBox-root css-0"
+                class="MuiBox-root css-1th7isc"
               >
-                <a
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1ijjcdo-MuiButtonBase-root-MuiIconButton-root"
-                  href="https://github.com/marcoshssilva/app-registranotas-react-native"
-                  tabindex="0"
-                  target="_blank"
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-hy96pz-MuiTypography-root"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-                    data-testid="GitHubIcon"
-                    focusable="false"
-                    viewBox="0 0 24 24"
+                  Aplicativo mobile para guardar notas de forma sincronizada em nuvem utilizando Firebase e autenticador Google
+                </p>
+                <div
+                  class="project-card-tags MuiBox-root css-0"
+                >
+                  <span
+                    class="project-card-tag"
                   >
-                    <path
-                      d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"
-                    />
-                  </svg>
-                </a>
+                     
+                    React Native
+                     
+                  </span>
+                  <span
+                    class="project-card-tag"
+                  >
+                     
+                    Android
+                     
+                  </span>
+                  <span
+                    class="project-card-tag"
+                  >
+                     
+                    Firebase
+                     
+                  </span>
+                  <span
+                    class="project-card-tag"
+                  >
+                     
+                    Google Auth
+                     
+                  </span>
+                </div>
+              </div>
+              <div
+                class="MuiBox-root css-zicj3k"
+              >
+                <span
+                  class="MuiTypography-root MuiTypography-caption css-1hlo5le-MuiTypography-root"
+                >
+                  SOURCE // LINK
+                </span>
+                <div
+                  class="MuiBox-root css-1utx3w7"
+                >
+                  <a
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-8whigj-MuiButtonBase-root-MuiIconButton-root"
+                    href="https://github.com/marcoshssilva/app-registranotas-react-native"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="GitHubIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"
+                      />
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -488,57 +780,86 @@ exports[`Home render component 1`] = `
             class="MuiBox-root css-0"
           >
             <div
-              class="project-card h-full relative hover:border-yellow-200 hover:border hover:-translate-y-[3px] transition-all duration-200 hover:shadow-lg MuiBox-root css-vcocbw"
+              class="project-card h-full relative flex flex-col justify-between overflow-hidden hover:-translate-y-[3px] transition-all duration-200 MuiBox-root css-baf2j"
             >
-              <h6
-                class="MuiTypography-root MuiTypography-h6 project-card-title css-1miy0lu-MuiTypography-root"
-              >
-                Global-Library
-              </h6>
-              <p
-                class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
-              >
-                Conjunto de funções escritas em Groovy script para Jenkins
-              </p>
               <div
-                class="project-card-tags pb-8 MuiBox-root css-0"
+                class="MuiBox-root css-1s11haw"
               >
-                <span
-                  class="project-card-tag"
+                <div
+                  class="MuiBox-root css-axw7ok"
                 >
-                   
-                  Groovy
-                   
-                </span>
-                <span
-                  class="project-card-tag"
+                  <div
+                    class="MuiBox-root css-9k2uub"
+                  />
+                  <h6
+                    class="MuiTypography-root MuiTypography-h6 project-card-title css-6fi00x-MuiTypography-root"
+                  >
+                    Global-Library
+                  </h6>
+                </div>
+                <div
+                  class="MuiBox-root css-19k2pfw"
                 >
-                   
-                  Jenkins CI/CD
-                   
-                </span>
+                  REPO
+                </div>
               </div>
               <div
-                class="my-4 absolute bottom-0 MuiBox-root css-0"
+                class="MuiBox-root css-1th7isc"
               >
-                <a
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1ijjcdo-MuiButtonBase-root-MuiIconButton-root"
-                  href="https://github.com/marcoshssilva/global-library"
-                  tabindex="0"
-                  target="_blank"
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-hy96pz-MuiTypography-root"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-                    data-testid="GitHubIcon"
-                    focusable="false"
-                    viewBox="0 0 24 24"
+                  Conjunto de funções escritas em Groovy script para Jenkins
+                </p>
+                <div
+                  class="project-card-tags MuiBox-root css-0"
+                >
+                  <span
+                    class="project-card-tag"
                   >
-                    <path
-                      d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"
-                    />
-                  </svg>
-                </a>
+                     
+                    Groovy
+                     
+                  </span>
+                  <span
+                    class="project-card-tag"
+                  >
+                     
+                    Jenkins CI/CD
+                     
+                  </span>
+                </div>
+              </div>
+              <div
+                class="MuiBox-root css-zicj3k"
+              >
+                <span
+                  class="MuiTypography-root MuiTypography-caption css-1hlo5le-MuiTypography-root"
+                >
+                  SOURCE // LINK
+                </span>
+                <div
+                  class="MuiBox-root css-1utx3w7"
+                >
+                  <a
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-8whigj-MuiButtonBase-root-MuiIconButton-root"
+                    href="https://github.com/marcoshssilva/global-library"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="GitHubIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"
+                      />
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -546,57 +867,86 @@ exports[`Home render component 1`] = `
             class="MuiBox-root css-0"
           >
             <div
-              class="project-card h-full relative hover:border-yellow-200 hover:border hover:-translate-y-[3px] transition-all duration-200 hover:shadow-lg MuiBox-root css-vcocbw"
+              class="project-card h-full relative flex flex-col justify-between overflow-hidden hover:-translate-y-[3px] transition-all duration-200 MuiBox-root css-baf2j"
             >
-              <h6
-                class="MuiTypography-root MuiTypography-h6 project-card-title css-1miy0lu-MuiTypography-root"
-              >
-                Nexus3 Helm
-              </h6>
-              <p
-                class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
-              >
-                Helm para facilitar deploy do Nexus3 Artifact Registry em ambiente Kubernetes
-              </p>
               <div
-                class="project-card-tags pb-8 MuiBox-root css-0"
+                class="MuiBox-root css-1s11haw"
               >
-                <span
-                  class="project-card-tag"
+                <div
+                  class="MuiBox-root css-axw7ok"
                 >
-                   
-                  Helm
-                   
-                </span>
-                <span
-                  class="project-card-tag"
+                  <div
+                    class="MuiBox-root css-9k2uub"
+                  />
+                  <h6
+                    class="MuiTypography-root MuiTypography-h6 project-card-title css-6fi00x-MuiTypography-root"
+                  >
+                    Nexus3 Helm
+                  </h6>
+                </div>
+                <div
+                  class="MuiBox-root css-19k2pfw"
                 >
-                   
-                  Kubernetes
-                   
-                </span>
+                  REPO
+                </div>
               </div>
               <div
-                class="my-4 absolute bottom-0 MuiBox-root css-0"
+                class="MuiBox-root css-1th7isc"
               >
-                <a
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1ijjcdo-MuiButtonBase-root-MuiIconButton-root"
-                  href="https://github.com/marcoshssilva/nexus3-kubernetes"
-                  tabindex="0"
-                  target="_blank"
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-hy96pz-MuiTypography-root"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-                    data-testid="GitHubIcon"
-                    focusable="false"
-                    viewBox="0 0 24 24"
+                  Helm para facilitar deploy do Nexus3 Artifact Registry em ambiente Kubernetes
+                </p>
+                <div
+                  class="project-card-tags MuiBox-root css-0"
+                >
+                  <span
+                    class="project-card-tag"
                   >
-                    <path
-                      d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"
-                    />
-                  </svg>
-                </a>
+                     
+                    Helm
+                     
+                  </span>
+                  <span
+                    class="project-card-tag"
+                  >
+                     
+                    Kubernetes
+                     
+                  </span>
+                </div>
+              </div>
+              <div
+                class="MuiBox-root css-zicj3k"
+              >
+                <span
+                  class="MuiTypography-root MuiTypography-caption css-1hlo5le-MuiTypography-root"
+                >
+                  SOURCE // LINK
+                </span>
+                <div
+                  class="MuiBox-root css-1utx3w7"
+                >
+                  <a
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-8whigj-MuiButtonBase-root-MuiIconButton-root"
+                    href="https://github.com/marcoshssilva/nexus3-kubernetes"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="GitHubIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"
+                      />
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -604,50 +954,79 @@ exports[`Home render component 1`] = `
             class="MuiBox-root css-0"
           >
             <div
-              class="project-card h-full relative hover:border-yellow-200 hover:border hover:-translate-y-[3px] transition-all duration-200 hover:shadow-lg MuiBox-root css-vcocbw"
+              class="project-card h-full relative flex flex-col justify-between overflow-hidden hover:-translate-y-[3px] transition-all duration-200 MuiBox-root css-baf2j"
             >
-              <h6
-                class="MuiTypography-root MuiTypography-h6 project-card-title css-1miy0lu-MuiTypography-root"
-              >
-                Docker Jenkins Agent
-              </h6>
-              <p
-                class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
-              >
-                Container editado com Docker CLI pré-instalado, ambos, SSH Agent e Inbound Agent
-              </p>
               <div
-                class="project-card-tags pb-8 MuiBox-root css-0"
+                class="MuiBox-root css-1s11haw"
               >
-                <span
-                  class="project-card-tag"
+                <div
+                  class="MuiBox-root css-axw7ok"
                 >
-                   
-                  Docker
-                   
-                </span>
+                  <div
+                    class="MuiBox-root css-9k2uub"
+                  />
+                  <h6
+                    class="MuiTypography-root MuiTypography-h6 project-card-title css-6fi00x-MuiTypography-root"
+                  >
+                    Docker Jenkins Agent
+                  </h6>
+                </div>
+                <div
+                  class="MuiBox-root css-19k2pfw"
+                >
+                  REPO
+                </div>
               </div>
               <div
-                class="my-4 absolute bottom-0 MuiBox-root css-0"
+                class="MuiBox-root css-1th7isc"
               >
-                <a
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1ijjcdo-MuiButtonBase-root-MuiIconButton-root"
-                  href="https://github.com/marcoshssilva/docker-jenkins-agent"
-                  tabindex="0"
-                  target="_blank"
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-hy96pz-MuiTypography-root"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-                    data-testid="GitHubIcon"
-                    focusable="false"
-                    viewBox="0 0 24 24"
+                  Container editado com Docker CLI pré-instalado, ambos, SSH Agent e Inbound Agent
+                </p>
+                <div
+                  class="project-card-tags MuiBox-root css-0"
+                >
+                  <span
+                    class="project-card-tag"
                   >
-                    <path
-                      d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"
-                    />
-                  </svg>
-                </a>
+                     
+                    Docker
+                     
+                  </span>
+                </div>
+              </div>
+              <div
+                class="MuiBox-root css-zicj3k"
+              >
+                <span
+                  class="MuiTypography-root MuiTypography-caption css-1hlo5le-MuiTypography-root"
+                >
+                  SOURCE // LINK
+                </span>
+                <div
+                  class="MuiBox-root css-1utx3w7"
+                >
+                  <a
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-8whigj-MuiButtonBase-root-MuiIconButton-root"
+                    href="https://github.com/marcoshssilva/docker-jenkins-agent"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="GitHubIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"
+                      />
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -655,70 +1034,169 @@ exports[`Home render component 1`] = `
       </div>
     </section>
     <section
-      class="relative box-section background-aboutme MuiBox-root css-0"
+      class="relative box-section background-aboutme contact-section-screen-frame MuiBox-root css-fgwfj8"
       id="section-aboutme"
     >
       <div
-        class="MuiContainer-root MuiContainer-maxWidthLg min-h-screen pt-[97px] css-5c1adp-MuiContainer-root"
+        class="MuiBox-root css-1hxljay"
       >
-        <h2
-          class="MuiTypography-root MuiTypography-h2 MuiTypography-alignLeft section-aboutme-title css-1ghxng7-MuiTypography-root"
-          style="--Typography-textAlign: left;"
-        >
-          #Sobre Mim
-        </h2>
         <div
-          class="grid grid-cols-1 MuiBox-root css-0"
+          class="MuiBox-root css-axw7ok"
+        >
+          <div
+            class="MuiBox-root css-9218an"
+          />
+          <div
+            class="MuiBox-root css-1hm9hj5"
+          />
+          <div
+            class="MuiBox-root css-12c35yr"
+          />
+          <span
+            class="MuiTypography-root MuiTypography-caption css-56idqn-MuiTypography-root"
+          >
+            SYS://MARCOSILVA.DEV/SOBRE-MIM
+          </span>
+        </div>
+        <span
+          class="MuiTypography-root MuiTypography-caption css-n1ym79-MuiTypography-root"
+        >
+          [PERFIL_DEV // BIO_DATA]
+        </span>
+      </div>
+      <div
+        class="MuiContainer-root MuiContainer-maxWidthLg py-[48px] px-4 css-5c1adp-MuiContainer-root"
+      >
+        <div
+          class="MuiBox-root css-nxadop"
+        >
+          <div
+            class="MuiBox-root css-0"
+          >
+            <div
+              class="MuiBox-root css-1w4vxup"
+            >
+              <span
+                class="MuiTypography-root MuiTypography-caption css-1dn6asd-MuiTypography-root"
+              >
+                [SECTION_02 // PROFILE_SPEC]
+              </span>
+            </div>
+            <div
+              class="MuiBox-root css-120nera"
+            >
+              <div
+                class="MuiBox-root css-1duaw62"
+              />
+              <h2
+                class="MuiTypography-root MuiTypography-h2 MuiTypography-alignLeft section-aboutme-title css-1dkbdd3-MuiTypography-root"
+                style="--Typography-textAlign: left;"
+              >
+                #Sobre Mim
+              </h2>
+            </div>
+            <div
+              class="MuiBox-root css-1y1fxk2"
+            >
+              <div
+                class="MuiBox-root css-o0kvu6"
+              />
+              <div
+                class="MuiBox-root css-gt3wa2"
+              />
+              <div
+                class="MuiBox-root css-1e6mx9a"
+              />
+              <div
+                class="MuiBox-root css-1d6hbv8"
+              />
+            </div>
+          </div>
+          <div
+            class="MuiBox-root css-1wkxdv3"
+          >
+            <div
+              class="MuiBox-root css-16gb4zv"
+            />
+            <span
+              class="MuiTypography-root MuiTypography-caption css-uhklpy-MuiTypography-root"
+            >
+              ROLE: DESENVOLVEDOR FULLSTACK
+            </span>
+          </div>
+        </div>
+        <div
+          class="grid grid-cols-1 MuiBox-root css-15z5p1r"
         >
           <h3
-            class="MuiTypography-root MuiTypography-h3 MuiTypography-alignLeft section-aboutme-name css-eg4jec-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-h3 MuiTypography-alignLeft section-aboutme-name css-h7hjkc-MuiTypography-root"
             style="--Typography-textAlign: left;"
           >
             Marcos Henrique
           </h3>
         </div>
         <div
-          class="grid grid-cols-12 MuiBox-root css-0"
+          class="grid grid-cols-12 gap-4 items-stretch MuiBox-root css-0"
         >
           <div
-            class="col-span-12 lg:col-span-4 MuiBox-root css-0"
-          >
-            <h6
-              class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignLeft section-aboutme-name css-10u6tip-MuiTypography-root"
-              style="--Typography-textAlign: left;"
-            >
-              Biografia
-            </h6>
-            <p
-              class="MuiTypography-root MuiTypography-body1 MuiTypography-alignJustify css-1agxnb9-MuiTypography-root"
-              style="--Typography-textAlign: justify;"
-            >
-              Sou um profissional de Tecnologia da Informação com experiência no desenvolvimento de software para plataformas web, microserviços, cloud e mobile.
-            </p>
-            <p
-              class="MuiTypography-root MuiTypography-body1 MuiTypography-alignJustify css-1agxnb9-MuiTypography-root"
-              style="--Typography-textAlign: justify;"
-            >
-              Minha trajetória combina atuação técnica e entrega de projetos alinhados às necessidades estratégicas dos negócios, utilizando práticas modernas e metodologias ágeis.
-            </p>
-            <p
-              class="MuiTypography-root MuiTypography-body1 MuiTypography-alignJustify css-1agxnb9-MuiTypography-root"
-              style="--Typography-textAlign: justify;"
-            >
-              Mantenho-me atualizado com as tendências tecnológicas e me dedico a construir soluções que agreguem valor ao mercado.
-            </p>
-            <p
-              class="MuiTypography-root MuiTypography-body1 MuiTypography-alignJustify css-1agxnb9-MuiTypography-root"
-              style="--Typography-textAlign: justify;"
-            >
-              Tenho compromisso profissional em consolidar meu perfil como um profissional versátil, preparado para desafios.
-            </p>
-          </div>
-          <div
-            class="col-span-12 md:col-span-6 lg:col-span-4 relative MuiBox-root css-0"
+            class="col-span-12 lg:col-span-4 flex flex-col justify-between overflow-hidden MuiBox-root css-xw67x5"
           >
             <div
-              class="box-image translate-y-[-50%] translate-x-[-50%] lg:translate-x-[-35%] MuiBox-root css-0"
+              class="MuiBox-root css-1s11haw"
+            >
+              <div
+                class="MuiBox-root css-axw7ok"
+              >
+                <div
+                  class="MuiBox-root css-1x0kcet"
+                />
+                <h6
+                  class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignLeft section-aboutme-name css-1udb1l6-MuiTypography-root"
+                  style="--Typography-textAlign: left;"
+                >
+                  Biografia
+                </h6>
+              </div>
+              <span
+                class="MuiTypography-root MuiTypography-caption css-457tbu-MuiTypography-root"
+              >
+                README.MD
+              </span>
+            </div>
+            <div
+              class="MuiBox-root css-131nj7m"
+            >
+              <p
+                class="MuiTypography-root MuiTypography-body1 MuiTypography-alignJustify css-840fua-MuiTypography-root"
+                style="--Typography-textAlign: justify;"
+              >
+                Sou um profissional de Tecnologia da Informação com experiência no desenvolvimento de software para plataformas web, microserviços, cloud e mobile.
+              </p>
+              <p
+                class="MuiTypography-root MuiTypography-body1 MuiTypography-alignJustify css-840fua-MuiTypography-root"
+                style="--Typography-textAlign: justify;"
+              >
+                Minha trajetória combina atuação técnica e entrega de projetos alinhados às necessidades estratégicas dos negócios, utilizando práticas modernas e metodologias ágeis.
+              </p>
+              <p
+                class="MuiTypography-root MuiTypography-body1 MuiTypography-alignJustify css-840fua-MuiTypography-root"
+                style="--Typography-textAlign: justify;"
+              >
+                Mantenho-me atualizado com as tendências tecnológicas e me dedico a construir soluções que agreguem valor ao mercado.
+              </p>
+              <p
+                class="MuiTypography-root MuiTypography-body1 MuiTypography-alignJustify css-12zm0z4-MuiTypography-root"
+                style="--Typography-textAlign: justify;"
+              >
+                Tenho compromisso profissional em consolidar meu perfil como um profissional versátil, preparado para desafios.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-span-12 md:col-span-6 lg:col-span-4 relative flex items-center justify-center MuiBox-root css-1a065rn"
+          >
+            <div
+              class="box-image translate-y-[-50%] translate-x-[-50%] lg:translate-x-[-50%] MuiBox-root css-0"
             >
               <div
                 class="box-content MuiBox-root css-0"
@@ -745,7 +1223,7 @@ exports[`Home render component 1`] = `
                   </span>
                 </p>
                 <a
-                  href="#"
+                  href="#section-contact-me"
                 >
                   Contrate-me
                 </a>
@@ -753,111 +1231,126 @@ exports[`Home render component 1`] = `
             </div>
           </div>
           <div
-            class="col-span-12 md:col-span-6 lg:col-span-4 flex flex-col MuiBox-root css-0"
+            class="col-span-12 md:col-span-6 lg:col-span-4 flex flex-col justify-between overflow-hidden MuiBox-root css-xw67x5"
           >
             <div
-              class="MuiBox-root css-0"
+              class="MuiBox-root css-1s11haw"
             >
-              <h6
-                class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignRight section-aboutme-name css-10u6tip-MuiTypography-root"
-                style="--Typography-textAlign: right;"
+              <div
+                class="MuiBox-root css-axw7ok"
               >
-                Tempo de experiência
-              </h6>
-              <p
-                class="MuiTypography-root MuiTypography-body1 MuiTypography-alignRight css-1cg9ty5-MuiTypography-root"
-                style="--Typography-textAlign: right;"
+                <div
+                  class="MuiBox-root css-1rb6a6s"
+                />
+                <span
+                  class="MuiTypography-root MuiTypography-caption css-6189gs-MuiTypography-root"
+                >
+                  STATS_PANEL // SKILLS
+                </span>
+              </div>
+              <div
+                class="MuiBox-root css-1kk7lpy"
               >
-                6+ anos
-              </p>
+                SENIOR_XP
+              </div>
             </div>
             <div
-              class="MuiBox-root css-0"
+              class="MuiBox-root css-1th7isc"
             >
-              <h6
-                class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignRight section-aboutme-name css-10u6tip-MuiTypography-root"
-                style="--Typography-textAlign: right;"
+              <div
+                class="MuiBox-root css-18ab390"
               >
-                Habilidades
-              </h6>
-              <ul
-                class="mt-[1.2rem] mb-4 mx-4"
+                <h6
+                  class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignRight section-aboutme-name css-ow3tsj-MuiTypography-root"
+                  style="--Typography-textAlign: right;"
+                >
+                  Tempo de experiência
+                </h6>
+                <p
+                  class="MuiTypography-root MuiTypography-body1 MuiTypography-alignRight css-4jnucy-MuiTypography-root"
+                  style="--Typography-textAlign: right;"
+                >
+                  6+ anos
+                </p>
+              </div>
+              <div
+                class="MuiBox-root css-0"
               >
-                <li>
-                   
-                  <p
-                    class="MuiTypography-root MuiTypography-body1 MuiTypography-alignRight css-1j3qii7-MuiTypography-root"
-                    style="--Typography-textAlign: right;"
-                  >
-                    Desenvolvimento Fullstack foco em Java
-                  </p>
-                   
-                </li>
-                <li>
-                   
-                  <p
-                    class="MuiTypography-root MuiTypography-body1 MuiTypography-alignRight css-1j3qii7-MuiTypography-root"
-                    style="--Typography-textAlign: right;"
-                  >
-                    Infraestrutura em Nuvem (AWS, Azure e GCP)
-                  </p>
-                   
-                </li>
-                <li>
-                   
-                  <p
-                    class="MuiTypography-root MuiTypography-body1 MuiTypography-alignRight css-1j3qii7-MuiTypography-root"
-                    style="--Typography-textAlign: right;"
-                  >
-                    Metodologias Ageis Scrum e Kanban
-                  </p>
-                   
-                </li>
-                <li>
-                   
-                  <p
-                    class="MuiTypography-root MuiTypography-body1 MuiTypography-alignRight css-1j3qii7-MuiTypography-root"
-                    style="--Typography-textAlign: right;"
-                  >
-                    Configuração de Servidores
-                  </p>
-                   
-                </li>
-                <li>
-                   
-                  <p
-                    class="MuiTypography-root MuiTypography-body1 MuiTypography-alignRight css-1j3qii7-MuiTypography-root"
-                    style="--Typography-textAlign: right;"
-                  >
-                    DevOps, GitOps e automação CI/CD
-                  </p>
-                   
-                </li>
-              </ul>
+                <h6
+                  class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignRight section-aboutme-name css-qatvlm-MuiTypography-root"
+                  style="--Typography-textAlign: right;"
+                >
+                  Habilidades
+                </h6>
+                <ul
+                  class="m-0 p-0 list-none space-y-1.5"
+                >
+                  <li>
+                    <p
+                      class="MuiTypography-root MuiTypography-body1 MuiTypography-alignRight css-5v6ym3-MuiTypography-root"
+                      style="--Typography-textAlign: right;"
+                    >
+                      Desenvolvimento Fullstack foco em Java
+                    </p>
+                  </li>
+                  <li>
+                    <p
+                      class="MuiTypography-root MuiTypography-body1 MuiTypography-alignRight css-5v6ym3-MuiTypography-root"
+                      style="--Typography-textAlign: right;"
+                    >
+                      Infraestrutura em Nuvem (AWS, Azure e GCP)
+                    </p>
+                  </li>
+                  <li>
+                    <p
+                      class="MuiTypography-root MuiTypography-body1 MuiTypography-alignRight css-5v6ym3-MuiTypography-root"
+                      style="--Typography-textAlign: right;"
+                    >
+                      Metodologias Ageis Scrum e Kanban
+                    </p>
+                  </li>
+                  <li>
+                    <p
+                      class="MuiTypography-root MuiTypography-body1 MuiTypography-alignRight css-5v6ym3-MuiTypography-root"
+                      style="--Typography-textAlign: right;"
+                    >
+                      Configuração de Servidores
+                    </p>
+                  </li>
+                  <li>
+                    <p
+                      class="MuiTypography-root MuiTypography-body1 MuiTypography-alignRight css-5v6ym3-MuiTypography-root"
+                      style="--Typography-textAlign: right;"
+                    >
+                      DevOps, GitOps e automação CI/CD
+                    </p>
+                  </li>
+                </ul>
+              </div>
             </div>
             <div
-              class="MuiBox-root css-0"
+              class="MuiBox-root css-z6vifz"
             >
               <h6
-                class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignRight section-aboutme-name css-10u6tip-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignRight section-aboutme-name css-jk5dam-MuiTypography-root"
                 style="--Typography-textAlign: right;"
               >
                 Redes sociais
               </h6>
-              <p
-                class="MuiTypography-root MuiTypography-body1 MuiTypography-alignRight css-1agxnb9-MuiTypography-root"
+              <div
+                class="MuiTypography-root MuiTypography-body1 MuiTypography-alignRight css-om1ltn-MuiTypography-root"
                 style="--Typography-textAlign: right;"
               >
                 <a
                   aria-label="linkedin"
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1ijjcdo-MuiButtonBase-root-MuiIconButton-root"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-8whigj-MuiButtonBase-root-MuiIconButton-root"
                   href="https://www.linkedin.com/in/marcos-henrique-santana/"
                   tabindex="0"
                   target="_blank"
                 >
                   <svg
                     aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
                     data-testid="LinkedInIcon"
                     focusable="false"
                     viewBox="0 0 24 24"
@@ -869,14 +1362,14 @@ exports[`Home render component 1`] = `
                 </a>
                 <a
                   aria-label="github"
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1ijjcdo-MuiButtonBase-root-MuiIconButton-root"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-8whigj-MuiButtonBase-root-MuiIconButton-root"
                   href="https://github.com/marcoshssilva"
                   tabindex="0"
                   target="_blank"
                 >
                   <svg
                     aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
                     data-testid="GitHubIcon"
                     focusable="false"
                     viewBox="0 0 24 24"
@@ -886,7 +1379,7 @@ exports[`Home render component 1`] = `
                     />
                   </svg>
                 </a>
-              </p>
+              </div>
             </div>
           </div>
         </div>
