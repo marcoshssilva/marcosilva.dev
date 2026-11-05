@@ -1193,42 +1193,69 @@ exports[`Home render component 1`] = `
             </div>
           </div>
           <div
-            class="col-span-12 md:col-span-6 lg:col-span-4 relative flex items-center justify-center MuiBox-root css-1a065rn"
+            class="col-span-12 md:col-span-6 lg:col-span-4 flex items-center justify-center MuiBox-root css-1hiwv1g"
           >
-            <div
-              class="box-image translate-y-[-50%] translate-x-[-50%] lg:translate-x-[-50%] MuiBox-root css-0"
+            <article
+              aria-label="Perfil de Marcos Henrique"
+              class="about-profile-card"
             >
               <div
-                class="box-content MuiBox-root css-0"
+                class="about-profile-card__header"
+              >
+                <span>
+                  PERFIL_DEV
+                </span>
+                <span
+                  aria-hidden="true"
+                >
+                  &lt;/&gt;
+                </span>
+              </div>
+              <div
+                class="about-profile-card__portrait"
               >
                 <img
-                  alt="profile-aboutme"
+                  alt="Marcos Henrique"
+                  class="about-profile-card__photo"
                   data-nimg="1"
                   decoding="async"
-                  height="200"
+                  height="600"
                   loading="lazy"
-                  src="/_next/image?url=%2Fimages%2Fme%2Fme.jpeg&w=640&q=75"
-                  srcset="/_next/image?url=%2Fimages%2Fme%2Fme.jpeg&w=256&q=75 1x, /_next/image?url=%2Fimages%2Fme%2Fme.jpeg&w=640&q=75 2x"
+                  sizes="(min-width: 1200px) 300px, (min-width: 768px) 340px, 85vw"
+                  src="/_next/image?url=%2Fimages%2Fme%2Fme.jpeg&w=3840&q=75"
+                  srcset="/_next/image?url=%2Fimages%2Fme%2Fme.jpeg&w=640&q=75 640w, /_next/image?url=%2Fimages%2Fme%2Fme.jpeg&w=750&q=75 750w, /_next/image?url=%2Fimages%2Fme%2Fme.jpeg&w=828&q=75 828w, /_next/image?url=%2Fimages%2Fme%2Fme.jpeg&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Fme%2Fme.jpeg&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Fme%2Fme.jpeg&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Fme%2Fme.jpeg&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Fme%2Fme.jpeg&w=3840&q=75 3840w"
                   style="color: transparent;"
-                  width="200"
+                  width="600"
                 />
-                <span>
-                  🤖
-                </span>
-                <p>
+              </div>
+              <div
+                class="about-profile-card__identity"
+              >
+                <h3>
                   Marcos Henrique
-                  <br />
-                  <span>
-                    Desenvolvedor Fullstack
-                  </span>
+                </h3>
+                <p
+                  class="about-profile-card__role"
+                >
+                  Desenvolvedor Fullstack
+                </p>
+                <p
+                  class="about-profile-card__description"
+                >
+                  Construindo soluções que agreguem valor ao mercado.
                 </p>
                 <a
                   href="#section-contact-me"
                 >
-                  Contrate-me
+                  Contrate-me 
+                  <span
+                    aria-hidden="true"
+                  >
+                    ↗
+                  </span>
                 </a>
               </div>
-            </div>
+            </article>
           </div>
           <div
             class="col-span-12 md:col-span-6 lg:col-span-4 flex flex-col justify-between overflow-hidden MuiBox-root css-xw67x5"
