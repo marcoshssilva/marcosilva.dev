@@ -264,29 +264,35 @@ export default function SectionAboutme() {
             </Box>
           </Box>
 
-          {/* Coluna Central: Foto Circular Interativa */}
+          {/* Coluna Central: Crachá de Desenvolvedor */}
           <Box
-            className='col-span-12 md:col-span-6 lg:col-span-4 relative flex items-center justify-center'
-            sx={{ minHeight: "380px" }}
+            className='col-span-12 md:col-span-6 lg:col-span-4 flex items-center justify-center'
+            sx={{ minWidth: 0, py: 2 }}
           >
-            <Box className={'box-image translate-y-[-50%] translate-x-[-50%] lg:translate-x-[-50%]'}>
-              <Box className={'box-content'}>
+            <article className="about-profile-card" aria-label="Perfil de Marcos Henrique">
+              <div className="about-profile-card__header">
+                <span>PERFIL_DEV</span>
+                <span aria-hidden="true">&lt;/&gt;</span>
+              </div>
+              <div className="about-profile-card__portrait">
                 <Image
                   src='/images/me/me.jpeg'
-                  width={200}
-                  height={200}
-                  alt={'profile-aboutme'}
+                  width={600}
+                  height={600}
+                  sizes="(min-width: 1200px) 300px, (min-width: 768px) 340px, 85vw"
+                  alt="Marcos Henrique"
+                  className="about-profile-card__photo"
                 />
-                {/* Gostaria de usar emojis? Acesse: https://emojipedia.org/ */}
-                <span>🤖</span>
-                <p>
-                  Marcos Henrique
-                  <br/>
-                  <span>Desenvolvedor Fullstack</span>
+              </div>
+              <div className="about-profile-card__identity">
+                <h3>Marcos Henrique</h3>
+                <p className="about-profile-card__role">Desenvolvedor Fullstack</p>
+                <p className="about-profile-card__description">
+                  Construindo soluções que agreguem valor ao mercado.
                 </p>
-                <a href="#section-contact-me">Contrate-me</a>
-              </Box>
-            </Box>
+                <a href="#section-contact-me">Contrate-me <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
           </Box>
 
           {/* Coluna Direita: Experiência, Habilidades e Redes Sociais */}
